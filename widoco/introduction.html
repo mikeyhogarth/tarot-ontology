@@ -1,0 +1,79 @@
+<h2 id="intro" class="list">
+  Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span>
+</h2>
+<p>
+  An ontology defining the classes and properties commonly required for
+  describing tarot decks and their cards. This includes the suits and ranks that
+  nearly every tarot system has, as well as the extension points that external
+  vocabularies fill, such as for symbology or correspondences.
+</p>
+<p>
+  As well as the ontology itself, this project also includes two example
+  vocabularies of common correspondences and symbology found within the tarot -
+  both of these vocabularies were heavily inspired by the Golden Dawn tradition
+  and the Rider-Waite-Smith deck. We have also provided a series of example
+  decks which demonstrate the ontology being applied in practice to several
+  popular decks. Links to these accompanying resources can be found in the "See
+  Also" section at the top of this page.
+</p>
+<h3 id="interpretations" class="list">
+  Interpretations
+  <span class="backlink"> back to <a href="#toc">ToC</a></span>
+</h3>
+<p>
+  All data within this project, including the ontology itself, is deliberately
+  designed to avoid prescribing or asserting any definitive interpretation of
+  any particular tarot card. Interpretation is an inherently contextual and
+  deeply personal aspect of tarot reading. We do not believe it is the role of
+  this project, or of any single authority, to dictate how others should
+  interpret the cards or their meanings, and we are confident that this is the
+  prevailing view within the tarot community. Interpretations may vary
+  considerably, and this diversity is something we seek to respect.
+</p>
+<p>
+  That said, this ontology does provide a small number of interpretation-related
+  properties for those who wish to express and document interpretations:
+</p>
+<ul>
+  <li>
+    <a href="#interpretation">tarot:interpretation</a> is a property that can be
+    used to record an individual's or group's own interpretation of a card. We
+    strongly recommend that interpretations are accompanied by provenance
+    information identifying whose interpretation is being represented.
+  </li>
+  <li>
+    <a href="#popularInterpretation">tarot:popularInterpretation</a> can be used
+    to describe an interpretation that is widely recognised or accepted within a
+    particular tradition or school of tarot.
+  </li>
+</ul>
+<p>
+  Ultimately, the human element is what makes tarot special. This project makes
+  no attempt to establish a definitive or universally authoritative
+  interpretation of any card, nor does it seek to imply that such an
+  interpretation exists. Its purpose is to provide a framework through which
+  interpretations can be represented, attributed, and explored, while leaving
+  the act of interpretation where it belongs: with the individual reader.
+</p>
+
+<h3 id="vocabreuse" class="list">
+  Vocabulary reuse
+  <span class="backlink"> back to <a href="#toc">ToC</a></span>
+</h3>
+
+<p>
+  The reuse of established vocabularies for generic concepts is encouraged. Not
+  every concept needs to be defined within a tarot-specific ontology,
+  particularly where suitable terms already exist in well-established
+  vocabularies. Reusing existing vocabularies helps avoid unnecessary
+  duplication, promotes interoperability, and makes the project's data easier to
+  integrate with other datasets and knowledge graphs.
+</p>
+<p>
+  Throughout this project, we make use of established vocabularies where
+  appropriate. For example, <code>skos</code> is used to provide labels for
+  concepts, while <code>foaf:depiction</code> is used to link cards to images of
+  them. We encourage others working with this ontology to follow
+  the same approach, reusing existing terms wherever they adequately describe
+  the concepts being represented.
+</p>

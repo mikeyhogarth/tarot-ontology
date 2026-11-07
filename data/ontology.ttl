@@ -1,0 +1,303 @@
+@prefix tarot:   <https://w3id.org/tarot/ontology#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix schema:  <https://schema.org/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix voaf:    <http://purl.org/vocommons/voaf#> .
+
+#################################################################
+# Ontology
+#################################################################
+
+<https://w3id.org/tarot/ontology> a owl:Ontology ;
+    rdfs:label "Tarot Ontology"@en ;
+    dcterms:title "Tarot Ontology"@en ;
+    dcterms:description "A small ontology for describing tarot decks and their cards."@en ;
+    dcterms:abstract "Classes and properties for describing tarot decks, their cards, and the suits and ranks nearly every deck shares. Esoteric correspondences and the symbols cards depict are deliberately left to optional companion vocabularies, so each deck states only the claims its own tradition makes. The ontology describes cards, not what they mean: any interpretation is offered as one popular reading among many. Suits and ranks are generic hooks labelled with popular terminology; a deck that uses its own names (e.g. Princess for Page) still links to the shared individuals and records its own names on its own cards."@en ;
+    vann:usageNote "This ontology is generic and extensible - tarot has no single vocabulary."@en ;
+    rdfs:seeAlso <https://w3id.org/tarot/correspondence>,
+        <https://w3id.org/tarot/symbol>,
+        <https://w3id.org/tarot/deck/rws>,
+        <https://w3id.org/tarot/deck/marseille>,
+        <https://w3id.org/tarot/deck/sola-busca> ;
+    schema:codeRepository <https://github.com/mikeyhogarth/tarot-ontology> ;
+    foaf:logo <https://mikeyhogarth.github.io/tarot-ontology/images/favicon.svg> ;
+    bibo:status <http://purl.org/ontology/bibo/status/draft> ;
+    dcterms:bibliographicCitation "Hogarth, M. (2026). Tarot Deck Ontology. https://w3id.org/tarot/ontology"@en ;
+    dcterms:creator "Mikey Hogarth" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-10-30"^^xsd:date ;
+    voaf:extends <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "tarot" ;
+    vann:preferredNamespaceUri "https://w3id.org/tarot/ontology#" .
+
+#################################################################
+# Classes
+#################################################################
+
+tarot:Deck a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:label "Deck"@en ;
+    rdfs:comment "A published tarot deck (a particular set of cards, such as the Rider-Waite-Smith). Its dcterms:language is the language its card names are printed in, and its dcterms:creator, dcterms:publisher and dcterms:created describe the deck itself (not the RDF data about it)."@en ;
+    vann:example "rws:Deck a tarot:Deck ; dcterms:language \"en\" ." .
+
+tarot:TarotCard a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:label "Tarot Card"@en ;
+    rdfs:comment "A single card in a tarot deck. Cards are named with skos:prefLabel (one per language; in the deck's own language, the name printed on the card) and skos:altLabel."@en .
+
+tarot:MajorArcanaCard a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:TarotCard ;
+    rdfs:label "Major Arcana"@en ;
+    rdfs:comment "A trump card with a named subject, such as The Fool or The Tower."@en ;
+    vann:example "rws:TheFool a tarot:MajorArcanaCard ; tarot:cardNumber 0 ." .
+
+tarot:MinorArcanaCard a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:TarotCard ;
+    rdfs:label "Minor Arcana"@en ;
+    rdfs:comment "A card belonging to one of the four suits, either a numbered card (Ace to Ten) or a court card."@en .
+
+tarot:CourtCard a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:MinorArcanaCard ;
+    rdfs:label "Court card"@en ;
+    rdfs:comment "A court card of a suit, typically named Page, Knight, Queen and King (decks may use other names)."@en ;
+    vann:example "rws:QueenOfCups a tarot:CourtCard ; tarot:hasSuit tarot:Cups ; tarot:hasRank tarot:Queen ." .
+
+tarot:PipCard a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:MinorArcanaCard ;
+    rdfs:label "Pip card"@en ;
+    rdfs:comment "A numbered card of a suit, Ace to Ten."@en ;
+    vann:example "rws:TwoOfCups a tarot:PipCard ; tarot:hasSuit tarot:Cups ; tarot:hasRank tarot:Two ." .
+
+tarot:Symbol a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Symbol"@en ;
+    rdfs:comment "Something a card depicts, such as an animal, object or pose. Names what is drawn, not what it means. Symbols may come from any SKOS concept scheme; an optional shared vocabulary is published separately."@en ;
+    rdfs:seeAlso <https://w3id.org/tarot/symbol> ;
+    vann:example "symbol:Dove a tarot:Symbol, skos:Concept ." .
+
+tarot:CardAttribute a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:label "Card Attribute"@en ;
+    rdfs:comment "An attribute associated with a card, such as its rank or its celestial correspondence."@en .
+
+tarot:Correspondence a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:CardAttribute ;
+    rdfs:label "Correspondence"@en ;
+    rdfs:comment "A more specific form of attribute representing something a tarot card corresponds to in an esoteric tradition. An extension point: the optional correspondences vocabulary defines elements, zodiac signs, celestial bodies and Hebrew letters as subclasses."@en ;
+    rdfs:seeAlso <https://w3id.org/tarot/correspondence> ;
+    vann:example "corr:Air a corr:Element . # corr:Element is a subclass of tarot:Correspondence" .
+
+tarot:Rank a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:CardAttribute ;
+    rdfs:label "Rank"@en ;
+    rdfs:comment "A generic rank of a minor arcana card within its suit, named after the most common usage: Ace to Ten, then Page, Knight, Queen and King."@en ;
+    vann:usageNote "Decks that name ranks differently (e.g. Princess, Prince) should link to the closest generic rank and record their own name on the card. The ontology takes no position on how a renamed court card maps."@en ;
+    vann:example "rws:AceOfWands tarot:hasRank tarot:Ace ." .
+
+tarot:Suit a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subClassOf tarot:CardAttribute ;
+    rdfs:label "Suit"@en ;
+    rdfs:comment "One of the four generic suits of the minor arcana: Wands, Cups, Swords and Pentacles. Common alternative names (e.g. Batons, Coins) are recorded as labels on the suit."@en ;
+    vann:usageNote "Decks that name suits differently should link to the closest generic suit and record their own name on the card."@en ;
+    vann:example "rws:AceOfWands tarot:hasSuit tarot:Wands ." .
+
+#################################################################
+# Object Properties
+#################################################################
+
+tarot:inDeck a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range tarot:Deck ;
+    rdfs:label "in deck"@en ;
+    rdfs:comment "Relates a card to the deck it belongs to."@en ;
+    vann:example "rws:TheFool a tarot:MajorArcanaCard ; tarot:inDeck rws:Deck ." .
+
+tarot:hasSymbol a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range tarot:Symbol ;
+    rdfs:label "depicts symbol"@en ;
+    rdfs:comment "Relates a card to a symbol it depicts. Cards state the most specific symbol; broader symbols are found through skos:broader."@en ;
+    vann:example "rws:TheFool tarot:hasSymbol symbol:Dog, symbol:Sun, symbol:Rose ." .
+
+tarot:hasCorrespondence a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range tarot:Correspondence ;
+    rdfs:label "corresponds to"@en ;
+    rdfs:comment "Relates a card to something it corresponds to in an esoteric tradition."@en ;
+    vann:example "rws:TheFool corr:hasElement corr:Air . # corr:hasElement is a sub-property of tarot:hasCorrespondence" .
+
+tarot:hasRank a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:domain tarot:MinorArcanaCard ;
+    rdfs:range tarot:Rank ;
+    rdfs:label "has rank"@en ;
+    rdfs:comment "Relates a minor arcana card to its rank."@en ;
+    vann:example "rws:TwoOfCups tarot:hasRank tarot:Two ." .
+
+tarot:hasSuit a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:domain tarot:MinorArcanaCard ;
+    rdfs:range tarot:Suit ;
+    rdfs:label "has suit"@en ;
+    rdfs:comment "Relates a minor arcana card to its suit."@en ;
+    vann:example "rws:TwoOfCups tarot:hasSuit tarot:Cups ." .
+
+#################################################################
+# Datatype Properties
+#################################################################
+
+tarot:cardNumber a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range xsd:integer ;
+    rdfs:label "has card number"@en ;
+    rdfs:comment "The card's number within its sequence, e.g. 0 for The Fool."@en ;
+    vann:example "rws:TheFool tarot:cardNumber 0 ." .
+
+tarot:visualDescription a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subPropertyOf skos:note ;
+    rdfs:label "visual description"@en ;
+    rdfs:comment "A plain account of what a card shows: its figures, objects and setting. The structured counterpart is tarot:hasSymbol."@en ;
+    vann:example "mar:LePape tarot:visualDescription \"The pope, with two acolytes.\"@en ." .
+
+tarot:interpretation a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subPropertyOf skos:note ;
+    rdfs:label "interpretation"@en ;
+    rdfs:comment "An interpretation of a card's meaning."@en ;
+    vann:usageNote "No interpretation is the true meaning of a card, and much of the interpretation a reader may draw comes from more than just the card in isolation. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:popularInterpretation if defining a commonly used interpretation."@en ;
+    vann:example "rws:TheFool tarot:interpretation \"A new beginning.\"@en ." .
+
+tarot:popularInterpretation a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    rdfs:subPropertyOf tarot:interpretation ;
+    rdfs:label "popular interpretation"@en ;
+    rdfs:comment "A popular interpretation of a card's meaning: one that is widely used in a tradition of practice."@en ;
+    vann:usageNote "Present this as one popular reading, never as the true meaning of the card - there is no true meaning, this is in the eye of the beholder alone."@en ;
+    vann:example "rws:TheFool tarot:popularInterpretation \"Innocence, spontaneity and a leap of faith.\"@en ." .
+
+#################################################################
+# Standard Tarot Individuals
+#################################################################
+
+# Ranks
+
+tarot:Ace a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The lowest rank of a suit, numbered one."@en ;
+    skos:prefLabel "Ace"@en, "As"@fr, "Asso"@it .
+
+tarot:Two a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered two."@en ;
+    skos:prefLabel "Two"@en .
+
+tarot:Three a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered three."@en ;
+    skos:prefLabel "Three"@en .
+
+tarot:Four a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered four."@en ;
+    skos:prefLabel "Four"@en .
+
+tarot:Five a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered five."@en ;
+    skos:prefLabel "Five"@en .
+
+tarot:Six a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered six."@en ;
+    skos:prefLabel "Six"@en .
+
+tarot:Seven a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered seven."@en ;
+    skos:prefLabel "Seven"@en .
+
+tarot:Eight a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered eight."@en ;
+    skos:prefLabel "Eight"@en .
+
+tarot:Nine a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The rank numbered nine."@en ;
+    skos:prefLabel "Nine"@en .
+
+tarot:Ten a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The highest numbered rank of a suit."@en ;
+    skos:prefLabel "Ten"@en .
+
+tarot:Page a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The lowest court rank of a suit."@en ;
+    skos:prefLabel "Page"@en, "Valet"@fr, "Fante"@it ;
+    skos:altLabel "Knave"@en, "Jack"@en, "Princess"@en, "Daughter"@en, "Maid"@en .
+
+tarot:Knight a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The court rank above Page and below Queen."@en ;
+    skos:prefLabel "Knight"@en, "Cavalier"@fr, "Cavallo"@it ;
+    skos:altLabel "Prince"@en, "Son"@en, "Horseman"@en .
+
+tarot:Queen a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The court rank above Knight and below King."@en ;
+    skos:prefLabel "Queen"@en, "Reine"@fr, "Regina"@it ;
+    skos:altLabel "Mother"@en .
+
+tarot:King a tarot:Rank ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The highest court rank of a suit."@en ;
+    skos:prefLabel "King"@en, "Roi"@fr, "Re"@it ;
+    skos:altLabel "Father"@en .
+
+# Suits
+
+tarot:Wands a tarot:Suit ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The suit of wands, also known as batons, rods or clubs."@en ;
+    skos:prefLabel "Wands"@en, "Bâtons"@fr, "Bastoni"@it ;
+    skos:altLabel "Batons"@en, "Rods"@en, "Clubs"@en, "Sceptres"@en .
+
+tarot:Cups a tarot:Suit ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The suit of cups, also known as chalices or goblets."@en ;
+    skos:prefLabel "Cups"@en, "Coupes"@fr, "Coppe"@it ;
+    skos:altLabel "Chalices"@en, "Goblets"@en, "Vessels"@en .
+
+
+tarot:Swords a tarot:Suit ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The suit of swords."@en ;
+    skos:prefLabel "Swords"@en, "Épées"@fr, "Spade"@it ;
+    skos:altLabel "Blades"@en, "Knives"@en .
+
+tarot:Pentacles a tarot:Suit ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
+    skos:definition "The suit of pentacles, also known as coins or discs."@en ;
+    skos:prefLabel "Pentacles"@en, "Deniers"@fr, "Denari"@it ;
+    skos:altLabel "Coins"@en, "Discs"@en, "Rings"@en  .

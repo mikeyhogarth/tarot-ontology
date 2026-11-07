@@ -1,0 +1,163 @@
+@prefix tarot: <https://w3id.org/tarot/ontology#> .
+@prefix rws:   <https://w3id.org/tarot/deck/rws#> .
+
+# Popular interpretations of the Rider-Waite-Smith cards: one common reading of each card, not
+# the only one and not what the card "means". Readers interpret cards for themselves. These
+# short readings were written for this dataset; they are not quotations from Waite's
+# Pictorial Key. One block per card, in the same order as cards.ttl.
+
+rws:TheFool tarot:popularInterpretation "The beginning of the journey: innocence, spontaneity and a leap of faith."@en .
+
+rws:TheMagician tarot:popularInterpretation "Willpower and skill: turning intention into action."@en .
+
+rws:TheHighPriestess tarot:popularInterpretation "Intuition and hidden knowledge."@en .
+
+rws:TheEmpress tarot:popularInterpretation "Nurture, creativity, fertility and abundance."@en .
+
+rws:TheEmperor tarot:popularInterpretation "Authority, structure and stable leadership."@en .
+
+rws:TheHierophant tarot:popularInterpretation "Tradition, convention and spiritual guidance."@en .
+
+rws:TheLovers tarot:popularInterpretation "Love, harmony and the weight of a meaningful choice."@en .
+
+rws:TheChariot tarot:popularInterpretation "Determination and control: victory through willpower."@en .
+
+rws:Strength tarot:popularInterpretation "Courage, patience and gentle inner strength."@en .
+
+rws:TheHermit tarot:popularInterpretation "Solitude, introspection and searching for inner wisdom."@en .
+
+rws:WheelOfFortune tarot:popularInterpretation "Cycles, fate and turning points."@en .
+
+rws:Justice tarot:popularInterpretation "Fairness, truth and cause and effect."@en .
+
+rws:TheHangedMan tarot:popularInterpretation "Surrender, pause and seeing things from a new angle."@en .
+
+rws:Death tarot:popularInterpretation "Endings and transformation: one chapter closes so another can begin."@en .
+
+rws:Temperance tarot:popularInterpretation "Balance, moderation and patient blending."@en .
+
+rws:TheDevil tarot:popularInterpretation "Bondage, temptation and attachment to the material."@en .
+
+rws:TheTower tarot:popularInterpretation "Sudden upheaval and revelation: false structures collapse."@en .
+
+rws:TheStar tarot:popularInterpretation "Hope, renewal and quiet inspiration."@en .
+
+rws:TheMoon tarot:popularInterpretation "Illusion, fear and the uncertain path of the unconscious."@en .
+
+rws:TheSun tarot:popularInterpretation "Joy, success and vitality."@en .
+
+rws:Judgement tarot:popularInterpretation "Reckoning, awakening and answering a higher calling."@en .
+
+rws:TheWorld tarot:popularInterpretation "Completion, wholeness and fulfilment."@en .
+
+rws:AceOfWands tarot:popularInterpretation "Inspiration, new ventures and creative spark."@en .
+
+rws:TwoOfWands tarot:popularInterpretation "Planning, vision and looking beyond the horizon."@en .
+
+rws:ThreeOfWands tarot:popularInterpretation "Expansion, foresight and progress under way."@en .
+
+rws:FourOfWands tarot:popularInterpretation "Celebration, homecoming and stability."@en .
+
+rws:FiveOfWands tarot:popularInterpretation "Competition, conflict and clashing ambitions."@en .
+
+rws:SixOfWands tarot:popularInterpretation "Victory, recognition and public acclaim."@en .
+
+rws:SevenOfWands tarot:popularInterpretation "Defending your position against challenge."@en .
+
+rws:EightOfWands tarot:popularInterpretation "Swift movement, momentum and news on the way."@en .
+
+rws:NineOfWands tarot:popularInterpretation "Resilience and persistence: holding the line."@en .
+
+rws:TenOfWands tarot:popularInterpretation "Burden and over-commitment: carrying too much."@en .
+
+rws:PageOfWands tarot:popularInterpretation "Enthusiasm, exploration and a message of new possibilities."@en .
+
+rws:KnightOfWands tarot:popularInterpretation "Energy, passion and impulsive adventure."@en .
+
+rws:QueenOfWands tarot:popularInterpretation "Confidence, warmth and determination."@en .
+
+rws:KingOfWands tarot:popularInterpretation "Visionary leadership and bold entrepreneurship."@en .
+
+rws:AceOfCups tarot:popularInterpretation "New love, emotional overflow and compassion."@en .
+
+rws:TwoOfCups tarot:popularInterpretation "Partnership, mutual attraction and union."@en .
+
+rws:ThreeOfCups tarot:popularInterpretation "Friendship, celebration and community."@en .
+
+rws:FourOfCups tarot:popularInterpretation "Apathy, contemplation and missed offers."@en .
+
+rws:FiveOfCups tarot:popularInterpretation "Loss and regret: dwelling on what has been spilled."@en .
+
+rws:SixOfCups tarot:popularInterpretation "Nostalgia, childhood memories and innocence."@en .
+
+rws:SevenOfCups tarot:popularInterpretation "Choices, fantasy and wishful thinking."@en .
+
+rws:EightOfCups tarot:popularInterpretation "Walking away from what no longer fulfils."@en .
+
+rws:NineOfCups tarot:popularInterpretation "Contentment and wishes fulfilled."@en .
+
+rws:TenOfCups tarot:popularInterpretation "Domestic harmony and lasting happiness."@en .
+
+rws:PageOfCups tarot:popularInterpretation "Creative beginnings, intuition and tender feelings."@en .
+
+rws:KnightOfCups tarot:popularInterpretation "Romance, charm and following the heart."@en .
+
+rws:QueenOfCups tarot:popularInterpretation "Compassion, calm and emotional insight."@en .
+
+rws:KingOfCups tarot:popularInterpretation "Emotional balance, diplomacy and generosity."@en .
+
+rws:AceOfSwords tarot:popularInterpretation "Clarity, breakthrough and the power of truth."@en .
+
+rws:TwoOfSwords tarot:popularInterpretation "Stalemate and difficult decisions avoided."@en .
+
+rws:ThreeOfSwords tarot:popularInterpretation "Heartbreak, grief and painful truth."@en .
+
+rws:FourOfSwords tarot:popularInterpretation "Rest, recovery and contemplation."@en .
+
+rws:FiveOfSwords tarot:popularInterpretation "Conflict, hollow victory and winning at a cost."@en .
+
+rws:SixOfSwords tarot:popularInterpretation "Transition and moving towards calmer waters."@en .
+
+rws:SevenOfSwords tarot:popularInterpretation "Deception, strategy and getting away with something."@en .
+
+rws:EightOfSwords tarot:popularInterpretation "Restriction and feeling trapped by one's own thoughts."@en .
+
+rws:NineOfSwords tarot:popularInterpretation "Anxiety, worry and sleepless nights."@en .
+
+rws:TenOfSwords tarot:popularInterpretation "Painful endings and hitting rock bottom."@en .
+
+rws:PageOfSwords tarot:popularInterpretation "Curiosity, vigilance and a hunger for ideas."@en .
+
+rws:KnightOfSwords tarot:popularInterpretation "Ambition, haste and charging ahead."@en .
+
+rws:QueenOfSwords tarot:popularInterpretation "Clear judgement, independence and honest perception."@en .
+
+rws:KingOfSwords tarot:popularInterpretation "Intellectual authority, truth and ethics."@en .
+
+rws:AceOfPentacles tarot:popularInterpretation "A new material opportunity and prosperity."@en .
+
+rws:TwoOfPentacles tarot:popularInterpretation "Balancing priorities and adapting to change."@en .
+
+rws:ThreeOfPentacles tarot:popularInterpretation "Teamwork, craftsmanship and collaboration."@en .
+
+rws:FourOfPentacles tarot:popularInterpretation "Security, control and holding on too tightly."@en .
+
+rws:FiveOfPentacles tarot:popularInterpretation "Hardship, poverty and feeling left out in the cold."@en .
+
+rws:SixOfPentacles tarot:popularInterpretation "Generosity, charity and sharing wealth."@en .
+
+rws:SevenOfPentacles tarot:popularInterpretation "Patience, investment and long-term view."@en .
+
+rws:EightOfPentacles tarot:popularInterpretation "Diligence, skill and dedicated apprenticeship."@en .
+
+rws:NineOfPentacles tarot:popularInterpretation "Abundance, self-sufficiency and refinement."@en .
+
+rws:TenOfPentacles tarot:popularInterpretation "Wealth, legacy and family security."@en .
+
+rws:PageOfPentacles tarot:popularInterpretation "Ambition, study and a desire to learn."@en .
+
+rws:KnightOfPentacles tarot:popularInterpretation "Hard work, routine and steady progress."@en .
+
+rws:QueenOfPentacles tarot:popularInterpretation "Nurturing, practicality and providing for others."@en .
+
+rws:KingOfPentacles tarot:popularInterpretation "Abundance, security and disciplined success."@en .

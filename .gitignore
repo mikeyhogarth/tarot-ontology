@@ -1,0 +1,71 @@
+# While I'm working on this...
+TODO.md
+TODO_MAYBE.md
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# uv
+.venv/
+.uv/
+uv-cache/
+
+# Python packaging
+site/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Packaging specific to this project
+docs/data/
+docs/reference/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Linters and type checkers
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.pyright/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# IDEs
+.idea/
+.vscode/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Local databases (remove if tracked intentionally)
+*.sqlite3
+*.db

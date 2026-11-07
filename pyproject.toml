@@ -1,0 +1,21 @@
+[project]
+name = "tarot-ontology"
+version = "0.1.0"
+description = "An RDF ontology for tarot, plus Linked Open Data for the Rider-Waite-Smith, Marseille and Sola Busca decks."
+readme = "README.md"
+requires-python = ">=3.14"
+classifiers = [
+    "Private :: Do Not Upload",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = ["rdflib>=7.6.0"]
+
+[dependency-groups]
+dev = ["pyshacl>=0.40.2", "pytest>=9.2.0", "zensical>=0.1.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]

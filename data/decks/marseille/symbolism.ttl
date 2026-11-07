@@ -1,0 +1,128 @@
+@prefix tarot: <https://w3id.org/tarot/ontology#> .
+@prefix mar:   <https://w3id.org/tarot/deck/marseille#> .
+@prefix symbol: <https://w3id.org/tarot/symbol#> .
+
+# What each Tarot of Marseilles card shows, read from the Jean Dodal deck. Depict the most specific
+# concept in symbols.ttl; broader ones (e.g. Animal) are found through the hierarchy.
+# Major arcana and court cards only: the pip cards show suit emblems arranged among foliage.
+# One block per card, in card-number order, majors then courts by suit.
+
+mar:LeMat tarot:hasSymbol
+    symbol:Feather, symbol:Knapsack, symbol:RightProfile, symbol:Staff .
+
+mar:LeBateleur tarot:hasSymbol
+    symbol:Cup, symbol:FrontalPose, symbol:Hat, symbol:Table, symbol:Wand .
+
+mar:LaPapesse tarot:hasSymbol
+    symbol:Book, symbol:Crown, symbol:LeftProfile .
+
+mar:LImperatrice tarot:hasSymbol
+    symbol:Crown, symbol:Eagle, symbol:FrontalPose, symbol:Orb, symbol:Sceptre, symbol:Shield .
+
+mar:LEmpereur tarot:hasSymbol
+    symbol:Crown, symbol:Eagle, symbol:LeftProfile, symbol:Orb, symbol:Sceptre, symbol:Shield .
+
+mar:LePape tarot:hasSymbol
+    symbol:Crown, symbol:Pillar, symbol:PresidingFigure, symbol:Staff, symbol:TwinPillars .
+
+mar:LAmoureux tarot:hasSymbol
+    symbol:Bow, symbol:Cherub, symbol:FlankingPair, symbol:FrontalPose .
+
+mar:LeChariot tarot:hasSymbol
+    symbol:Armour, symbol:Chariot, symbol:Crown, symbol:FrontalPose, symbol:Horse,
+    symbol:PresidingFigure, symbol:Sceptre, symbol:Shield .
+
+mar:LaJustice tarot:hasSymbol
+    symbol:Crown, symbol:FrontalPose, symbol:Scales, symbol:Sword .
+
+mar:LHermite tarot:hasSymbol
+    symbol:Cloak, symbol:Lantern, symbol:Staff .
+
+mar:LaRoueDeFortune tarot:hasSymbol
+    symbol:Crown, symbol:PresidingFigure, symbol:Wheel .
+
+mar:LaForce tarot:hasSymbol
+    symbol:DownwardGaze, symbol:Hat, symbol:Lion .
+
+mar:LePendu tarot:hasSymbol
+    symbol:FrontalPose, symbol:Restraint, symbol:Tree .
+
+mar:LArcaneSansNom tarot:hasSymbol
+    symbol:RightProfile, symbol:Scythe, symbol:Skeleton .
+
+mar:Temperance tarot:hasSymbol
+    symbol:Angel, symbol:DownwardGaze, symbol:Pitcher .
+
+mar:LeDiable tarot:hasSymbol
+    symbol:Devil, symbol:FlankingPair, symbol:FrontalPose, symbol:Restraint .
+
+mar:LaMaisonDieu tarot:hasSymbol
+    symbol:Crown, symbol:Lightning, symbol:Sun, symbol:Tower .
+
+mar:LEtoile tarot:hasSymbol
+    symbol:Bird, symbol:DownwardGaze, symbol:Flower, symbol:Nudity, symbol:Pitcher, symbol:Pool,
+    symbol:Star, symbol:Tree .
+
+mar:LaLune tarot:hasSymbol
+    symbol:Crayfish, symbol:Dog, symbol:Moon, symbol:Pool, symbol:Tower, symbol:Wolf .
+
+mar:LeSoleil tarot:hasSymbol
+    symbol:Child, symbol:Sun, symbol:Wall .
+
+mar:LeJugement tarot:hasSymbol
+    symbol:Angel, symbol:Banner, symbol:Cloud, symbol:Cross, symbol:Halo, symbol:Trumpet .
+
+mar:LeMonde tarot:hasSymbol
+    symbol:Tetramorph, symbol:Wreath .
+
+#################################################################
+# Court cards
+#################################################################
+
+mar:ValetDeBatons tarot:hasSymbol
+    symbol:Page, symbol:RightProfile, symbol:Staff .
+
+mar:CavalierDeBatons tarot:hasSymbol
+    symbol:Hat, symbol:Horse, symbol:Knight, symbol:LeftProfile, symbol:Staff .
+
+mar:ReineDeBatons tarot:hasSymbol
+    symbol:Crown, symbol:Queen, symbol:Staff .
+
+mar:RoiDeBatons tarot:hasSymbol
+    symbol:Armour, symbol:Crown, symbol:FrontalPose, symbol:Hat, symbol:King, symbol:Staff .
+
+mar:ValetDeCoupes tarot:hasSymbol
+    symbol:Cup, symbol:Page, symbol:Wreath .
+
+mar:CavalierDeCoupes tarot:hasSymbol
+    symbol:Cup, symbol:Horse, symbol:Knight, symbol:LeftProfile .
+
+mar:ReineDeCoupes tarot:hasSymbol
+    symbol:Crown, symbol:Cup, symbol:Queen .
+
+mar:RoiDeCoupes tarot:hasSymbol
+    symbol:Armour, symbol:Crown, symbol:Cup, symbol:FrontalPose, symbol:Hat, symbol:King .
+
+mar:ValetDeDeniers tarot:hasSymbol
+    symbol:Coin, symbol:FrontalPose, symbol:Hat, symbol:Page .
+
+mar:CavalierDeDeniers tarot:hasSymbol
+    symbol:Coin, symbol:Horse, symbol:Knight .
+
+mar:ReineDeDeniers tarot:hasSymbol
+    symbol:Coin, symbol:Crown, symbol:LeftProfile, symbol:Queen, symbol:Sceptre .
+
+mar:RoiDeDeniers tarot:hasSymbol
+    symbol:Coin, symbol:Hat, symbol:King .
+
+mar:ValetDeEpees tarot:hasSymbol
+    symbol:Hat, symbol:Page, symbol:Sword .
+
+mar:CavalierDeEpees tarot:hasSymbol
+    symbol:Armour, symbol:Horse, symbol:Knight, symbol:Sword .
+
+mar:ReineDeEpees tarot:hasSymbol
+    symbol:Crown, symbol:Queen, symbol:Sword .
+
+mar:RoiDeEpees tarot:hasSymbol
+    symbol:Crown, symbol:FrontalPose, symbol:Hat, symbol:King, symbol:Sword .

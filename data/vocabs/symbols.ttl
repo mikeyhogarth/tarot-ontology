@@ -1,0 +1,1143 @@
+@prefix tarot: <https://w3id.org/tarot/ontology#> .
+@prefix symbol: <https://w3id.org/tarot/symbol#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+
+# An optional, non-exhaustive starter vocabulary. It is published separately from the ontology:
+# decks are free to use concepts from any skos:ConceptScheme (typed tarot:Symbol), and may link
+# their own concepts into this one with skos:broader or skos:exactMatch.
+
+# The hierarchy of things a card can depict. This is the only place it is written down:
+# state `skos:broader` here and nowhere else, and have cards depict the most specific concept.
+# Concepts name what is drawn, not what it means. Group by top concept; leaves alphabetical.
+#
+# `skos:related` is stated here too, once per pair, on the alphabetically earlier concept; the
+# reverse is derived at query time. Use it for counterparts and companions (left/right profile),
+# never because two concepts merely share a broader concept, nor along a broader/narrower chain.
+
+<https://w3id.org/tarot/symbol> a skos:ConceptScheme ;
+    skos:prefLabel "Symbols"@en ;
+    skos:definition "Things a tarot card can depict, and the ways it depicts them."@en ;
+    dcterms:title "Tarot Symbols"@en ;
+    dcterms:description "A shared, non-exhaustive vocabulary of things tarot cards depict, built mainly from the Rider-Waite-Smith and Marseille decks. Optional: decks may use concepts from any scheme, or link their own concepts into this one with skos:broader or skos:exactMatch."@en ;
+    dcterms:creator <https://github.com/mikeyhogarth> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-10-30"^^xsd:date ;
+    dcterms:requires <https://w3id.org/tarot/ontology> ;
+    vann:preferredNamespacePrefix "symbol" ;
+    vann:preferredNamespaceUri "https://w3id.org/tarot/symbol#" .
+
+#################################################################
+# Animals
+#################################################################
+
+symbol:Animal a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Animal"@en ;
+    skos:definition "A living creature other than a human or plant, drawn in any form."@en .
+
+symbol:Bird a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Bird"@en ;
+    skos:definition "A feathered, winged animal, often shown in flight or perched."@en .
+
+symbol:Dove a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Bird ;
+    skos:prefLabel "Dove"@en ;
+    skos:definition "A small, plump, usually white bird with a gentle appearance."@en .
+
+symbol:Eagle a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Bird ;
+    skos:related symbol:Tetramorph ;
+    skos:prefLabel "Eagle"@en ;
+    skos:definition "A large bird of prey with broad wings, a hooked beak and sharp talons."@en .
+
+symbol:Falcon a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Bird ;
+    skos:prefLabel "Falcon"@en ;
+    skos:definition "A swift bird of prey with pointed wings and a hooked beak."@en .
+
+symbol:Ibis a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Bird ;
+    skos:prefLabel "Ibis"@en ;
+    skos:definition "A long-legged wading bird with a long, downward-curving bill."@en .
+
+symbol:Butterfly a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Butterfly"@en ;
+    skos:definition "A winged insect with large, often brightly coloured wings."@en .
+
+symbol:Crayfish a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Crayfish"@en ;
+    skos:definition "A freshwater crustacean with a hard shell, claws and a segmented tail."@en .
+
+symbol:Fish a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Fish"@en ;
+    skos:definition "A cold-blooded water animal with fins, scales and a tail."@en .
+
+symbol:Mammal a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Mammal"@en ;
+    skos:definition "A warm-blooded, furred animal that bears live young."@en .
+
+symbol:Bull a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:related symbol:Tetramorph ;
+    skos:prefLabel "Bull"@en ;
+    skos:definition "An adult male bovine with horns and a heavy, muscular build."@en .
+
+symbol:Cat a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:prefLabel "Cat"@en ;
+    skos:definition "A small, furred domestic animal with pointed ears and a long tail."@en .
+
+symbol:Dog a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:related symbol:Wolf ;
+    skos:prefLabel "Dog"@en ;
+    skos:definition "A domesticated canine, often shown with its tongue out or at its master's side."@en .
+
+symbol:Horse a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:prefLabel "Horse"@en ;
+    skos:definition "A large, hoofed animal with a mane and tail, often ridden or harnessed."@en .
+
+symbol:Lion a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:related symbol:Tetramorph ;
+    skos:prefLabel "Lion"@en ;
+    skos:definition "A large tawny cat, the male with a thick mane."@en .
+
+symbol:Rabbit a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:prefLabel "Rabbit"@en ;
+    skos:definition "A small, long-eared mammal with a short tail."@en .
+
+symbol:Ram a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:prefLabel "Ram"@en ;
+    skos:definition "An adult male sheep with curled horns."@en .
+
+symbol:Wolf a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mammal ;
+    skos:prefLabel "Wolf"@en ;
+    skos:definition "A wild canine with a lean body, pointed ears and a bushy tail."@en .
+
+symbol:Salamander a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Salamander"@en ;
+    skos:definition "A slender, lizard-like amphibian with a long tail."@en .
+
+symbol:Shell a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Shell"@en ;
+    skos:definition "A sea creature's hard shell, such as a scallop or conch."@en .
+
+symbol:Snail a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Snail"@en ;
+    skos:definition "A soft-bodied mollusc carrying a spiral shell on its back."@en .
+
+symbol:Snake a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Animal ;
+    skos:prefLabel "Snake"@en ;
+    skos:definition "A long, limbless reptile with scaly skin, often shown coiled."@en .
+
+#################################################################
+# Celestial
+#################################################################
+
+symbol:Celestial a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Celestial"@en ;
+    skos:definition "A body or light seen in the sky beyond the earth."@en .
+
+symbol:Eclipse a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Celestial ;
+    skos:related symbol:Moon, symbol:Sun ;
+    skos:prefLabel "Eclipse"@en ;
+    skos:definition "A dark disc passing across or blocking a luminous one, drawn as a darkened moon or sun, often ringed with light."@en .
+
+symbol:Moon a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Celestial ;
+    skos:related symbol:Sun ;
+    skos:prefLabel "Moon"@en ;
+    skos:definition "The earth's natural satellite, shown as a disc or crescent."@en .
+
+symbol:Star a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Celestial ;
+    skos:prefLabel "Star"@en ;
+    skos:definition "A point of light in the sky, usually drawn with radiating points."@en .
+
+symbol:Sun a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Celestial ;
+    skos:prefLabel "Sun"@en ;
+    skos:definition "The star at the centre of our solar system, drawn as a bright disc, often with rays."@en .
+
+#################################################################
+# Clothing
+#################################################################
+
+symbol:Clothing a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Clothing"@en ;
+    skos:definition "Garments and accessories worn on the body."@en .
+
+symbol:Armour a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:related symbol:Shield ;
+    skos:prefLabel "Armour"@en ;
+    skos:definition "Protective metal covering worn on the body in combat."@en .
+
+symbol:Bandage a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:prefLabel "Bandage"@en ;
+    skos:definition "A strip of cloth wrapped around part of the body, usually over a wound."@en .
+
+symbol:Blindfold a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:related symbol:ObscuredFace ;
+    skos:prefLabel "Blindfold"@en ;
+    skos:definition "A cloth tied over the eyes to prevent sight."@en .
+
+symbol:Cloak a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:prefLabel "Cloak"@en ;
+    skos:definition "A loose, sleeveless outer garment hanging from the shoulders."@en .
+
+symbol:Feather a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:prefLabel "Feather"@en ;
+    skos:definition "A single light plume from a bird, often worn as decoration."@en .
+
+symbol:Glove a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:prefLabel "Glove"@en ;
+    skos:definition "A covering for the hand with separate sheaths for the fingers."@en .
+
+symbol:Headwear a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:prefLabel "Headwear"@en ;
+    skos:definition "Anything worn on the head."@en .
+
+symbol:Crown a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Headwear ;
+    skos:related symbol:King, symbol:Queen ;
+    skos:prefLabel "Crown"@en ;
+    skos:definition "A circular ornamental headdress worn by a ruler."@en .
+
+symbol:Hat a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Headwear ;
+    skos:prefLabel "Hat"@en ;
+    skos:definition "A head covering with a brim, often broad and sometimes plumed."@en .
+
+symbol:Wreath a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Headwear ;
+    skos:prefLabel "Wreath"@en ;
+    skos:definition "A ring of leaves, flowers or branches worn on the head or hung up."@en .
+
+symbol:Nudity a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Clothing ;
+    skos:prefLabel "Nudity"@en ;
+    skos:definition "A human figure shown without clothing."@en .
+
+#################################################################
+# Compositions
+#################################################################
+
+symbol:Composition a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Composition"@en ;
+    skos:definition "A way the elements of a card are arranged in relation to one another."@en .
+
+symbol:Conflict a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Composition ;
+    skos:prefLabel "Conflict"@en ;
+    skos:definition "Figures set against one another, fighting or armed to fight."@en .
+
+symbol:FlankingPair a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Composition ;
+    skos:prefLabel "Flanking pair"@en ;
+    skos:definition "Two figures standing on opposite sides of a central figure or object."@en .
+
+symbol:NoSentientFigures a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Composition ;
+    skos:prefLabel "No sentient figures"@en ;
+    skos:definition "A scene with no figure, animal or other living being in it, only objects, landscape or weather."@en .
+
+symbol:PresidingFigure a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Composition ;
+    skos:prefLabel "Presiding figure"@en ;
+    skos:definition "A central figure or object raised above other figures."@en .
+
+symbol:StageBackdrop a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Composition ;
+    skos:prefLabel "Stage backdrop"@en ;
+    skos:definition "Figures set in a shallow foreground, as if on a stage, against a background that looks like painted scenery."@en .
+
+symbol:TwinPillars a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Composition ;
+    skos:prefLabel "Twin pillars"@en ;
+    skos:definition "A central figure set between two matching pillars."@en .
+
+#################################################################
+# Figures
+#################################################################
+
+symbol:Figure a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Figure"@en ;
+    skos:definition "A person or human-like form."@en .
+
+symbol:Bishop a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:prefLabel "Bishop"@en ;
+    skos:definition "A senior Christian cleric, usually shown in ceremonial robes and a mitre."@en .
+
+symbol:Child a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:prefLabel "Child"@en ;
+    skos:definition "A young human, shown as a small boy or girl."@en .
+
+symbol:King a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:related symbol:Knight, symbol:Page, symbol:Queen ;
+    skos:prefLabel "King"@en ;
+    skos:definition "A male monarch, usually shown crowned and enthroned."@en .
+
+symbol:Knight a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:related symbol:Page, symbol:Queen ;
+    skos:prefLabel "Knight"@en ;
+    skos:definition "A mounted warrior, usually shown in armour."@en .
+
+symbol:Page a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:related symbol:Queen ;
+    skos:prefLabel "Page"@en ;
+    skos:definition "A young attendant or messenger, shown standing."@en .
+
+symbol:Queen a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:prefLabel "Queen"@en ;
+    skos:definition "A female monarch, usually shown crowned and enthroned."@en .
+
+symbol:Skeleton a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Figure ;
+    skos:prefLabel "Skeleton"@en ;
+    skos:definition "The bony framework of a body, shown without flesh."@en .
+
+#################################################################
+# Landscape
+#################################################################
+
+symbol:Landscape a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Landscape"@en ;
+    skos:definition "A stretch of natural scenery."@en .
+
+symbol:Cliff a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:prefLabel "Cliff"@en ;
+    skos:definition "A steep rock face, usually at the edge of the sea or a drop."@en .
+
+symbol:Desert a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:prefLabel "Desert"@en ;
+    skos:definition "A dry, sandy region with little vegetation."@en .
+
+symbol:Field a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:prefLabel "Field"@en ;
+    skos:definition "An open area of land, often cultivated."@en .
+
+symbol:Hill a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:related symbol:Mountain ;
+    skos:prefLabel "Hill"@en ;
+    skos:definition "A rounded rise in the land, lower than a mountain."@en .
+
+symbol:Mountain a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:prefLabel "Mountain"@en ;
+    skos:definition "A large, steep and high natural elevation of the land."@en .
+
+symbol:Path a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:prefLabel "Path"@en ;
+    skos:definition "A narrow track or way along the ground."@en .
+
+symbol:Rock a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Landscape ;
+    skos:prefLabel "Rock"@en ;
+    skos:definition "A large mass of stone standing on the ground."@en .
+
+#################################################################
+# Mythical
+#################################################################
+
+symbol:Mythical a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Mythical"@en ;
+    skos:definition "A being or attribute from myth, legend or religion rather than the natural world."@en .
+
+symbol:Angel a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:related symbol:Tetramorph ;
+    skos:prefLabel "Angel"@en ;
+    skos:definition "A winged, usually robed spiritual being."@en .
+
+symbol:Cherub a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Angel ;
+    skos:related symbol:Child ;
+    skos:prefLabel "Cherub"@en ;
+    skos:definition "A small, winged angel in the form of a child."@en .
+
+symbol:Devil a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Devil"@en ;
+    skos:definition "A horned, bat-winged demonic figure."@en .
+
+symbol:Dragon a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Dragon"@en ;
+    skos:definition "A large, winged, scaly, serpent-like creature."@en .
+
+symbol:Halo a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Halo"@en ;
+    skos:definition "A ring or disc of light drawn around a head."@en .
+
+symbol:Hand a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Hand"@en ;
+    skos:definition "A hand emerging from a cloud, holding out an object."@en .
+
+symbol:Hermanubis a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Hermanubis"@en ;
+    skos:definition "A figure combining the Greek god Hermes with the jackal-headed Egyptian god Anubis."@en .
+
+symbol:Sphinx a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Sphinx"@en ;
+    skos:definition "A creature with a lion's body and a human head."@en .
+
+symbol:Tetramorph a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Mythical ;
+    skos:prefLabel "Tetramorph"@en ;
+    skos:definition "The four winged living creatures of religious vision - a man or angel, a lion, a bull and an eagle - drawn together, usually in the sky."@en .
+
+#################################################################
+# Objects
+#################################################################
+
+symbol:Object a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Object"@en ;
+    skos:definition "A man-made, movable thing."@en .
+
+symbol:Banner a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Banner"@en ;
+    skos:definition "A flag or strip of cloth hung from a pole."@en .
+
+symbol:Book a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Book"@en ;
+    skos:definition "A set of bound pages, usually held open or shut."@en .
+
+symbol:Chain a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Chain"@en ;
+    skos:definition "A series of connected metal links."@en .
+
+symbol:Coin a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:related symbol:Pentacle ;
+    skos:prefLabel "Coin"@en ;
+    skos:definition "A flat, round disc of metal, drawn as money and decorated with a pattern rather than a star."@en .
+
+symbol:Container a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Container"@en ;
+    skos:definition "An object for holding or carrying things."@en .
+
+symbol:Coffin a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Container ;
+    skos:related symbol:Tomb ;
+    skos:prefLabel "Coffin"@en ;
+    skos:definition "A box in which a dead body is placed for burial."@en .
+
+symbol:Knapsack a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Container ;
+    skos:prefLabel "Knapsack"@en ;
+    skos:definition "A bag carried on the back or slung from a stick."@en .
+
+symbol:Vessel a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Container ;
+    skos:prefLabel "Vessel"@en ;
+    skos:definition "A container for holding liquid."@en .
+
+symbol:Cup a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Vessel ;
+    skos:prefLabel "Cup"@en ;
+    skos:definition "A small, round, open vessel for drinking, often with a stem."@en .
+
+symbol:Pitcher a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Vessel ;
+    skos:prefLabel "Pitcher"@en ;
+    skos:definition "A large jug with a handle and a lip for pouring."@en .
+
+symbol:Furniture a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Furniture"@en ;
+    skos:definition "Movable items that equip a room for living or working."@en .
+
+symbol:Bed a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Furniture ;
+    skos:prefLabel "Bed"@en ;
+    skos:definition "A piece of furniture for sleeping on."@en .
+
+symbol:Bench a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Furniture ;
+    skos:prefLabel "Bench"@en ;
+    skos:definition "A long seat for more than one person, or a sturdy work surface."@en .
+
+symbol:Table a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Furniture ;
+    skos:prefLabel "Table"@en ;
+    skos:definition "A piece of furniture with a flat top on legs."@en .
+
+symbol:Throne a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Furniture ;
+    skos:prefLabel "Throne"@en ;
+    skos:definition "A ceremonial chair for a ruler."@en .
+
+symbol:Globe a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Globe"@en ;
+    skos:definition "A model of the earth as a sphere."@en .
+
+symbol:Jewels a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Jewels"@en ;
+    skos:definition "Precious cut stones, or ornaments set with them."@en .
+
+symbol:LightSource a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Light source"@en ;
+    skos:definition "An object that gives off light."@en .
+
+symbol:Lantern a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:LightSource ;
+    skos:prefLabel "Lantern"@en ;
+    skos:definition "A portable case with a flame or lamp inside, protected by glass or panels."@en .
+
+symbol:Torch a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:LightSource ;
+    skos:prefLabel "Torch"@en ;
+    skos:definition "A stick with a burning end, carried to give light."@en .
+
+symbol:MusicalInstrument a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Musical instrument"@en ;
+    skos:definition "An object played to make music."@en .
+
+symbol:Bell a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:MusicalInstrument ;
+    skos:prefLabel "Bell"@en ;
+    skos:definition "A hollow metal cup that rings when struck."@en .
+
+symbol:Trumpet a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:MusicalInstrument ;
+    skos:prefLabel "Trumpet"@en ;
+    skos:definition "A brass instrument with a flared bell, blown to make a loud sound."@en .
+
+symbol:Orb a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:related symbol:Sceptre ;
+    skos:prefLabel "Orb"@en ;
+    skos:definition "A sphere, often topped with a cross, held as a symbol of sovereignty."@en .
+
+symbol:Pentacle a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object, symbol:Pentagram ;
+    skos:prefLabel "Pentacle"@en ;
+    skos:definition "A disc or coin marked with a five-pointed star."@en .
+
+symbol:Staff a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Staff"@en ;
+    skos:definition "A long, stout stick, carried for support or as an emblem."@en .
+
+symbol:Caduceus a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Staff ;
+    skos:related symbol:Snake ;
+    skos:prefLabel "Caduceus"@en ;
+    skos:definition "A staff entwined with two snakes and topped with wings."@en .
+
+symbol:Sceptre a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Staff ;
+    skos:prefLabel "Sceptre"@en ;
+    skos:definition "A decorated rod carried by a ruler as a symbol of authority."@en .
+
+symbol:Wand a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Staff ;
+    skos:prefLabel "Wand"@en ;
+    skos:definition "A slender rod held in the hand."@en .
+
+symbol:Tool a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Tool"@en ;
+    skos:definition "A hand-held implement used to do a task."@en .
+
+symbol:Crutch a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Tool ;
+    skos:prefLabel "Crutch"@en ;
+    skos:definition "A support for walking, fitting under the arm."@en .
+
+symbol:Hammer a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Tool ;
+    skos:prefLabel "Hammer"@en ;
+    skos:definition "A tool with a heavy head on a handle, used for striking."@en .
+
+symbol:Keys a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Tool ;
+    skos:prefLabel "Keys"@en ;
+    skos:definition "Metal implements for operating locks."@en .
+
+symbol:Scales a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Tool ;
+    skos:prefLabel "Scales"@en ;
+    skos:definition "A balance with two pans, used for weighing."@en .
+
+symbol:Scythe a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Tool ;
+    skos:prefLabel "Scythe"@en ;
+    skos:definition "A tool with a long, curved blade on a long handle, used for cutting grass or grain."@en .
+
+symbol:Vehicle a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Vehicle"@en ;
+    skos:definition "A thing used for carrying people or goods from place to place."@en .
+
+symbol:Boat a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Vehicle ;
+    skos:prefLabel "Boat"@en ;
+    skos:definition "A small vessel for travelling on water."@en .
+
+symbol:Chariot a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Vehicle ;
+    skos:prefLabel "Chariot"@en ;
+    skos:definition "A two-wheeled, horse-drawn vehicle."@en .
+
+symbol:Weapon a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Weapon"@en ;
+    skos:definition "An object made for fighting or defence."@en .
+
+symbol:Bow a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weapon ;
+    skos:prefLabel "Bow"@en ;
+    skos:definition "A curved weapon strung with a cord, used to shoot arrows."@en .
+
+symbol:Shield a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weapon ;
+    skos:prefLabel "Shield"@en ;
+    skos:definition "A broad plate held on the arm to ward off blows."@en .
+
+symbol:Sword a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weapon ;
+    skos:prefLabel "Sword"@en ;
+    skos:definition "A weapon with a long metal blade and a hilt."@en .
+
+symbol:Wheel a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Object ;
+    skos:prefLabel "Wheel"@en ;
+    skos:definition "A circular frame that turns on an axle."@en .
+
+#################################################################
+# Plants
+#################################################################
+
+symbol:Plant a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Plant"@en ;
+    skos:definition "A living organism that grows in the soil, such as a tree, flower or crop."@en .
+
+symbol:Flower a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Plant ;
+    skos:prefLabel "Flower"@en ;
+    skos:definition "The blossom of a plant, with petals around a centre."@en .
+
+symbol:Iris a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Flower ;
+    skos:prefLabel "Iris"@en ;
+    skos:definition "A flower with sword-shaped leaves and large, showy petals."@en .
+
+symbol:Lily a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Flower ;
+    skos:prefLabel "Lily"@en ;
+    skos:definition "A tall flower with large, trumpet-shaped petals."@en .
+
+symbol:Lotus a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Flower ;
+    skos:prefLabel "Lotus"@en ;
+    skos:definition "A water flower with broad, rounded petals, rising from or floating on water."@en .
+
+symbol:Rose a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Flower ;
+    skos:prefLabel "Rose"@en ;
+    skos:definition "A flower with layered petals on a thorny stem."@en .
+
+symbol:Sunflower a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Flower ;
+    skos:prefLabel "Sunflower"@en ;
+    skos:definition "A tall plant with a large, round, yellow-petalled flower head."@en .
+
+symbol:Fruit a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Plant ;
+    skos:prefLabel "Fruit"@en ;
+    skos:definition "The seed-bearing, usually sweet, product of a plant."@en .
+
+symbol:Apple a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Fruit ;
+    skos:prefLabel "Apple"@en ;
+    skos:definition "A round fruit with red, green or yellow skin."@en .
+
+symbol:Grapes a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Fruit ;
+    skos:related symbol:Vine ;
+    skos:prefLabel "Grapes"@en ;
+    skos:definition "Small, round fruits growing in bunches on a vine."@en .
+
+symbol:Pomegranate a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Fruit ;
+    skos:prefLabel "Pomegranate"@en ;
+    skos:definition "A round, red fruit full of seeds in juicy pulp."@en .
+
+symbol:Tree a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Plant ;
+    skos:prefLabel "Tree"@en ;
+    skos:definition "A tall plant with a woody trunk and branches bearing leaves."@en .
+
+symbol:Vine a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Plant ;
+    skos:prefLabel "Vine"@en ;
+    skos:definition "A climbing or trailing plant with a long, slender stem."@en .
+
+symbol:Wheat a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Plant ;
+    skos:prefLabel "Wheat"@en ;
+    skos:definition "A cereal grass whose seed heads are harvested for grain."@en .
+
+#################################################################
+# Pose
+#################################################################
+
+symbol:Pose a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Pose"@en ;
+    skos:definition "The way a human figure is turned or looking, relative to the viewer."@en .
+
+symbol:DownwardGaze a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:related symbol:UpwardGaze ;
+    skos:prefLabel "Downward gaze"@en ;
+    skos:definition "A human figure whose eyes or head are lowered, looking down."@en .
+
+symbol:FacingAway a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:related symbol:FrontalPose ;
+    skos:prefLabel "Facing away"@en ;
+    skos:definition "A human figure with their back turned to the viewer."@en .
+
+symbol:FrontalPose a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:prefLabel "Frontal pose"@en ;
+    skos:definition "A human figure facing the viewer, with body and face turned towards them."@en .
+
+symbol:LeftProfile a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:related symbol:RightProfile ;
+    skos:prefLabel "Left profile"@en ;
+    skos:definition "A human figure turned side-on, facing the viewer's left."@en .
+
+symbol:ObscuredFace a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:prefLabel "Obscured face"@en ;
+    skos:definition "A human figure whose face is hidden by hands, cloth or an object."@en .
+
+symbol:Restraint a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:prefLabel "Restraint"@en ;
+    skos:definition "A human figure bound, tied or held in place so that they cannot move freely."@en .
+
+symbol:RightProfile a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:prefLabel "Right profile"@en ;
+    skos:definition "A human figure turned side-on, facing the viewer's right."@en .
+
+symbol:UpwardGaze a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Pose ;
+    skos:prefLabel "Upward gaze"@en ;
+    skos:definition "A human figure whose eyes or head are raised, looking up."@en .
+
+#################################################################
+# Signs
+#################################################################
+
+symbol:Sign a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Sign"@en ;
+    skos:definition "A mark, shape or glyph used to stand for something."@en .
+
+symbol:Ankh a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Sign ;
+    skos:prefLabel "Ankh"@en ;
+    skos:definition "An Egyptian cross with a loop at the top."@en .
+
+symbol:Cross a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Sign ;
+    skos:prefLabel "Cross"@en ;
+    skos:definition "A shape made of an upright and a transverse bar."@en .
+
+symbol:Heart a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Sign ;
+    skos:prefLabel "Heart"@en ;
+    skos:definition "A traditional heart symbol, such as found on playing cards."@en .
+
+symbol:Infinity a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Sign ;
+    skos:prefLabel "Infinity"@en ;
+    skos:definition "A sideways figure eight, drawn as a continuous looping line."@en .
+
+symbol:Pentagram a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Sign ;
+    skos:prefLabel "Pentagram"@en ;
+    skos:definition "A five-pointed star drawn as a single continuous line, often within a circle."@en .
+
+#################################################################
+# Structures
+#################################################################
+
+symbol:Structure a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Structure"@en ;
+    skos:definition "A built construction."@en .
+
+symbol:ArchitecturalFeature a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Structure ;
+    skos:prefLabel "Architectural feature"@en ;
+    skos:definition "A distinct element forming part of a building or built structure."@en .
+
+symbol:Arch a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:ArchitecturalFeature ;
+    skos:prefLabel "Arch"@en ;
+    skos:definition "A curved structure spanning an opening."@en .
+
+symbol:Pillar a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:ArchitecturalFeature ;
+    skos:related symbol:TwinPillars ;
+    skos:prefLabel "Pillar"@en ;
+    skos:definition "An upright column supporting or decorating a building."@en .
+
+symbol:Wall a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:ArchitecturalFeature ;
+    skos:prefLabel "Wall"@en ;
+    skos:definition "A continuous upright structure enclosing or dividing an area."@en .
+
+symbol:Window a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:ArchitecturalFeature ;
+    skos:prefLabel "Window"@en ;
+    skos:definition "An opening in a wall, usually glazed, to let in light."@en .
+
+symbol:Bridge a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Structure ;
+    skos:prefLabel "Bridge"@en ;
+    skos:definition "A structure carrying a path or road across a gap, such as a river."@en .
+
+symbol:Building a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Structure ;
+    skos:prefLabel "Building"@en ;
+    skos:definition "A roofed structure with walls."@en .
+
+symbol:Castle a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "Castle"@en ;
+    skos:definition "A large fortified building with towers and battlements."@en .
+
+symbol:Cathedral a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "Cathedral"@en ;
+    skos:definition "A large, important Christian church."@en .
+
+symbol:House a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "House"@en ;
+    skos:definition "A building for people to live in."@en .
+
+symbol:Pyramid a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "Pyramid"@en ;
+    skos:definition "A structure with a square base and four triangular sides meeting at a point."@en .
+
+symbol:Tent a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "Tent"@en ;
+    skos:definition "A portable shelter of fabric stretched over poles."@en .
+
+symbol:Tomb a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "Tomb"@en ;
+    skos:definition "A structure or chamber in which the dead are buried."@en .
+
+symbol:Tower a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Building ;
+    skos:prefLabel "Tower"@en ;
+    skos:definition "A tall, narrow building, or part of one."@en .
+
+symbol:City a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Structure ;
+    skos:prefLabel "City"@en ;
+    skos:definition "A large settlement of many buildings, seen as a skyline or cluster."@en .
+
+#################################################################
+# Water
+#################################################################
+
+symbol:Water a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Water"@en ;
+    skos:definition "A body or flow of water."@en .
+
+symbol:Pool a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Water ;
+    skos:prefLabel "Pool"@en ;
+    skos:definition "A small, still body of water."@en .
+
+symbol:River a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Water ;
+    skos:prefLabel "River"@en ;
+    skos:definition "A natural stream of water flowing in a channel."@en .
+
+symbol:Sea a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Water ;
+    skos:prefLabel "Sea"@en ;
+    skos:definition "A large expanse of salt water."@en .
+
+symbol:Waterfall a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Water ;
+    skos:prefLabel "Waterfall"@en ;
+    skos:definition "A stream of water falling from a height."@en .
+
+#################################################################
+# Weather
+#################################################################
+
+symbol:Weather a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:topConceptOf <https://w3id.org/tarot/symbol> ;
+    skos:prefLabel "Weather"@en ;
+    skos:definition "Conditions of the atmosphere such as rain, cloud or lightning."@en .
+
+symbol:Cloud a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weather ;
+    skos:prefLabel "Cloud"@en ;
+    skos:definition "A visible mass of water vapour floating in the sky."@en .
+
+symbol:Lightning a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weather ;
+    skos:prefLabel "Lightning"@en ;
+    skos:definition "A bright flash of electricity in the sky, usually drawn as a zigzag."@en .
+
+symbol:Rain a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weather ;
+    skos:prefLabel "Rain"@en ;
+    skos:definition "Drops of water falling from the sky."@en .
+
+symbol:Rainbow a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weather ;
+    skos:prefLabel "Rainbow"@en ;
+    skos:definition "An arc of coloured light across the sky."@en .
+
+symbol:Snow a tarot:Symbol, skos:Concept ;
+    skos:inScheme <https://w3id.org/tarot/symbol> ;
+    skos:broader symbol:Weather ;
+    skos:prefLabel "Snow"@en ;
+    skos:definition "Frozen white flakes falling from the sky or covering the ground."@en .

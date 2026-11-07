@@ -1,0 +1,319 @@
+@prefix tarot:   <https://w3id.org/tarot/ontology#> .
+@prefix corr:    <https://w3id.org/tarot/correspondence#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+
+# An optional vocabulary of esoteric correspondences: the classes (elements, zodiac signs,
+# celestial bodies, Hebrew letters) and properties that extend tarot:Correspondence and
+# tarot:hasCorrespondence in the ontology, plus their individuals. It is published separately
+# because only some traditions use them (notably the Golden Dawn); the ontology keeps the extension
+# points, and the suits and ranks that nearly every system has.
+#
+# It makes no claims about any deck. Which card corresponds to which of these is stated by each
+# deck (e.g. the Rider-Waite-Smith deck follows the Golden Dawn); other decks need not use them.
+
+<https://w3id.org/tarot/correspondence> a owl:Ontology ;
+    rdfs:label "Tarot Correspondences"@en ;
+    dcterms:title "Tarot Correspondences"@en ;
+    dcterms:description "A shared, optional vocabulary of esoteric correspondences used by some tarot traditions: elements, zodiac signs, celestial bodies and Hebrew letters. Which card corresponds to which is stated by each deck."@en ;
+    dcterms:creator <https://github.com/mikeyhogarth> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-11-01"^^xsd:date ;
+    dcterms:requires <https://w3id.org/tarot/ontology> ;
+    vann:preferredNamespacePrefix "corr" ;
+    vann:preferredNamespaceUri "https://w3id.org/tarot/correspondence#" .
+
+
+#################################################################
+# Classes
+#################################################################
+
+corr:Element a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subClassOf tarot:Correspondence ;
+    rdfs:label "Element"@en ;
+    rdfs:comment "One of the four classical elements: Fire, Water, Air or Earth."@en .
+
+corr:ZodiacSign a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subClassOf tarot:Correspondence ;
+    rdfs:label "Zodiac Sign"@en ;
+    rdfs:comment "One of the twelve signs of the zodiac."@en .
+
+corr:CelestialBody a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subClassOf tarot:Correspondence ;
+    rdfs:label "Celestial Body"@en ;
+    rdfs:comment "A planet or luminary, such as the Sun, the Moon or Venus."@en .
+
+corr:HebrewLetter a owl:Class ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subClassOf tarot:Correspondence ;
+    rdfs:label "Hebrew Letter"@en ;
+    rdfs:comment "One of the twenty-two letters of the Hebrew alphabet."@en .
+
+#################################################################
+# Properties
+#################################################################
+
+corr:hasElement a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range corr:Element ;
+    rdfs:label "corresponds to element"@en ;
+    rdfs:comment "Relates a card to the element it corresponds to."@en .
+
+corr:hasZodiacSign a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range corr:ZodiacSign ;
+    rdfs:label "corresponds to zodiac sign"@en ;
+    rdfs:comment "Relates a card to a zodiac sign it corresponds to."@en .
+
+corr:hasCelestialBody a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range corr:CelestialBody ;
+    rdfs:label "corresponds to celestial body"@en ;
+    rdfs:comment "Relates a card to a planet or luminary it corresponds to."@en .
+
+corr:hasHebrewLetter a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range corr:HebrewLetter ;
+    rdfs:label "corresponds to Hebrew letter"@en ;
+    rdfs:comment "Relates a card to the Hebrew letter it corresponds to."@en .
+
+#################################################################
+# Individuals
+#################################################################
+
+# Elements
+
+corr:Fire a corr:Element ;
+    skos:prefLabel "Fire"@en ;
+    rdfs:comment "The element of Fire."@en .
+
+corr:Water a corr:Element ;
+    skos:prefLabel "Water"@en ;
+    rdfs:comment "The element of Water."@en .
+
+corr:Air a corr:Element ;
+    skos:prefLabel "Air"@en ;
+    rdfs:comment "The element of Air."@en .
+
+corr:Earth a corr:Element ;
+    skos:prefLabel "Earth"@en ;
+    rdfs:comment "The element of Earth."@en .
+
+# Zodiac signs
+
+corr:Aries a corr:ZodiacSign ;
+    skos:prefLabel "Aries"@en ;
+    rdfs:comment "The zodiac sign of Aries."@en .
+
+corr:Taurus a corr:ZodiacSign ;
+    skos:prefLabel "Taurus"@en ;
+    rdfs:comment "The zodiac sign of Taurus."@en .
+
+corr:Gemini a corr:ZodiacSign ;
+    skos:prefLabel "Gemini"@en ;
+    rdfs:comment "The zodiac sign of Gemini."@en .
+
+corr:Cancer a corr:ZodiacSign ;
+    skos:prefLabel "Cancer"@en ;
+    rdfs:comment "The zodiac sign of Cancer."@en .
+
+corr:Leo a corr:ZodiacSign ;
+    skos:prefLabel "Leo"@en ;
+    rdfs:comment "The zodiac sign of Leo."@en .
+
+corr:Virgo a corr:ZodiacSign ;
+    skos:prefLabel "Virgo"@en ;
+    rdfs:comment "The zodiac sign of Virgo."@en .
+
+corr:Libra a corr:ZodiacSign ;
+    skos:prefLabel "Libra"@en ;
+    rdfs:comment "The zodiac sign of Libra."@en .
+
+corr:Scorpio a corr:ZodiacSign ;
+    skos:prefLabel "Scorpio"@en ;
+    rdfs:comment "The zodiac sign of Scorpio."@en .
+
+corr:Sagittarius a corr:ZodiacSign ;
+    skos:prefLabel "Sagittarius"@en ;
+    rdfs:comment "The zodiac sign of Sagittarius."@en .
+
+corr:Capricorn a corr:ZodiacSign ;
+    skos:prefLabel "Capricorn"@en ;
+    rdfs:comment "The zodiac sign of Capricorn."@en .
+
+corr:Aquarius a corr:ZodiacSign ;
+    skos:prefLabel "Aquarius"@en ;
+    rdfs:comment "The zodiac sign of Aquarius."@en .
+
+corr:Pisces a corr:ZodiacSign ;
+    skos:prefLabel "Pisces"@en ;
+    rdfs:comment "The zodiac sign of Pisces."@en .
+
+# Celestial bodies
+
+corr:Sun a corr:CelestialBody ;
+    skos:prefLabel "Sun"@en ;
+    rdfs:comment "The celestial body of the Sun."@en .
+
+corr:Moon a corr:CelestialBody ;
+    skos:prefLabel "Moon"@en ;
+    rdfs:comment "The celestial body of the Moon."@en .
+
+corr:Mercury a corr:CelestialBody ;
+    skos:prefLabel "Mercury"@en ;
+    rdfs:comment "The celestial body of Mercury."@en .
+
+corr:Venus a corr:CelestialBody ;
+    skos:prefLabel "Venus"@en ;
+    rdfs:comment "The celestial body of Venus."@en .
+
+corr:Mars a corr:CelestialBody ;
+    skos:prefLabel "Mars"@en ;
+    rdfs:comment "The celestial body of Mars."@en .
+
+corr:Jupiter a corr:CelestialBody ;
+    skos:prefLabel "Jupiter"@en ;
+    rdfs:comment "The celestial body of Jupiter."@en .
+
+corr:Saturn a corr:CelestialBody ;
+    skos:prefLabel "Saturn"@en ;
+    rdfs:comment "The celestial body of Saturn."@en .
+
+corr:Uranus a corr:CelestialBody ;
+    skos:prefLabel "Uranus"@en ;
+    rdfs:comment "The celestial body of Uranus."@en .
+
+corr:Neptune a corr:CelestialBody ;
+    skos:prefLabel "Neptune"@en ;
+    rdfs:comment "The celestial body of Neptune."@en .
+
+corr:Pluto a corr:CelestialBody ;
+    skos:prefLabel "Pluto"@en ;
+    rdfs:comment "The celestial body of Pluto."@en .
+
+# Hebrew letters
+
+corr:HebrewAleph a corr:HebrewLetter ;
+    skos:prefLabel "Aleph"@en ;
+    skos:notation "א" ;
+    rdfs:comment "The Hebrew letter Aleph."@en .
+
+corr:HebrewBeth a corr:HebrewLetter ;
+    skos:prefLabel "Beth"@en ;
+    skos:notation "ב" ;
+    rdfs:comment "The Hebrew letter Beth."@en .
+
+corr:HebrewGimel a corr:HebrewLetter ;
+    skos:prefLabel "Gimel"@en ;
+    skos:notation "ג" ;
+    rdfs:comment "The Hebrew letter Gimel."@en .
+
+corr:HebrewDalet a corr:HebrewLetter ;
+    skos:prefLabel "Dalet"@en ;
+    skos:notation "ד" ;
+    rdfs:comment "The Hebrew letter Dalet."@en .
+
+corr:HebrewHeh a corr:HebrewLetter ;
+    skos:prefLabel "Heh"@en ;
+    skos:notation "ה" ;
+    rdfs:comment "The Hebrew letter Heh."@en .
+
+corr:HebrewVav a corr:HebrewLetter ;
+    skos:prefLabel "Vav"@en ;
+    skos:notation "ו" ;
+    rdfs:comment "The Hebrew letter Vav."@en .
+
+corr:HebrewZayin a corr:HebrewLetter ;
+    skos:prefLabel "Zayin"@en ;
+    skos:notation "ז" ;
+    rdfs:comment "The Hebrew letter Zayin."@en .
+
+corr:HebrewChet a corr:HebrewLetter ;
+    skos:prefLabel "Chet"@en ;
+    skos:notation "ח" ;
+    rdfs:comment "The Hebrew letter Chet."@en .
+
+corr:HebrewTeth a corr:HebrewLetter ;
+    skos:prefLabel "Teth"@en ;
+    skos:notation "ט" ;
+    rdfs:comment "The Hebrew letter Teth."@en .
+
+corr:HebrewYod a corr:HebrewLetter ;
+    skos:prefLabel "Yod"@en ;
+    skos:notation "י" ;
+    rdfs:comment "The Hebrew letter Yod."@en .
+
+corr:HebrewKaph a corr:HebrewLetter ;
+    skos:prefLabel "Kaph"@en ;
+    skos:notation "כּ" ;
+    rdfs:comment "The Hebrew letter Kaph."@en .
+
+corr:HebrewLamed a corr:HebrewLetter ;
+    skos:prefLabel "Lamed"@en ;
+    skos:notation "ל" ;
+    rdfs:comment "The Hebrew letter Lamed."@en .
+
+corr:HebrewMem a corr:HebrewLetter ;
+    skos:prefLabel "Mem"@en ;
+    skos:notation "מ" ;
+    rdfs:comment "The Hebrew letter Mem."@en .
+
+corr:HebrewNun a corr:HebrewLetter ;
+    skos:prefLabel "Nun"@en ;
+    skos:notation "נ" ;
+    rdfs:comment "The Hebrew letter Nun."@en .
+
+corr:HebrewSamekh a corr:HebrewLetter ;
+    skos:prefLabel "Samekh"@en ;
+    skos:notation "ס" ;
+    rdfs:comment "The Hebrew letter Samekh."@en .
+
+corr:HebrewAyin a corr:HebrewLetter ;
+    skos:prefLabel "Ayin"@en ;
+    skos:notation "ע" ;
+    rdfs:comment "The Hebrew letter Ayin."@en .
+
+corr:HebrewPeh a corr:HebrewLetter ;
+    skos:prefLabel "Peh"@en ;
+    skos:notation "פ" ;
+    rdfs:comment "The Hebrew letter Peh."@en .
+
+corr:HebrewTzaddi a corr:HebrewLetter ;
+    skos:prefLabel "Tzaddi"@en ;
+    skos:notation "צ" ;
+    rdfs:comment "The Hebrew letter Tzaddi."@en .
+
+corr:HebrewQoph a corr:HebrewLetter ;
+    skos:prefLabel "Qoph"@en ;
+    skos:notation "ק" ;
+    rdfs:comment "The Hebrew letter Qoph."@en .
+
+corr:HebrewResh a corr:HebrewLetter ;
+    skos:prefLabel "Resh"@en ;
+    skos:notation "ר" ;
+    rdfs:comment "The Hebrew letter Resh."@en .
+
+corr:HebrewShin a corr:HebrewLetter ;
+    skos:prefLabel "Shin"@en ;
+    skos:notation "ש" ;
+    rdfs:comment "The Hebrew letter Shin."@en .
+
+corr:HebrewTav a corr:HebrewLetter ;
+    skos:prefLabel "Tav"@en ;
+    skos:notation "ת" ;
+    rdfs:comment "The Hebrew letter Tav."@en .

@@ -1,0 +1,675 @@
+@prefix tarot: <https://w3id.org/tarot/ontology#> .
+@prefix sb:    <https://w3id.org/tarot/deck/sola-busca#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+
+# The Sola Busca tarot (Italy, late 15th century, c. 1491). Names follow the inscriptions on the cards, and
+# images are from Wikimedia Commons (public domain).
+
+<https://w3id.org/tarot/deck/sola-busca> a void:Dataset ;
+    dcterms:title "Sola Busca deck data"@en ;
+    dcterms:description "The cards of the Sola Busca deck."@en ;
+    dcterms:creator <https://github.com/mikeyhogarth> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-10-30"^^xsd:date .
+
+#################################################################
+# DECK
+#################################################################
+
+sb:Deck a tarot:Deck ;
+    skos:prefLabel "Sola Busca"@en, "Sola Busca"@it ;
+    rdfs:comment "The Sola Busca tarot deck, made in Italy in the late 15th century (c. 1491). Maker unknown."@en ;
+    dcterms:created "1491"^^xsd:gYear ;
+    dcterms:language "it" .
+
+#################################################################
+# MAJOR ARCANA
+#################################################################
+
+sb:Mato a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Mato"@it, "Mato"@en ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_00.jpg> .
+
+sb:Panfilio a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Panfilio"@it, "Panfilio"@en ;
+    tarot:cardNumber 1 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_01.jpg> ;
+    tarot:visualDescription "Thought to depict Numa Pompilius."@en .
+
+sb:Postumio a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Postumio"@it, "Postumio"@en ;
+    tarot:cardNumber 2 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_02.jpg> ;
+    tarot:visualDescription "Thought to depict Aulus Postumius Albus Regillensis."@en .
+
+sb:Lenpio a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Lenpio"@it, "Lenpio"@en ;
+    tarot:cardNumber 3 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_03.jpg> ;
+    tarot:visualDescription "Thought to depict Lepidus."@en .
+
+sb:Mario a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Mario"@it, "Mario"@en ;
+    tarot:cardNumber 4 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_04.jpg> ;
+    tarot:visualDescription "Thought to depict Gaius Marius."@en .
+
+sb:Catulo a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Catulo"@it, "Catulo"@en ;
+    tarot:cardNumber 5 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_05.jpg> ;
+    tarot:visualDescription "Thought to depict Quintus Lutatius Catulus."@en .
+
+sb:Sesto a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sesto"@it, "Sesto"@en ;
+    tarot:cardNumber 6 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_06.jpg> ;
+    tarot:visualDescription "Thought to depict Sextus Tarquinius."@en .
+
+sb:DeoTauro a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Deo Tauro"@it, "Deo Tauro"@en ;
+    tarot:cardNumber 7 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_07.jpg> ;
+    tarot:visualDescription "Thought to depict Europa, carried off by Zeus as a bull (tentative)."@en .
+
+sb:Nerone a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nerone"@it, "Nerone"@en ;
+    tarot:cardNumber 8 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_08.jpg> ;
+    tarot:visualDescription "Thought to depict the emperor Nero."@en .
+
+sb:Falco a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Falco"@it, "Falco"@en ;
+    tarot:cardNumber 9 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_09.jpg> ;
+    tarot:visualDescription "Thought to depict Quintus Pompeius Falco."@en .
+
+sb:Venturio a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Venturio"@it, "Venturio"@en ;
+    tarot:cardNumber 10 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_10.jpg> ;
+    tarot:visualDescription "Thought to depict the Mamuralia, a Roman festival (tentative)."@en .
+
+sb:Tulio a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Tulio"@it, "Tulio"@en ;
+    tarot:cardNumber 11 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_11.jpg> ;
+    tarot:visualDescription "Thought to depict Cicero."@en .
+
+sb:Carbone a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Carbone"@it, "Carbone"@en ;
+    tarot:cardNumber 12 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_12.jpg> ;
+    tarot:visualDescription "Thought to depict Gnaeus Papirius Carbo."@en .
+
+sb:Catone a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Catone"@it, "Catone"@en ;
+    tarot:cardNumber 13 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_13.jpg> ;
+    tarot:visualDescription "Thought to depict Cato the Younger."@en .
+
+sb:Bocho a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Bocho"@it, "Bocho"@en ;
+    tarot:cardNumber 14 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_14.jpg> ;
+    tarot:visualDescription "Thought to depict Bocchus I of Mauretania."@en .
+
+sb:Metelo a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Metelo"@it, "Metelo"@en ;
+    tarot:cardNumber 15 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_15.jpg> ;
+    tarot:visualDescription "Thought to depict Gaius Caecilius Metellus Caprarius."@en .
+
+sb:Olivo a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Olivo"@it, "Olivo"@en ;
+    tarot:cardNumber 16 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_16.jpg> ;
+    tarot:visualDescription "Thought to depict Livy."@en .
+
+sb:Ipeo a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Ipeo"@it, "Ipeo"@en ;
+    tarot:cardNumber 17 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_17.jpg> ;
+    tarot:visualDescription "Thought to depict Epeius of Phocis, builder of the Trojan Horse."@en .
+
+sb:Lentulo a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Lentulo"@it, "Lentulo"@en ;
+    tarot:cardNumber 18 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_18.jpg> ;
+    tarot:visualDescription "Thought to depict Lucius Cornelius Lentulus Crus."@en .
+
+sb:Sabino a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sabino"@it, "Sabino"@en ;
+    tarot:cardNumber 19 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_19.jpg> ;
+    tarot:visualDescription "Thought to depict Quintus Titurius Sabinus."@en .
+
+sb:Nenbroto a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nenbroto"@it, "Nenbroto"@en ;
+    tarot:cardNumber 20 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_20.jpg> ;
+    tarot:visualDescription "Thought to depict Nimrod."@en .
+
+sb:NabuchoDenasor a tarot:MajorArcanaCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nabucho-denasor"@it, "Nabucho-denasor"@en ;
+    tarot:cardNumber 21 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_21.jpg> ;
+    tarot:visualDescription "Thought to depict Nebuchadnezzar."@en .
+
+#################################################################
+# CUPS
+#################################################################
+
+sb:AssoDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Asso di Coppe"@it, "Ace of Cups"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_22.jpg> .
+
+sb:DueDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Due di Coppe"@it, "Two of Cups"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_23.jpg> .
+
+sb:TreDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Tre di Coppe"@it, "Three of Cups"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_24.jpg> .
+
+sb:QuattroDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Quattro di Coppe"@it, "Four of Cups"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_25.jpg> .
+
+sb:CinqueDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Cinque di Coppe"@it, "Five of Cups"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_26.jpg> .
+
+sb:SeiDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sei di Coppe"@it, "Six of Cups"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_27.jpg> .
+
+sb:SetteDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sette di Coppe"@it, "Seven of Cups"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_28.jpg> .
+
+sb:OttoDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Otto di Coppe"@it, "Eight of Cups"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_29.jpg> .
+
+sb:NoveDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nove di Coppe"@it, "Nine of Cups"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_30.jpg> .
+
+sb:DieciDiCoppe a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Dieci di Coppe"@it, "Ten of Cups"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_31.jpg> .
+
+sb:FanteDiCoppe a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Fante di Coppe"@it, "Knave of Cups"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_32.jpg> ;
+    skos:note "No name is printed on the card."@en .
+
+sb:CavalloDiCoppe a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Natanabo"@it, "Knight of Cups"@en ;
+    skos:altLabel "Cavallo di Coppe"@it ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_33.jpg> ;
+    tarot:visualDescription "Thought to depict Nectanebo II."@en .
+
+sb:ReginaDiCoppe a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Polisena"@it, "Queen of Cups"@en ;
+    skos:altLabel "Regina di Coppe"@it ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_34.jpg> ;
+    tarot:visualDescription "Thought to depict Polyxena."@en .
+
+sb:ReDiCoppe a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Lucio Cecilio R."@it, "King of Cups"@en ;
+    skos:altLabel "Re di Coppe"@it ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_35.jpg> ;
+    tarot:visualDescription "Thought to depict a member of the Caecilii."@en .
+
+#################################################################
+# COINS
+#################################################################
+
+sb:AssoDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Asso di Denari"@it, "Ace of Coins"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_36.jpg> .
+
+sb:DueDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Due di Denari"@it, "Two of Coins"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_37.jpg> .
+
+sb:TreDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Tre di Denari"@it, "Three of Coins"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_38.jpg> .
+
+sb:QuattroDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Quattro di Denari"@it, "Four of Coins"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_39.jpg> .
+
+sb:CinqueDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Cinque di Denari"@it, "Five of Coins"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_40.jpg> .
+
+sb:SeiDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sei di Denari"@it, "Six of Coins"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_41.jpg> .
+
+sb:SetteDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sette di Denari"@it, "Seven of Coins"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_42.jpg> .
+
+sb:OttoDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Otto di Denari"@it, "Eight of Coins"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_43.jpg> .
+
+sb:NoveDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nove di Denari"@it, "Nine of Coins"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_44.jpg> .
+
+sb:DieciDiDenari a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Dieci di Denari"@it, "Ten of Coins"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_45.jpg> .
+
+sb:FanteDiDenari a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Fante di Denari"@it, "Knave of Coins"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_46.jpg> ;
+    skos:note "No name is printed on the card."@en .
+
+sb:CavalloDiDenari a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sarafino"@it, "Knight of Coins"@en ;
+    skos:altLabel "Cavallo di Denari"@it ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_47.jpg> ;
+    tarot:visualDescription "Thought to depict Serapion."@en .
+
+sb:ReginaDiDenari a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Elena"@it, "Queen of Coins"@en ;
+    skos:altLabel "Regina di Denari"@it ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_48.jpg> ;
+    tarot:visualDescription "Thought to depict Helen of Troy."@en .
+
+sb:ReDiDenari a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "R. Filipo"@it, "King of Coins"@en ;
+    skos:altLabel "Re di Denari"@it ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_49.jpg> ;
+    tarot:visualDescription "Thought to depict Philip II of Macedon."@en .
+
+#################################################################
+# BATONS
+#################################################################
+
+sb:AssoDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Asso di Bastoni"@it, "Ace of Batons"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_50.jpg> .
+
+sb:DueDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Due di Bastoni"@it, "Two of Batons"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_51.jpg> .
+
+sb:TreDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Tre di Bastoni"@it, "Three of Batons"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_52.jpg> .
+
+sb:QuattroDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Quattro di Bastoni"@it, "Four of Batons"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_53.jpg> .
+
+sb:CinqueDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Cinque di Bastoni"@it, "Five of Batons"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_54.jpg> .
+
+sb:SeiDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sei di Bastoni"@it, "Six of Batons"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_55.jpg> .
+
+sb:SetteDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sette di Bastoni"@it, "Seven of Batons"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_56.jpg> .
+
+sb:OttoDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Otto di Bastoni"@it, "Eight of Batons"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_57.jpg> .
+
+sb:NoveDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nove di Bastoni"@it, "Nine of Batons"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_58.jpg> .
+
+sb:DieciDiBastoni a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Dieci di Bastoni"@it, "Ten of Batons"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_59.jpg> .
+
+sb:FanteDiBastoni a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Fante di Bastoni"@it, "Knave of Batons"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_60.jpg> ;
+    skos:note "No name is printed on the card."@en .
+
+sb:CavalloDiBastoni a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Apolino"@it, "Knight of Batons"@en ;
+    skos:altLabel "Cavallo di Bastoni"@it ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_61.jpg> ;
+    tarot:visualDescription "Thought to depict Apollonius of Rhodes."@en .
+
+sb:ReginaDiBastoni a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Palas"@it, "Queen of Batons"@en ;
+    skos:altLabel "Regina di Bastoni"@it ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_62.jpg> ;
+    tarot:visualDescription "Thought to depict Pallas Athena."@en .
+
+sb:ReDiBastoni a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Levio Plauto R."@it, "King of Batons"@en ;
+    skos:altLabel "Re di Bastoni"@it ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_63.jpg> .
+
+#################################################################
+# SWORDS
+#################################################################
+
+sb:AssoDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Asso di Spade"@it, "Ace of Swords"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_64.jpg> .
+
+sb:DueDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Due di Spade"@it, "Two of Swords"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_65.jpg> .
+
+sb:TreDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Tre di Spade"@it, "Three of Swords"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_66.jpg> .
+
+sb:QuattroDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Quattro di Spade"@it, "Four of Swords"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_67.jpg> .
+
+sb:CinqueDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Cinque di Spade"@it, "Five of Swords"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_68.jpg> .
+
+sb:SeiDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sei di Spade"@it, "Six of Swords"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_69.jpg> .
+
+sb:SetteDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Sette di Spade"@it, "Seven of Swords"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_70.jpg> .
+
+sb:OttoDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Otto di Spade"@it, "Eight of Swords"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_71.jpg> .
+
+sb:NoveDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Nove di Spade"@it, "Nine of Swords"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_72.jpg> .
+
+sb:DieciDiSpade a tarot:PipCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Dieci di Spade"@it, "Ten of Swords"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_73.jpg> .
+
+sb:FanteDiSpade a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Fante di Spade"@it, "Knave of Swords"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_74.jpg> ;
+    skos:note "No name is printed on the card."@en .
+
+sb:CavalloDiSpade a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Amone"@it, "Knight of Swords"@en ;
+    skos:altLabel "Cavallo di Spade"@it ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_75.jpg> ;
+    tarot:visualDescription "Thought to depict the god Amun."@en .
+
+sb:ReginaDiSpade a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Olinpia"@it, "Queen of Swords"@en ;
+    skos:altLabel "Regina di Spade"@it ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_76.jpg> ;
+    tarot:visualDescription "Thought to depict Olympias, mother of Alexander the Great."@en .
+
+sb:ReDiSpade a tarot:CourtCard ;
+    tarot:inDeck sb:Deck ;
+    skos:prefLabel "Alecxandro M."@it, "King of Swords"@en ;
+    skos:altLabel "Re di Spade"@it ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Sola_Busca_tarot_card_77.jpg> ;
+    tarot:visualDescription "Thought to depict Alexander the Great."@en .

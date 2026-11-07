@@ -1,0 +1,651 @@
+@prefix tarot: <https://w3id.org/tarot/ontology#> .
+@prefix mar:   <https://w3id.org/tarot/deck/marseille#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+
+# The Tarot of Marseilles. Names follow the Marseilles tradition, and images are the Jean Dodal deck
+# (Lyon, c. 1701-1715; public domain).
+
+<https://w3id.org/tarot/deck/marseille> a void:Dataset ;
+    dcterms:title "Tarot de Marseille deck data"@en ;
+    dcterms:description "The cards of the Tarot de Marseille deck."@en ;
+    dcterms:creator <https://github.com/mikeyhogarth> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2026-10-30"^^xsd:date .
+
+#################################################################
+# DECK
+#################################################################
+
+mar:Deck a tarot:Deck ;
+    skos:prefLabel "Tarot of Marseilles"@en, "Tarot de Marseille"@fr ;
+    rdfs:comment "A Tarot de Marseille deck, following the Marseilles tradition. Dated to the Jean Dodal edition (Lyon, c. 1701-1715)."@en ;
+    dcterms:creator "Jean Dodal" ;
+    dcterms:created "1701"^^xsd:gYear ;
+    dcterms:language "fr" .
+
+#################################################################
+# MAJOR ARCANA
+#################################################################
+
+mar:LeMat a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Mat"@fr, "The Fool"@en ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M00.jpg> .
+
+mar:LeBateleur a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Bateleur"@fr, "The Juggler"@en ;
+    tarot:cardNumber 1 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M01.jpg> ;
+    tarot:visualDescription "The Juggler or mountebank at his table."@en .
+
+mar:LaPapesse a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "La Papesse"@fr, "The Popess"@en ;
+    tarot:cardNumber 2 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M02.jpg> ;
+    tarot:visualDescription "The female pope."@en .
+
+mar:LImperatrice a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "L'Impératrice"@fr, "The Empress"@en ;
+    tarot:cardNumber 3 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M03.jpg> ;
+    tarot:visualDescription "The Empress enthroned."@en .
+
+mar:LEmpereur a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "L'Empereur"@fr, "The Emperor"@en ;
+    tarot:cardNumber 4 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M04.jpg> ;
+    tarot:visualDescription "The Emperor enthroned."@en .
+
+mar:LePape a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Pape"@fr, "The Pope"@en ;
+    tarot:cardNumber 5 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M05.jpg> ;
+    tarot:visualDescription "The pope, with two acolytes."@en .
+
+mar:LAmoureux a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "L'Amoureux"@fr, "The Lovers"@en ;
+    tarot:cardNumber 6 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M06.jpg> ;
+    tarot:visualDescription "A man between two women, with Cupid above."@en .
+
+mar:LeChariot a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Chariot"@fr, "The Chariot"@en ;
+    tarot:cardNumber 7 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M07.jpg> ;
+    tarot:visualDescription "A crowned figure in a chariot drawn by two horses."@en .
+
+mar:LaJustice a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "La Justice"@fr, "Justice"@en ;
+    tarot:cardNumber 8 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M08.jpg> .
+
+mar:LHermite a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "L'Hermite"@fr, "The Hermit"@en ;
+    tarot:cardNumber 9 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M09.jpg> ;
+    tarot:visualDescription "A hooded old man with a lantern and staff."@en .
+
+mar:LaRoueDeFortune a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "La Roue de Fortune"@fr, "Wheel of Fortune"@en ;
+    tarot:cardNumber 10 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M10.jpg> ;
+    tarot:visualDescription "A wheel turned by a figure, with creatures climbing and falling."@en .
+
+mar:LaForce a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "La Force"@fr, "Strength"@en ;
+    tarot:cardNumber 11 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M11.jpg> .
+
+mar:LePendu a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Pendu"@fr, "The Hanged Man"@en ;
+    tarot:cardNumber 12 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M12.jpg> ;
+    tarot:visualDescription "A man hanging by one foot."@en .
+
+mar:LArcaneSansNom a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "L'Arcane sans nom"@fr, "The Nameless Arcanum"@en ;
+    tarot:cardNumber 13 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M13.jpg> ;
+    tarot:popularInterpretation "Commonly read as Death."@en .
+
+mar:Temperance a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Tempérance"@fr, "Temperance"@en ;
+    tarot:cardNumber 14 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M14.jpg> ;
+    tarot:visualDescription "An angel pouring liquid between two vessels."@en .
+
+mar:LeDiable a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Diable"@fr, "The Devil"@en ;
+    tarot:cardNumber 15 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M15.jpg> ;
+    tarot:visualDescription "A horned devil above two small chained figures."@en .
+
+mar:LaMaisonDieu a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "La Maison Dieu"@fr, "The House of God"@en ;
+    tarot:cardNumber 16 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M16.jpg> ;
+    tarot:visualDescription "A tower struck from above, with figures falling."@en .
+
+mar:LEtoile a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "L'Étoile"@fr, "The Star"@en ;
+    tarot:cardNumber 17 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M17.jpg> ;
+    tarot:visualDescription "A nude woman pouring water beneath a large star."@en .
+
+mar:LaLune a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "La Lune"@fr, "The Moon"@en ;
+    tarot:cardNumber 18 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M18.jpg> ;
+    tarot:visualDescription "The Moon above two dogs and a crayfish."@en .
+
+mar:LeSoleil a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Soleil"@fr, "The Sun"@en ;
+    tarot:cardNumber 19 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M19.jpg> ;
+    tarot:visualDescription "The Sun above two children."@en .
+
+mar:LeJugement a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Jugement"@fr, "Judgement"@en ;
+    tarot:cardNumber 20 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M20.jpg> ;
+    tarot:visualDescription "An angel sounding a trumpet over figures rising from their graves."@en .
+
+mar:LeMonde a tarot:MajorArcanaCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Le Monde"@fr, "The World"@en ;
+    tarot:cardNumber 21 ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_M21.jpg> ;
+    tarot:visualDescription "A figure within a wreath, with four creatures at the corners."@en .
+
+#################################################################
+# BÂTONS
+#################################################################
+
+mar:AsDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "As de Bâtons"@fr, "Ace of Batons"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B01.jpg> ;
+    tarot:visualDescription "A hand emerging from a sunburst, holding a baton."@en .
+
+mar:DeuxDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Deux de Bâtons"@fr, "Two of Batons"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B02.jpg> .
+
+mar:TroisDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Trois de Bâtons"@fr, "Three of Batons"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B03.jpg> .
+
+mar:QuatreDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Quatre de Bâtons"@fr, "Four of Batons"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B04.jpg> .
+
+mar:CinqDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cinq de Bâtons"@fr, "Five of Batons"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B05.jpg> .
+
+mar:SixDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Six de Bâtons"@fr, "Six of Batons"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B06.jpg> .
+
+mar:SeptDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Sept de Bâtons"@fr, "Seven of Batons"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B07.jpg> .
+
+mar:HuitDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Huit de Bâtons"@fr, "Eight of Batons"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B08.jpg> .
+
+mar:NeufDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Neuf de Bâtons"@fr, "Nine of Batons"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B09.jpg> .
+
+mar:DixDeBatons a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Dix de Bâtons"@fr, "Ten of Batons"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B10.jpg> .
+
+mar:ValetDeBatons a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Valet de Bâtons"@fr, "Page of Batons"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B11.jpg> .
+
+mar:CavalierDeBatons a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cavalier de Bâtons"@fr, "Knight of Batons"@en ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B12.jpg> .
+
+mar:ReineDeBatons a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Reine de Bâtons"@fr, "Queen of Batons"@en ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B13.jpg> .
+
+mar:RoiDeBatons a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Roi de Bâtons"@fr, "King of Batons"@en ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Wands ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_B14.jpg> .
+
+#################################################################
+# COUPES
+#################################################################
+
+mar:AsDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "As de Coupes"@fr, "Ace of Cups"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C01.jpg> ;
+    tarot:visualDescription "A castle-shaped chalice on a stepped base."@en .
+
+mar:DeuxDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Deux de Coupes"@fr, "Two of Cups"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C02.jpg> .
+
+mar:TroisDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Trois de Coupes"@fr, "Three of Cups"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C03.jpg> .
+
+mar:QuatreDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Quatre de Coupes"@fr, "Four of Cups"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C04.jpg> .
+
+mar:CinqDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cinq de Coupes"@fr, "Five of Cups"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C05.jpg> .
+
+mar:SixDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Six de Coupes"@fr, "Six of Cups"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C06.jpg> .
+
+mar:SeptDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Sept de Coupes"@fr, "Seven of Cups"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C07.jpg> .
+
+mar:HuitDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Huit de Coupes"@fr, "Eight of Cups"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C08.jpg> .
+
+mar:NeufDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Neuf de Coupes"@fr, "Nine of Cups"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C09.jpg> .
+
+mar:DixDeCoupes a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Dix de Coupes"@fr, "Ten of Cups"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C10.jpg> .
+
+mar:ValetDeCoupes a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Valet de Coupes"@fr, "Page of Cups"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C11.jpg> .
+
+mar:CavalierDeCoupes a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cavalier de Coupes"@fr, "Knight of Cups"@en ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C12.jpg> .
+
+mar:ReineDeCoupes a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Reine de Coupes"@fr, "Queen of Cups"@en ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C13.jpg> .
+
+mar:RoiDeCoupes a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Roi de Coupes"@fr, "King of Cups"@en ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Cups ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_C14.jpg> .
+
+#################################################################
+# DENIERS
+#################################################################
+
+mar:AsDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "As de Deniers"@fr, "Ace of Coins"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D01.jpg> ;
+    tarot:visualDescription "A single coin framed by leaf ornaments."@en .
+
+mar:DeuxDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Deux de Deniers"@fr, "Two of Coins"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D02.jpg> .
+
+mar:TroisDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Trois de Deniers"@fr, "Three of Coins"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D03.jpg> .
+
+mar:QuatreDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Quatre de Deniers"@fr, "Four of Coins"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D04.jpg> .
+
+mar:CinqDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cinq de Deniers"@fr, "Five of Coins"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D05.jpg> .
+
+mar:SixDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Six de Deniers"@fr, "Six of Coins"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D06.jpg> .
+
+mar:SeptDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Sept de Deniers"@fr, "Seven of Coins"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D07.jpg> .
+
+mar:HuitDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Huit de Deniers"@fr, "Eight of Coins"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D08.jpg> .
+
+mar:NeufDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Neuf de Deniers"@fr, "Nine of Coins"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D09.jpg> .
+
+mar:DixDeDeniers a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Dix de Deniers"@fr, "Ten of Coins"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D10.jpg> .
+
+mar:ValetDeDeniers a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Valet de Deniers"@fr, "Page of Coins"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D11.jpg> .
+
+mar:CavalierDeDeniers a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cavalier de Deniers"@fr, "Knight of Coins"@en ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D12.jpg> .
+
+mar:ReineDeDeniers a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Reine de Deniers"@fr, "Queen of Coins"@en ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D13.jpg> .
+
+mar:RoiDeDeniers a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Roi de Deniers"@fr, "King of Coins"@en ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Pentacles ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_D14.jpg> .
+
+#################################################################
+# ÉPÉES
+#################################################################
+
+mar:AsDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "As d'Épées"@fr, "Ace of Swords"@en ;
+    tarot:cardNumber 1 ;
+    tarot:hasRank tarot:Ace ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E01.jpg> ;
+    tarot:visualDescription "A sword crowned and wreathed in foliage."@en .
+
+mar:DeuxDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Deux d'Épées"@fr, "Two of Swords"@en ;
+    tarot:cardNumber 2 ;
+    tarot:hasRank tarot:Two ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E02.jpg> .
+
+mar:TroisDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Trois d'Épées"@fr, "Three of Swords"@en ;
+    tarot:cardNumber 3 ;
+    tarot:hasRank tarot:Three ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E03.jpg> .
+
+mar:QuatreDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Quatre d'Épées"@fr, "Four of Swords"@en ;
+    tarot:cardNumber 4 ;
+    tarot:hasRank tarot:Four ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E04.jpg> .
+
+mar:CinqDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cinq d'Épées"@fr, "Five of Swords"@en ;
+    tarot:cardNumber 5 ;
+    tarot:hasRank tarot:Five ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E05.jpg> .
+
+mar:SixDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Six d'Épées"@fr, "Six of Swords"@en ;
+    tarot:cardNumber 6 ;
+    tarot:hasRank tarot:Six ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E06.jpg> .
+
+mar:SeptDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Sept d'Épées"@fr, "Seven of Swords"@en ;
+    tarot:cardNumber 7 ;
+    tarot:hasRank tarot:Seven ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E07.jpg> .
+
+mar:HuitDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Huit d'Épées"@fr, "Eight of Swords"@en ;
+    tarot:cardNumber 8 ;
+    tarot:hasRank tarot:Eight ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E08.jpg> .
+
+mar:NeufDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Neuf d'Épées"@fr, "Nine of Swords"@en ;
+    tarot:cardNumber 9 ;
+    tarot:hasRank tarot:Nine ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E09.jpg> .
+
+mar:DixDeEpees a tarot:PipCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Dix d'Épées"@fr, "Ten of Swords"@en ;
+    tarot:cardNumber 10 ;
+    tarot:hasRank tarot:Ten ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E10.jpg> .
+
+mar:ValetDeEpees a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Valet d'Épées"@fr, "Page of Swords"@en ;
+    tarot:cardNumber 11 ;
+    tarot:hasRank tarot:Page ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E11.jpg> .
+
+mar:CavalierDeEpees a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Cavalier d'Épées"@fr, "Knight of Swords"@en ;
+    tarot:cardNumber 12 ;
+    tarot:hasRank tarot:Knight ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E12.jpg> .
+
+mar:ReineDeEpees a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Reine d'Épées"@fr, "Queen of Swords"@en ;
+    tarot:cardNumber 13 ;
+    tarot:hasRank tarot:Queen ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E13.jpg> .
+
+mar:RoiDeEpees a tarot:CourtCard ;
+    tarot:inDeck mar:Deck ;
+    skos:prefLabel "Roi d'Épées"@fr, "King of Swords"@en ;
+    tarot:cardNumber 14 ;
+    tarot:hasRank tarot:King ;
+    tarot:hasSuit tarot:Swords ;
+    foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Dodal_E14.jpg> .

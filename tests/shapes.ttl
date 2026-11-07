@@ -1,0 +1,210 @@
+@prefix tsh:     <urn:tarot:test-shapes#> .
+@prefix tarot:   <https://w3id.org/tarot/ontology#> .
+@prefix corr:   <https://w3id.org/tarot/correspondence#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+
+#################################################################
+# Shapes
+#################################################################
+
+# These shapes are internal data quality checks for the data in this repository
+# only - they are not published.
+
+tsh: a owl:Ontology ;
+    sh:declare [ sh:prefix "tarot" ; sh:namespace "https://w3id.org/tarot/ontology#"^^xsd:anyURI ] ,
+               [ sh:prefix "skos" ; sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ] ,
+               [ sh:prefix "dcterms" ; sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ] ,
+               [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .
+
+# Text on cards and symbols is always language-tagged: one constraint covers every property
+# (labels, comments, notes and any future sub-property of skos:note). Decks are excluded
+# because they legitimately carry plain strings (dcterms:language, creator names).
+tsh:TaggedTextConstraint a sh:SPARQLConstraint ;
+    sh:message "Text must be language-tagged, but {?p} has an untagged string: {?value}"@en ;
+    sh:prefixes tsh: ;
+    sh:select """
+        SELECT $this ?p ?value
+        WHERE {
+            $this ?p ?value .
+            FILTER (isLiteral(?value) && DATATYPE(?value) = xsd:string)
+        }
+    """ .
+
+tsh:CardShape a sh:NodeShape ;
+    rdfs:comment "Every card is numbered at most once (unnumbered cards such as the Fool are allowed), has at most one prefLabel per language, an English prefLabel, a prefLabel in the deck's own language and a depiction. All its text is language-tagged (comments, notes and interpretations are optional)."@en ;
+    sh:targetClass tarot:TarotCard ;
+    sh:property [
+        sh:path tarot:inDeck ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class tarot:Deck ;
+        sh:message "A card must have exactly one tarot:inDeck, a tarot:Deck."@en
+    ] ;
+    sh:property [
+        sh:path tarot:cardNumber ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:integer ;
+        sh:message "A card has at most one integer card number."@en
+    ] ;
+    sh:property [
+        sh:path corr:hasHebrewLetter ;
+        sh:maxCount 1 ;
+        sh:message "A card corresponds to at most one Hebrew letter."@en
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:uniqueLang true ;
+        sh:message "A card must have a skos:prefLabel, with at most one per language."@en
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "A card must have exactly one skos:prefLabel in English."@en
+    ] ;
+    sh:property [
+        sh:path foaf:depiction ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A card must have at least one foaf:depiction, given as an IRI."@en
+    ] ;
+    sh:sparql tsh:TaggedTextConstraint ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "A card must have a skos:prefLabel in the language of its deck (the dcterms:language of the card's tarot:inDeck)."@en ;
+        sh:prefixes tsh: ;
+        sh:select """
+            SELECT $this ?language
+            WHERE {
+                $this tarot:inDeck/dcterms:language ?language .
+                FILTER NOT EXISTS {
+                    $this skos:prefLabel ?label .
+                    FILTER (LANGMATCHES(LANG(?label), ?language))
+                }
+            }
+        """
+    ] .
+
+tsh:MinorCardShape a sh:NodeShape ;
+    rdfs:comment "A minor arcana card has a number, a suit and a rank."@en ;
+    sh:targetClass tarot:MinorArcanaCard ;
+    sh:property [
+        sh:path tarot:cardNumber ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A minor arcana card must have exactly one card number."@en
+    ] ;
+    sh:property [
+        sh:path tarot:hasSuit ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class tarot:Suit ;
+        sh:message "A minor arcana card must have exactly one tarot:hasSuit, a tarot:Suit."@en
+    ] ;
+    sh:property [
+        sh:path tarot:hasRank ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class tarot:Rank ;
+        sh:message "A minor arcana card must have exactly one tarot:hasRank, a tarot:Rank."@en
+    ] .
+
+tsh:DeckShape a sh:NodeShape ;
+    rdfs:comment "A deck names its language, has one English prefLabel (and at most one per language) and an English comment."@en ;
+    sh:targetClass tarot:Deck ;
+    sh:property [
+        sh:path dcterms:created ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:gYear ;
+        sh:message "A deck has at most one dcterms:created, an xsd:gYear: when the deck itself was first made or published."@en
+    ] ;
+    sh:property [
+        sh:path dcterms:language ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "A deck must have exactly one dcterms:language, a language tag such as \"en\"."@en
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:message "Every skos:prefLabel of a deck must be language-tagged, with at most one per language."@en
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "A deck must have exactly one skos:prefLabel in English."@en
+    ] ;
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:datatype rdf:langString ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "A deck must have an rdfs:comment in English."@en
+    ] .
+
+tsh:DatasetShape a sh:NodeShape ;
+    rdfs:comment "A dataset states who made the data, under what license and when. This is about the data, not the decks it describes."@en ;
+    sh:targetClass void:Dataset ;
+    sh:property [
+        sh:path dcterms:creator ;
+        sh:minCount 1 ;
+        sh:message "A dataset must have at least one dcterms:creator."@en
+    ] ;
+    sh:property [
+        sh:path dcterms:license ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A dataset must have exactly one dcterms:license, given as an IRI."@en
+    ] ;
+    sh:property [
+        sh:path dcterms:created ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "A dataset must have exactly one dcterms:created, an xsd:date."@en
+    ] .
+
+tsh:SymbolShape a sh:NodeShape ;
+    rdfs:comment "A symbol belongs to at least one concept scheme (any, not only the shared symbol scheme), has one English prefLabel and all its text is language-tagged."@en ;
+    sh:targetClass tarot:Symbol ;
+    sh:sparql tsh:TaggedTextConstraint ;
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:minCount 1 ;
+        sh:class skos:ConceptScheme ;
+        sh:message "A symbol must be in at least one skos:ConceptScheme."@en
+    ] ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "A symbol must have exactly one skos:prefLabel in English."@en
+    ] .
+
+tsh:SymbolUseShape a sh:NodeShape ;
+    rdfs:comment "Whatever a card depicts is a tarot:Symbol."@en ;
+    sh:targetObjectsOf tarot:hasSymbol ;
+    sh:class tarot:Symbol ;
+    sh:message "The object of tarot:hasSymbol must be a tarot:Symbol."@en .
+
+tsh:HebrewLetterUseShape a sh:NodeShape ;
+    rdfs:comment "Whatever a card corresponds to as a Hebrew letter is a corr:HebrewLetter."@en ;
+    sh:targetObjectsOf corr:hasHebrewLetter ;
+    sh:class corr:HebrewLetter ;
+    sh:message "The object of corr:hasHebrewLetter must be a corr:HebrewLetter."@en .
