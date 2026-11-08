@@ -8,8 +8,8 @@ Published in 1909 by William Rider & Son (London) and beautifully illustrated by
 
 `https://w3id.org/tarot/deck/rws`
 
-- [Turtle](data/deck/rws.ttl)
-- [JSON-LD](data/deck/rws.jsonld)
+- Download as [Turtle](data/deck/rws.ttl){ aria-label="Download the Rider-Waite-Smith deck dataset as Turtle" }
+- Download as [JSON-LD](data/deck/rws.jsonld){ aria-label="Download the Rider-Waite-Smith deck dataset as JSON-LD" }
 
 Of all the datasets included in the project, this is the one that's received the most attention. Every card includes:
 
@@ -26,8 +26,8 @@ Cards following the Marseille tradition and dated to the Jean Dodal edition (Lyo
 
 `https://w3id.org/tarot/deck/marseille`
 
-- [Turtle](data/deck/marseille.ttl)
-- [JSON-LD](data/deck/marseille.jsonld)
+- Download as [Turtle](data/deck/marseille.ttl){ aria-label="Download the Marseille deck dataset as Turtle" }
+- Download as [JSON-LD](data/deck/marseille.jsonld){ aria-label="Download the Marseille deck dataset as JSON-LD" }
 
 In addition, this dataset includes `tarot:visualDescription` for the major arcana and court cards, and the **symbology** depicted on them (via the [symbol](symbol.md) vocabulary).
 
@@ -37,7 +37,7 @@ Cards of the Sola Busca, made in Italy in the late 15th century (c. 1491). The o
 
 `https://w3id.org/tarot/deck/sola-busca`
 
-- [Turtle](data/deck/sola-busca.ttl)
-- [JSON-LD](data/deck/sola-busca.jsonld)
+- Download as [Turtle](data/deck/sola-busca.ttl){ aria-label="Download the Sola Busca deck dataset as Turtle" }
+- Download as [JSON-LD](data/deck/sola-busca.jsonld){ aria-label="Download the Sola Busca deck dataset as JSON-LD" }
 
 In addition, this dataset includes `tarot:visualDescription` for some of the cards.

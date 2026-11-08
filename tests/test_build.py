@@ -10,6 +10,7 @@ from scripts.build_data import (
     DATA_OUTPUT_DIRECTORY,
     DOCUMENTS,
     PREFIXES,
+    ROOT,
     build,
 )
 
@@ -48,6 +49,17 @@ def test_jsonld_uses_project_context(name, site):
     _, written = site
     jsonld = json.loads(written[name][1].read_text())
     assert jsonld["@context"] == PREFIXES
+
+
+@pytest.mark.parametrize("name", DOCUMENTS)
+def test_downloads_page_lists_every_document(name):
+    """
+    Checks docs/downloads.md links to both published files of every document, so a new
+    deck can't be left out of the downloads table accidentally.
+    """
+    page = (ROOT / "docs" / "downloads.md").read_text()
+    for extension in ("ttl", "jsonld"):
+        assert f"({DATA_OUTPUT_DIRECTORY}/{name}.{extension})" in page
 
 
 def test_every_source_file_is_published():

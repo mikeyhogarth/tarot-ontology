@@ -6,8 +6,8 @@ The vocabulary is non-exhaustive and has been developed primarily with reference
 
 `https://w3id.org/tarot/symbol`
 
-- [Turtle](data/symbol.ttl)
-- [JSON-LD](data/symbol.jsonld)
+- Download as [Turtle](data/symbol.ttl){ aria-label="Download the symbology vocabulary as Turtle" }
+- Download as [JSON-LD](data/symbol.jsonld){ aria-label="Download the symbology vocabulary as JSON-LD" }
 
 You can indicate that a card depicts particular symbology using the `tarot:hasSymbol` term.
 
@@ -21,10 +21,8 @@ Importantly, this vocabulary is concerned with what is depicted on the cards, ra
 
 Symbols can carry different meanings across artistic traditions, historical periods, tarot decks, and individual readings. Even familiar visual elements may be identified or understood differently by different people. For example, the Moon card from the Rider-Waite-Smith deck may be described as depicting two dogs, or a wolf and a dog, depending on how the imagery is perceived.
 
-`SKOS` has been used in an attempt to accommodate this nuance and diversity of perspectives. Its hierarchical and associative relationships allow concepts to be defined more broadly or narrowly, and related to one another, without requiring them to be treated as mutually exclusive or universally agreed upon.
+`SKOS` has been used in an attempt to accommodate this diversity of perspectives. Its hierarchical and associative relationships allow concepts to be defined more broadly or narrowly, and related to one another, without requiring them to be treated as mutually exclusive or universally agreed upon. This means that even if people disagree on whether something is a dog or a wolf, they may be able to agree on a broader term and as such the user experience for the data still somewhat works even for people who disagree on the symbolism.
 
-The vocabulary therefore makes no attempt to define the meaning or significance of individual symbols, nor does it claim to provide an exhaustive catalogue of the imagery found in tarot. Its purpose is simply to provide a shared means of describing and referencing the visual elements that appear on many of the Rider-Waite-Smith cards, while allowing for differences in how those elements are identified and leaving their interpretation open to the individual reader.
+### Symbolism specificity within the data
 
-### Use within the Rider-Waite-Smith dataset
-
-Cards within the example [Rider-Waite-Smith](./decks.md) dataset indicate the **most specific** applicable symbols for a given card - they do not each exhaustively list, for example, all of the many ways of referring to a dog - this kind of broader/narrower nuance is made available through the `skos` heirachy.
+Cards within the [example decks](./decks.md) only indicate the **most specific** applicable symbols for a given card. The data does not exhaustively list, for example, every ancestor concept for the term "dog" (e.g. "animal") - this information is implied by the `skos` heirachy.

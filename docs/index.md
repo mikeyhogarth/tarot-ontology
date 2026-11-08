@@ -8,7 +8,7 @@
 
 An RDF ontology for tarot, designed for representing the common information associated with tarot decks. You could use this to create a dataset describing any tarot deck in rich semantic detail.
 
-As well as the [ontology](ontology.md) itself, this project also includes two example vocabularies of common [correspondences](./correspondence.md) and [symbology](./symbol.md) found within the tarot - both of these vocabularies were heavily inspired by the Golden Dawn tradition and the Rider-Waite-Smith deck. We have also provided a series of [example decks](./decks.md) which demonstrate the ontology being applied in practice to several popular decks.
+As well as the [ontology](ontology.md) itself, this project also includes two example vocabularies of common [correspondences](./correspondence.md) and [symbology](./symbol.md) found within the tarot - both of these vocabularies were heavily inspired by the Golden Dawn tradition and the Rider-Waite-Smith deck. We have also provided a series of [example decks](./decks.md) which demonstrate the ontology being applied in practice to several popular decks. If you just want the files, they are all listed on the [downloads](./downloads.md) page.
 
 <figure markdown="span">
   <img src="https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_03_Empress.jpeg?width=400"
