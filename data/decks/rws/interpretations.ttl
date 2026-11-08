@@ -1,11 +1,11 @@
 @prefix tarot: <https://w3id.org/tarot/ontology#> .
 @prefix rws:   <https://w3id.org/tarot/deck/rws#> .
 
-# Popular interpretations of the Rider-Waite-Smith cards: one common reading of each card, not
-# the only one and not what the card "means". Readers interpret cards for themselves. These
-# short readings were written for this dataset; they are not quotations from Waite's
-# Pictorial Key. One block per card, in the same order as cards.ttl.
-
+# 
+# Popular interpretations of the Rider-Waite-Smith cards: one common reading of each card. 
+# These are presented in good faith as "popular interpretations" and do not seek to define 
+# the one true interpretation of each card (humans are meant to do that part themselves).
+#
 rws:TheFool tarot:popularInterpretation "The beginning of the journey: innocence, spontaneity and a leap of faith."@en .
 
 rws:TheMagician tarot:popularInterpretation "Willpower and skill: turning intention into action."@en .

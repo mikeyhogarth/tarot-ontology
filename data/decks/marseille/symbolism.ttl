@@ -2,11 +2,11 @@
 @prefix mar:   <https://w3id.org/tarot/deck/marseille#> .
 @prefix symbol: <https://w3id.org/tarot/symbol#> .
 
-# What each Tarot of Marseilles card shows, read from the Jean Dodal deck. Depict the most specific
-# concept in symbols.ttl; broader ones (e.g. Animal) are found through the hierarchy.
-# Major arcana and court cards only: the pip cards show suit emblems arranged among foliage.
-# One block per card, in card-number order, majors then courts by suit.
-
+# 
+# What the picture on each Marseille card depicts. For this dataset, the most 
+# specific concepts in the symbols vocabulary are the only ones that should be stated 
+# for each card - the rest can be inferred through through the SKOS hierarchy.
+#
 mar:LeMat tarot:hasSymbol
     symbol:Feather, symbol:Knapsack, symbol:RightProfile, symbol:Staff .
 

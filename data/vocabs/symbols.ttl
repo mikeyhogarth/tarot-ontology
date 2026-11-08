@@ -6,18 +6,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix vann:  <http://purl.org/vocab/vann/> .
 
-# An optional, non-exhaustive starter vocabulary. It is published separately from the ontology:
-# decks are free to use concepts from any skos:ConceptScheme (typed tarot:Symbol), and may link
-# their own concepts into this one with skos:broader or skos:exactMatch.
-
-# The hierarchy of things a card can depict. This is the only place it is written down:
-# state `skos:broader` here and nowhere else, and have cards depict the most specific concept.
-# Concepts name what is drawn, not what it means. Group by top concept; leaves alphabetical.
+# 
+# An optional vocabulary of symbology, mainly based around those symbols present in the
+# Rider-Waite-Smith tarot deck.
 #
-# `skos:related` is stated here too, once per pair, on the alphabetically earlier concept; the
-# reverse is derived at query time. Use it for counterparts and companions (left/right profile),
-# never because two concepts merely share a broader concept, nor along a broader/narrower chain.
-
+# This file is published separately to the cards - this is by design and the main intention
+# is that this demonstrates the extension points in the main ontology that can be used for 
+# adding symbology (tarot:Symbol and, in the example decks, tarot:hasSymbol).
+# 
+# This vocab uses SKOS to represent the hierarchy of things a card can depict, marrying each
+# term to narrower/broader terms or to other adjacent (related) terms.
+#
 <https://w3id.org/tarot/symbol> a skos:ConceptScheme ;
     skos:prefLabel "Symbols"@en ;
     skos:definition "Things a tarot card can depict, and the ways it depicts them."@en ;

@@ -7,15 +7,19 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix vann:    <http://purl.org/vocab/vann/> .
 
-# An optional vocabulary of esoteric correspondences: the classes (elements, zodiac signs,
-# celestial bodies, Hebrew letters) and properties that extend tarot:Correspondence and
-# tarot:hasCorrespondence in the ontology, plus their individuals. It is published separately
-# because only some traditions use them (notably the Golden Dawn); the ontology keeps the extension
-# points, and the suits and ranks that nearly every system has.
+# 
+# An optional vocabulary of esoteric correspondences: this file includes the classes 
+# and properties that allow things like elements, zodiac signs, celestial bodies and 
+# Hebrew letters.
 #
-# It makes no claims about any deck. Which card corresponds to which of these is stated by each
-# deck (e.g. the Rider-Waite-Smith deck follows the Golden Dawn); other decks need not use them.
-
+# This file is published separately by design because because only some traditions use 
+# these particular correspondences (notably the Golden Dawn); this data also acts as a 
+# demonstration of how to use the main ontology's extension points (tarot:Correspondence
+# and tarot:hasCorrespondence) to introduce any correspondences you want to.
+#
+# This data purpousfully makes no claims about the correspondences of any deck, neither 
+# does it attribute any meaning to those correspondences.
+#
 <https://w3id.org/tarot/correspondence> a owl:Ontology ;
     rdfs:label "Tarot Correspondences"@en ;
     dcterms:title "Tarot Correspondences"@en ;

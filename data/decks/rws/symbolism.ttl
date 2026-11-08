@@ -2,10 +2,11 @@
 @prefix rws:   <https://w3id.org/tarot/deck/rws#> .
 @prefix symbol: <https://w3id.org/tarot/symbol#> .
 
-# What each Rider-Waite-Smith card shows. Depict the most specific concept in symbols.ttl;
-# broader ones (e.g. Animal) are found through the hierarchy.
-# One block per card, in card-number order.
-
+# 
+# What the picture on each Rider-Waite-Smith card depicts. For this dataset, the most 
+# specific concepts in the symbols vocabulary are the only ones that should be stated 
+# for each card - the rest can be inferred through through the SKOS hierarchy.
+#
 rws:TheFool tarot:hasSymbol
     symbol:Cliff, symbol:Dog, symbol:Feather, symbol:Knapsack, symbol:LeftProfile,
     symbol:Mountain, symbol:Rose, symbol:Staff, symbol:Sun, symbol:UpwardGaze, symbol:Wreath .
