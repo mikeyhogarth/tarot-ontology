@@ -1,4 +1,7 @@
-"""Build the RDF downloads (.ttl and .jsonld) for every published document into docs/data/ (zensical copies them into the site)."""
+"""
+Build the RDF downloads (.ttl and .jsonld) for every published document into docs/data/,
+a gitignored folder within the zensical docs source.
+"""
 
 from pathlib import Path
 
@@ -13,6 +16,11 @@ DATA_OUTPUT_DIRECTORY = "data"  # subfolder of the site holding the RDF download
 DECK_NAMES = ["rws", "marseille", "sola-busca"]
 DECK_DOCUMENTS = [f"deck/{deck}" for deck in DECK_NAMES]
 
+# Prefixes lookup to ensure we get nice, human-readable prefixes in the outputs when we serialize
+# them. This includes both our own prefixes and the ones from other vocabularies that we're using.
+# Whilst the ttl serialization would sort most of the "popular vocab" prefixes out for us, the
+# jsonld one does not, so specifying them here leads to a better jsonld @context. This may change
+# in the future if we ever decide to properly support jsonld contexts.
 PREFIXES: dict[str, str] = {
     "tarot": "https://w3id.org/tarot/ontology#",
     "corr": "https://w3id.org/tarot/correspondence#",
@@ -72,7 +80,12 @@ def build(output_dir: Path = OUTPUT_ROOT) -> dict[str, list[Path]]:
     return written
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Build every document and print the files written."""
     for name, paths in build().items():
         for path in paths:
             print(f"{name}: {path.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,18 +1,21 @@
+"""
+Tests the build_data functionality
+"""
+
 import json
 import pytest
 
-from build_data import (
+from scripts.build_data import (
     DATA_DIRECTORY,
     DATA_OUTPUT_DIRECTORY,
     DOCUMENTS,
     PREFIXES,
     build,
-    load_graph,
 )
 
 
-@pytest.fixture(scope="module")
-def site(tmp_path_factory):
+@pytest.fixture(scope="module", name="site")
+def fixture_site(tmp_path_factory):
     """
     Performs the build and writes the result to a temporary directory. Note that this is
     scoped to module so will only run once (in this module) and all tests use that result.

@@ -1,9 +1,13 @@
+"""
+Shared pytest fixtures.
+"""
+
 from pathlib import Path
 
 import pytest
 from rdflib import Graph
 
-from build_data import load_graph
+from scripts.build_data import load_graph
 
 
 @pytest.fixture(scope="session")

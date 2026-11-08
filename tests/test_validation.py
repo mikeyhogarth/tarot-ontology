@@ -1,8 +1,11 @@
+"""
+Tests each provided data file against the test suite's SHACL standards.
+"""
+
 import pytest
 from pyshacl import validate
-from rdflib import Graph
 
-from build_data import DECK_DOCUMENTS, DOCUMENTS, load_graph
+from scripts.build_data import DECK_DOCUMENTS, DOCUMENTS, load_graph
 
 
 @pytest.mark.parametrize("name", DOCUMENTS)
