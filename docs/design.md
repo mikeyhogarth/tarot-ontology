@@ -8,8 +8,8 @@ Interpretation is an inherently contextual and deeply personal aspect of tarot r
 
 That said, we have provided a small number of interpretation-related properties for those who wish to express and document interpretations:
 
-- `tarot:interpretation` is a property that can be used to record an individual's or group's own interpretation of a card. We strongly recommend that interpretations are accompanied by provenance information identifying whose interpretation is being represented.
-- `tarot:popularInterpretation` can be used to describe an interpretation that is widely recognised or accepted within a particular tradition or school of tarot. Our example [Rider-Waite-Smith dataset](./decks.md), for instance, includes a popular interpretation for each card.
+- `tarot:hasInterpretation` is a property that can be used to record an individual's or group's own interpretation of a card. We strongly recommend that interpretations are accompanied by provenance information identifying whose interpretation is being represented.
+- `tarot:hasPopularInterpretation` can be used to describe an interpretation that is widely recognised or accepted within a particular tradition or school of tarot. Our example [Rider-Waite-Smith dataset](./decks.md), for instance, includes a popular interpretation for each card.
 
 Ultimately, the human element is what makes tarot special. This project makes no attempt to establish a definitive or universally authoritative interpretation of any card, nor does it seek to imply that such an interpretation exists. Its purpose is to provide a framework through which interpretations can be represented, attributed, and explored, while leaving the act of interpretation where it belongs: with the individual reader.
 
@@ -22,3 +22,9 @@ Reusing existing vocabularies helps avoid unnecessary duplication, promotes inte
 Throughout this project, we make use of established vocabularies where appropriate. For example, `skos` is used to provide labels for concepts, while `foaf:depiction` is used to link cards to images of them.
 
 We encourage others working with this ontology to follow the same approach, reusing existing terms wherever they adequately describe the concepts being represented.
+
+## Naming conventions
+
+Every property defined in this project is named as a verb phrase describing how a card relates to the value, for example `tarot:hasSuit`, `tarot:inDeck`, `tarot:depictsSymbol` and `tarot:correspondsTo`. Each property's label uses the same words as its name ("has suit", "in deck"), so any statement can be read aloud as a sentence: _the Two of Cups has suit Cups_.
+
+The verb should be chosen to reflect the nature of the statement being made. Correspondences, for instance, use `correspondsTo` rather than `hasCorrespondence`.

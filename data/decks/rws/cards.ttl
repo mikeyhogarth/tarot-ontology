@@ -38,240 +38,240 @@ rws:Deck a tarot:Deck ;
 rws:TheFool a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Fool"@en ;
-    tarot:cardNumber 0 ;
+    tarot:hasCardNumber 0 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_00_Fool.jpeg> ;
-    tarot:visualDescription "A young man walks towards a cliff edge, either oblivious or carefree. He is holding a flower and a knapsack and is accompanied by a dog."@en ;
-    corr:hasHebrewLetter corr:HebrewAleph ;
-    corr:hasElement corr:Air ;
-    corr:hasCelestialBody corr:Uranus .
+    tarot:hasVisualDescription "A young man walks towards a cliff edge, either oblivious or carefree. He is holding a flower and a knapsack and is accompanied by a dog."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewAleph ;
+    corr:correspondsToElement corr:Air ;
+    corr:correspondsToCelestialBody corr:Uranus .
 
 rws:TheMagician a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Magician"@en ;
-    tarot:cardNumber 1 ;
+    tarot:hasCardNumber 1 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_01_Magician.jpeg> ;
-    tarot:visualDescription "A robed man stands, one hand holding a wand aloft and the other pointing towards the ground. On the table in front of him lie four objects representing the suits of the minor arcana."@en ;
-    corr:hasHebrewLetter corr:HebrewBeth ;
-    corr:hasElement corr:Air ;
-    corr:hasZodiacSign corr:Virgo ;
-    corr:hasCelestialBody corr:Mercury .
+    tarot:hasVisualDescription "A robed man stands, one hand holding a wand aloft and the other pointing towards the ground. On the table in front of him lie four objects representing the suits of the minor arcana."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewBeth ;
+    corr:correspondsToElement corr:Air ;
+    corr:correspondsToZodiacSign corr:Virgo ;
+    corr:correspondsToCelestialBody corr:Mercury .
 
 rws:TheHighPriestess a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The High Priestess"@en ;
-    tarot:cardNumber 2 ;
+    tarot:hasCardNumber 2 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_02_High_Priestess.jpeg> ;
-    tarot:visualDescription "A woman robed in pale blue and wearing a moon headdress sits between two pillars (one dark, one light) holding a scroll."@en ;
-    corr:hasHebrewLetter corr:HebrewGimel ;
-    corr:hasElement corr:Water ;
-    corr:hasZodiacSign corr:Pisces ;
-    corr:hasCelestialBody corr:Moon .
+    tarot:hasVisualDescription "A woman robed in pale blue and wearing a moon headdress sits between two pillars (one dark, one light) holding a scroll."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewGimel ;
+    corr:correspondsToElement corr:Water ;
+    corr:correspondsToZodiacSign corr:Pisces ;
+    corr:correspondsToCelestialBody corr:Moon .
 
 rws:TheEmpress a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Empress"@en ;
-    tarot:cardNumber 3 ;
+    tarot:hasCardNumber 3 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_03_Empress.jpeg> ;
-    tarot:visualDescription "A woman wearing a crown of stars sits on a cushioned throne surrounded by trees and fields. A river flows in the background."@en ;
-    corr:hasHebrewLetter corr:HebrewDalet ;
-    corr:hasElement corr:Earth ;
-    corr:hasZodiacSign corr:Taurus, corr:Libra ;
-    corr:hasCelestialBody corr:Venus .
+    tarot:hasVisualDescription "A woman wearing a crown of stars sits on a cushioned throne surrounded by trees and fields. A river flows in the background."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewDalet ;
+    corr:correspondsToElement corr:Earth ;
+    corr:correspondsToZodiacSign corr:Taurus, corr:Libra ;
+    corr:correspondsToCelestialBody corr:Venus .
 
 rws:TheEmperor a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Emperor"@en ;
-    tarot:cardNumber 4 ;
+    tarot:hasCardNumber 4 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_04_Emperor.jpeg> ;
-    tarot:visualDescription "A stern-looking man in red robes holds an orb and sceptre and sits upon a stone throne."@en ;
-    corr:hasHebrewLetter corr:HebrewHeh ;
-    corr:hasElement corr:Fire ;
-    corr:hasZodiacSign corr:Aries ;
-    corr:hasCelestialBody corr:Mars .
+    tarot:hasVisualDescription "A stern-looking man in red robes holds an orb and sceptre and sits upon a stone throne."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewHeh ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToZodiacSign corr:Aries ;
+    corr:correspondsToCelestialBody corr:Mars .
 
 rws:TheHierophant a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Hierophant"@en ;
-    tarot:cardNumber 5 ;
+    tarot:hasCardNumber 5 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_05_Hierophant.jpeg> ;
-    tarot:visualDescription "A man in religious garb sits between two pillars in front of two other figures looking up at him."@en ;
-    corr:hasHebrewLetter corr:HebrewVav ;
-    corr:hasElement corr:Earth ;
-    corr:hasZodiacSign corr:Taurus ;
-    corr:hasCelestialBody corr:Venus .
+    tarot:hasVisualDescription "A man in religious garb sits between two pillars in front of two other figures looking up at him."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewVav ;
+    corr:correspondsToElement corr:Earth ;
+    corr:correspondsToZodiacSign corr:Taurus ;
+    corr:correspondsToCelestialBody corr:Venus .
 
 rws:TheLovers a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Lovers"@en ;
-    tarot:cardNumber 6 ;
+    tarot:hasCardNumber 6 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_06_Lovers.jpeg> ;
-    tarot:visualDescription "Two naked figures, one male, one female, stand facing each other with an angelic figure looking down on them."@en ;
-    corr:hasHebrewLetter corr:HebrewZayin ;
-    corr:hasElement corr:Air ;
-    corr:hasZodiacSign corr:Gemini ;
-    corr:hasCelestialBody corr:Mercury .
+    tarot:hasVisualDescription "Two naked figures, one male, one female, stand facing each other with an angelic figure looking down on them."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewZayin ;
+    corr:correspondsToElement corr:Air ;
+    corr:correspondsToZodiacSign corr:Gemini ;
+    corr:correspondsToCelestialBody corr:Mercury .
 
 rws:TheChariot a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Chariot"@en ;
-    tarot:cardNumber 7 ;
+    tarot:hasCardNumber 7 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_07_Chariot.jpeg> ;
-    tarot:visualDescription "An armoured man stands in a stone chariot led by two sphinxes, one black, one white."@en ;
-    corr:hasHebrewLetter corr:HebrewChet ;
-    corr:hasElement corr:Water ;
-    corr:hasZodiacSign corr:Cancer ;
-    corr:hasCelestialBody corr:Moon .
+    tarot:hasVisualDescription "An armoured man stands in a stone chariot led by two sphinxes, one black, one white."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewChet ;
+    corr:correspondsToElement corr:Water ;
+    corr:correspondsToZodiacSign corr:Cancer ;
+    corr:correspondsToCelestialBody corr:Moon .
 
 rws:Strength a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Strength"@en ;
-    tarot:cardNumber 8 ;
+    tarot:hasCardNumber 8 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_08_Strength.jpeg> ;
-    tarot:visualDescription "A woman in a white robe gently closes the jaws of a lion."@en ;
-    corr:hasHebrewLetter corr:HebrewTeth ;
-    corr:hasElement corr:Fire ;
-    corr:hasZodiacSign corr:Leo ;
-    corr:hasCelestialBody corr:Sun .
+    tarot:hasVisualDescription "A woman in a white robe gently closes the jaws of a lion."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewTeth ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToZodiacSign corr:Leo ;
+    corr:correspondsToCelestialBody corr:Sun .
 
 rws:TheHermit a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Hermit"@en ;
-    tarot:cardNumber 9 ;
+    tarot:hasCardNumber 9 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_09_Hermit.jpeg> ;
-    tarot:visualDescription "A solitary bearded man holding a staff and a lantern, wearing a hooded robe."@en ;
-    corr:hasHebrewLetter corr:HebrewYod ;
-    corr:hasElement corr:Earth ;
-    corr:hasZodiacSign corr:Virgo ;
-    corr:hasCelestialBody corr:Mercury .
+    tarot:hasVisualDescription "A solitary bearded man holding a staff and a lantern, wearing a hooded robe."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewYod ;
+    corr:correspondsToElement corr:Earth ;
+    corr:correspondsToZodiacSign corr:Virgo ;
+    corr:correspondsToCelestialBody corr:Mercury .
 
 rws:WheelOfFortune a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Wheel of Fortune"@en ;
-    tarot:cardNumber 10 ;
+    tarot:hasCardNumber 10 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_10_Wheel_of_Fortune.jpeg> ;
-    tarot:visualDescription "A disc in the sky depicting alchemical symbols, Hebrew characters and the letters 'T A R O'. The wheel is surrounded by various mythological creatures."@en ;
-    corr:hasHebrewLetter corr:HebrewKaph ;
-    corr:hasElement corr:Fire ;
-    corr:hasZodiacSign corr:Pisces ;
-    corr:hasCelestialBody corr:Jupiter .
+    tarot:hasVisualDescription "A disc in the sky depicting alchemical symbols, Hebrew characters and the letters 'T A R O'. The wheel is surrounded by various mythological creatures."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewKaph ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToZodiacSign corr:Pisces ;
+    corr:correspondsToCelestialBody corr:Jupiter .
 
 rws:Justice a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Justice"@en ;
-    tarot:cardNumber 11 ;
+    tarot:hasCardNumber 11 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_11_Justice.jpeg> ;
-    tarot:visualDescription "A robed figure sitting between two stone pillars holding an upright sword and a set of scales."@en ;
-    corr:hasHebrewLetter corr:HebrewLamed ;
-    corr:hasElement corr:Air ;
-    corr:hasZodiacSign corr:Libra ;
-    corr:hasCelestialBody corr:Venus .
+    tarot:hasVisualDescription "A robed figure sitting between two stone pillars holding an upright sword and a set of scales."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewLamed ;
+    corr:correspondsToElement corr:Air ;
+    corr:correspondsToZodiacSign corr:Libra ;
+    corr:correspondsToCelestialBody corr:Venus .
 
 rws:TheHangedMan a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Hanged Man"@en ;
-    tarot:cardNumber 12 ;
+    tarot:hasCardNumber 12 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_12_Hanged_Man.jpeg> ;
-    tarot:visualDescription "A man hangs upside down, tied by one foot with one leg bent and his arms behind his back."@en ;
-    corr:hasHebrewLetter corr:HebrewMem ;
-    corr:hasElement corr:Water ;
-    corr:hasCelestialBody corr:Neptune .
+    tarot:hasVisualDescription "A man hangs upside down, tied by one foot with one leg bent and his arms behind his back."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewMem ;
+    corr:correspondsToElement corr:Water ;
+    corr:correspondsToCelestialBody corr:Neptune .
 
 rws:Death a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Death"@en ;
-    tarot:cardNumber 13 ;
+    tarot:hasCardNumber 13 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_13_Death.jpeg> ;
-    tarot:visualDescription "An armoured skeleton on a white horse stands over a fallen king. Other figures are reacting in various ways."@en ;
-    corr:hasHebrewLetter corr:HebrewNun ;
-    corr:hasElement corr:Water ;
-    corr:hasZodiacSign corr:Scorpio ;
-    corr:hasCelestialBody corr:Mars .
+    tarot:hasVisualDescription "An armoured skeleton on a white horse stands over a fallen king. Other figures are reacting in various ways."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewNun ;
+    corr:correspondsToElement corr:Water ;
+    corr:correspondsToZodiacSign corr:Scorpio ;
+    corr:correspondsToCelestialBody corr:Mars .
 
 rws:Temperance a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Temperance"@en ;
-    tarot:cardNumber 14 ;
+    tarot:hasCardNumber 14 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_14_Temperance.jpeg> ;
-    tarot:visualDescription "An angel stands with one foot in a pool of water and the other on the ground, pouring water between two goblets."@en ;
-    corr:hasHebrewLetter corr:HebrewSamekh ;
-    corr:hasElement corr:Fire ;
-    corr:hasZodiacSign corr:Sagittarius ;
-    corr:hasCelestialBody corr:Jupiter .
+    tarot:hasVisualDescription "An angel stands with one foot in a pool of water and the other on the ground, pouring water between two goblets."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewSamekh ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToZodiacSign corr:Sagittarius ;
+    corr:correspondsToCelestialBody corr:Jupiter .
 
 rws:TheDevil a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Devil"@en ;
-    tarot:cardNumber 15 ;
+    tarot:hasCardNumber 15 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_15_Devil.jpeg> ;
-    tarot:visualDescription "A demonic figure perches on a plinth. Two naked figures, one male and one female, are chained to the plinth."@en ;
-    corr:hasHebrewLetter corr:HebrewAyin ;
-    corr:hasElement corr:Earth ;
-    corr:hasZodiacSign corr:Capricorn ;
-    corr:hasCelestialBody corr:Saturn .
+    tarot:hasVisualDescription "A demonic figure perches on a plinth. Two naked figures, one male and one female, are chained to the plinth."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewAyin ;
+    corr:correspondsToElement corr:Earth ;
+    corr:correspondsToZodiacSign corr:Capricorn ;
+    corr:correspondsToCelestialBody corr:Saturn .
 
 rws:TheTower a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Tower"@en ;
-    tarot:cardNumber 16 ;
+    tarot:hasCardNumber 16 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_16_Tower.jpeg> ;
-    tarot:visualDescription "Two figures are falling head-first from a burning tower as it is struck by lightning."@en ;
-    corr:hasHebrewLetter corr:HebrewPeh ;
-    corr:hasElement corr:Fire ;
-    corr:hasZodiacSign corr:Scorpio ;
-    corr:hasCelestialBody corr:Mars .
+    tarot:hasVisualDescription "Two figures are falling head-first from a burning tower as it is struck by lightning."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewPeh ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToZodiacSign corr:Scorpio ;
+    corr:correspondsToCelestialBody corr:Mars .
 
 rws:TheStar a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Star"@en ;
-    tarot:cardNumber 17 ;
+    tarot:hasCardNumber 17 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_17_Star.jpeg> ;
-    tarot:visualDescription "A naked woman kneels on the ground with one foot in water, pouring water out of two vessels under a starry sky."@en ;
-    corr:hasHebrewLetter corr:HebrewTzaddi ;
-    corr:hasElement corr:Air ;
-    corr:hasZodiacSign corr:Aquarius ;
-    corr:hasCelestialBody corr:Saturn .
+    tarot:hasVisualDescription "A naked woman kneels on the ground with one foot in water, pouring water out of two vessels under a starry sky."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewTzaddi ;
+    corr:correspondsToElement corr:Air ;
+    corr:correspondsToZodiacSign corr:Aquarius ;
+    corr:correspondsToCelestialBody corr:Saturn .
 
 rws:TheMoon a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Moon"@en ;
-    tarot:cardNumber 18 ;
+    tarot:hasCardNumber 18 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_18_Moon.jpeg> ;
-    tarot:visualDescription "A crayfish crawls out of water as a dog and wolf look up at the moon. Two large towers loom in the background."@en ;
-    corr:hasHebrewLetter corr:HebrewQoph ;
-    corr:hasElement corr:Water ;
-    corr:hasZodiacSign corr:Pisces ;
-    corr:hasCelestialBody corr:Jupiter .
+    tarot:hasVisualDescription "A crayfish crawls out of water as a dog and wolf look up at the moon. Two large towers loom in the background."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewQoph ;
+    corr:correspondsToElement corr:Water ;
+    corr:correspondsToZodiacSign corr:Pisces ;
+    corr:correspondsToCelestialBody corr:Jupiter .
 
 rws:TheSun a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The Sun"@en ;
-    tarot:cardNumber 19 ;
+    tarot:hasCardNumber 19 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_19_Sun.jpeg> ;
-    tarot:visualDescription "The sun shines above a garden of sunflowers, through which a child rides a horse."@en ;
-    corr:hasHebrewLetter corr:HebrewResh ;
-    corr:hasElement corr:Fire ;
-    corr:hasZodiacSign corr:Leo ;
-    corr:hasCelestialBody corr:Sun .
+    tarot:hasVisualDescription "The sun shines above a garden of sunflowers, through which a child rides a horse."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewResh ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToZodiacSign corr:Leo ;
+    corr:correspondsToCelestialBody corr:Sun .
 
 rws:Judgement a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Judgement"@en ;
-    tarot:cardNumber 20 ;
+    tarot:hasCardNumber 20 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_20_Judgement.jpeg> ;
-    tarot:visualDescription "An angel blows a trumpet from the sky as naked humans appear to rise up out of coffins below."@en ;
-    corr:hasHebrewLetter corr:HebrewShin ;
-    corr:hasElement corr:Fire ;
-    corr:hasCelestialBody corr:Pluto .
+    tarot:hasVisualDescription "An angel blows a trumpet from the sky as naked humans appear to rise up out of coffins below."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewShin ;
+    corr:correspondsToElement corr:Fire ;
+    corr:correspondsToCelestialBody corr:Pluto .
 
 rws:TheWorld a tarot:MajorArcanaCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "The World"@en ;
-    tarot:cardNumber 21 ;
+    tarot:hasCardNumber 21 ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_21_World.jpeg> ;
-    tarot:visualDescription "A nude figure floats in the clouds holding two wands, encircled by a laurel wreath surrounded by the heads of a human, an eagle, a bull and a lion."@en ;
-    corr:hasHebrewLetter corr:HebrewTav ;
-    corr:hasElement corr:Earth ;
-    corr:hasCelestialBody corr:Saturn .
+    tarot:hasVisualDescription "A nude figure floats in the clouds holding two wands, encircled by a laurel wreath surrounded by the heads of a human, an eagle, a bull and a lion."@en ;
+    corr:correspondsToHebrewLetter corr:HebrewTav ;
+    corr:correspondsToElement corr:Earth ;
+    corr:correspondsToCelestialBody corr:Saturn .
 
 #################################################################    
 # MINOR ARCANA — WANDS
@@ -280,142 +280,142 @@ rws:TheWorld a tarot:MajorArcanaCard ;
 rws:AceOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ace of Wands"@en ;
-    tarot:cardNumber 1 ;
+    tarot:hasCardNumber 1 ;
     tarot:hasRank tarot:Ace ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_01.jpeg> ;
-    tarot:visualDescription "A hand holding a wand emerges from a cloud above hills and a river. Leaves sprout from the wand."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A hand holding a wand emerges from a cloud above hills and a river. Leaves sprout from the wand."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:TwoOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Two of Wands"@en ;
-    tarot:cardNumber 2 ;
+    tarot:hasCardNumber 2 ;
     tarot:hasRank tarot:Two ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_02.jpeg> ;
-    tarot:visualDescription "A man holding a globe looks out on the world from some battlements. He is flanked by two large wooden poles."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A man holding a globe looks out on the world from some battlements. He is flanked by two large wooden poles."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:ThreeOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Three of Wands"@en ;
-    tarot:cardNumber 3 ;
+    tarot:hasCardNumber 3 ;
     tarot:hasRank tarot:Three ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_03.jpeg> ;
-    tarot:visualDescription "A man surrounded by three wooden posts looks out at boats floating on a body of water."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A man surrounded by three wooden posts looks out at boats floating on a body of water."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:FourOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Four of Wands"@en ;
-    tarot:cardNumber 4 ;
+    tarot:hasCardNumber 4 ;
     tarot:hasRank tarot:Four ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_04.jpeg> ;
-    tarot:visualDescription "Two people appear to celebrate below a floral canopy supported by four poles. There is a large walled building in the background."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "Two people appear to celebrate below a floral canopy supported by four poles. There is a large walled building in the background."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:FiveOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Five of Wands"@en ;
-    tarot:cardNumber 5 ;
+    tarot:hasCardNumber 5 ;
     tarot:hasRank tarot:Five ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_05.jpeg> ;
-    tarot:visualDescription "Five youths appear to spar using large wooden sticks."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "Five youths appear to spar using large wooden sticks."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:SixOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Six of Wands"@en ;
-    tarot:cardNumber 6 ;
+    tarot:hasCardNumber 6 ;
     tarot:hasRank tarot:Six ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_06.jpeg> ;
-    tarot:visualDescription "A figure wearing a laurel crown and carrying a wreath-topped staff rides a white horse in front of other people also holding staves."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A figure wearing a laurel crown and carrying a wreath-topped staff rides a white horse in front of other people also holding staves."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:SevenOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Seven of Wands"@en ;
-    tarot:cardNumber 7 ;
+    tarot:hasCardNumber 7 ;
     tarot:hasRank tarot:Seven ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_07.jpeg> ;
-    tarot:visualDescription "A man holds a large staff in both hands in front of his body. Below, six other staves are being raised."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A man holds a large staff in both hands in front of his body. Below, six other staves are being raised."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:EightOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Eight of Wands"@en ;
-    tarot:cardNumber 8 ;
+    tarot:hasCardNumber 8 ;
     tarot:hasRank tarot:Eight ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_08.jpeg> ;
-    tarot:visualDescription "Eight sticks, positioned diagonally in the air."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "Eight sticks, positioned diagonally in the air."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:NineOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Nine of Wands"@en ;
-    tarot:cardNumber 9 ;
+    tarot:hasCardNumber 9 ;
     tarot:hasRank tarot:Nine ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_09.jpeg> ;
-    tarot:visualDescription "Eight upright wooden posts. In front of them, a wounded man holds a ninth."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "Eight upright wooden posts. In front of them, a wounded man holds a ninth."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:TenOfWands a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ten of Wands"@en ;
-    tarot:cardNumber 10 ;
+    tarot:hasCardNumber 10 ;
     tarot:hasRank tarot:Ten ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_10.jpeg> ;
-    tarot:visualDescription "A man using both arms to carry a bundle of ten large staves."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A man using both arms to carry a bundle of ten large staves."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:PageOfWands a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Page of Wands"@en ;
-    tarot:cardNumber 11 ;
+    tarot:hasCardNumber 11 ;
     tarot:hasRank tarot:Page ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_11.jpeg> ;
-    tarot:visualDescription "A young man holds a wooden staff, looking up at the top of it. Deserts and pyramids appear in the background."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A young man holds a wooden staff, looking up at the top of it. Deserts and pyramids appear in the background."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:KnightOfWands a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Knight of Wands"@en ;
-    tarot:cardNumber 12 ;
+    tarot:hasCardNumber 12 ;
     tarot:hasRank tarot:Knight ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_12.jpeg> ;
-    tarot:visualDescription "An armoured knight on a rearing horse holding a wooden club in a desert landscape."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "An armoured knight on a rearing horse holding a wooden club in a desert landscape."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:QueenOfWands a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Queen of Wands"@en ;
-    tarot:cardNumber 13 ;
+    tarot:hasCardNumber 13 ;
     tarot:hasRank tarot:Queen ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_13.jpeg> ;
-    tarot:visualDescription "A woman holding a staff and a sunflower sits on a throne with a black cat at her feet."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A woman holding a staff and a sunflower sits on a throne with a black cat at her feet."@en ;
+    corr:correspondsToElement corr:Fire .
 
 rws:KingOfWands a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "King of Wands"@en ;
-    tarot:cardNumber 14 ;
+    tarot:hasCardNumber 14 ;
     tarot:hasRank tarot:King ;
     tarot:hasSuit tarot:Wands ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Wands_14.jpeg> ;
-    tarot:visualDescription "A king sits on a throne holding a staff. There is a small lizard by his feet."@en ;
-    corr:hasElement corr:Fire .
+    tarot:hasVisualDescription "A king sits on a throne holding a staff. There is a small lizard by his feet."@en ;
+    corr:correspondsToElement corr:Fire .
 
 
 #################################################################
@@ -425,142 +425,142 @@ rws:KingOfWands a tarot:CourtCard ;
 rws:AceOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ace of Cups"@en ;
-    tarot:cardNumber 1 ;
+    tarot:hasCardNumber 1 ;
     tarot:hasRank tarot:Ace ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_01.jpeg> ;
-    tarot:visualDescription "Water pours into a pool from a golden chalice held by a hand emerging from a cloud."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "Water pours into a pool from a golden chalice held by a hand emerging from a cloud."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:TwoOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Two of Cups"@en ;
-    tarot:cardNumber 2 ;
+    tarot:hasCardNumber 2 ;
     tarot:hasRank tarot:Two ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_02.jpeg> ;
-    tarot:visualDescription "Two figures facing each other, each holding a goblet. Above them is a lion's head atop a caduceus."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "Two figures facing each other, each holding a goblet. Above them is a lion's head atop a caduceus."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:ThreeOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Three of Cups"@en ;
-    tarot:cardNumber 3 ;
+    tarot:hasCardNumber 3 ;
     tarot:hasRank tarot:Three ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_03.jpeg> ;
-    tarot:visualDescription "Three women raise chalices aloft, surrounded by foliage and produce."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "Three women raise chalices aloft, surrounded by foliage and produce."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:FourOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Four of Cups"@en ;
-    tarot:cardNumber 4 ;
+    tarot:hasCardNumber 4 ;
     tarot:hasRank tarot:Four ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_04.jpeg> ;
-    tarot:visualDescription "A youth sits cross-legged under a tree in front of three cups. A fourth cup is being held by a hand emerging from a cloud."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A youth sits cross-legged under a tree in front of three cups. A fourth cup is being held by a hand emerging from a cloud."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:FiveOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Five of Cups"@en ;
-    tarot:cardNumber 5 ;
+    tarot:hasCardNumber 5 ;
     tarot:hasRank tarot:Five ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_05.jpeg> ;
-    tarot:visualDescription "A cloaked figure looks down at three spilled cups. Behind them, two more cups stand upright."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A cloaked figure looks down at three spilled cups. Behind them, two more cups stand upright."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:SixOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Six of Cups"@en ;
-    tarot:cardNumber 6 ;
+    tarot:hasCardNumber 6 ;
     tarot:hasRank tarot:Six ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_06.jpeg> ;
-    tarot:visualDescription "In front of buildings, one figure offers a flower in a golden vessel to another person."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "In front of buildings, one figure offers a flower in a golden vessel to another person."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:SevenOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Seven of Cups"@en ;
-    tarot:cardNumber 7 ;
+    tarot:hasCardNumber 7 ;
     tarot:hasRank tarot:Seven ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_07.jpeg> ;
-    tarot:visualDescription "A silhouetted figure gazes up at seven chalices in the clouds containing various fantastical symbols."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A silhouetted figure gazes up at seven chalices in the clouds containing various fantastical symbols."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:EightOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Eight of Cups"@en ;
-    tarot:cardNumber 8 ;
+    tarot:hasCardNumber 8 ;
     tarot:hasRank tarot:Eight ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_08.jpeg> ;
-    tarot:visualDescription "Eight cups stand in the foreground as a figure walks away into the mountains."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "Eight cups stand in the foreground as a figure walks away into the mountains."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:NineOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Nine of Cups"@en ;
-    tarot:cardNumber 9 ;
+    tarot:hasCardNumber 9 ;
     tarot:hasRank tarot:Nine ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_09.jpeg> ;
-    tarot:visualDescription "A man sits with his arms folded in front of nine goblets on a tall table."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A man sits with his arms folded in front of nine goblets on a tall table."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:TenOfCups a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ten of Cups"@en ;
-    tarot:cardNumber 10 ;
+    tarot:hasCardNumber 10 ;
     tarot:hasRank tarot:Ten ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_10.jpeg> ;
-    tarot:visualDescription "Ten chalices form a large rainbow. A couple raise their hands to the sky as children play beside them."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "Ten chalices form a large rainbow. A couple raise their hands to the sky as children play beside them."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:PageOfCups a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Page of Cups"@en ;
-    tarot:cardNumber 11 ;
+    tarot:hasCardNumber 11 ;
     tarot:hasRank tarot:Page ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_11.jpeg> ;
-    tarot:visualDescription "A young man stands in front of the sea. He is looking at a fish emerging from the goblet he is holding."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A young man stands in front of the sea. He is looking at a fish emerging from the goblet he is holding."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:KnightOfCups a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Knight of Cups"@en ;
-    tarot:cardNumber 12 ;
+    tarot:hasCardNumber 12 ;
     tarot:hasRank tarot:Knight ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_12.jpeg> ;
-    tarot:visualDescription "An armoured knight holding a golden chalice sits atop a white horse standing by a river."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "An armoured knight holding a golden chalice sits atop a white horse standing by a river."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:QueenOfCups a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Queen of Cups"@en ;
-    tarot:cardNumber 13 ;
+    tarot:hasCardNumber 13 ;
     tarot:hasRank tarot:Queen ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_13.jpeg> ;
-    tarot:visualDescription "A queen sits on a throne by the sea, gazing at an ornate chalice in her hands."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A queen sits on a throne by the sea, gazing at an ornate chalice in her hands."@en ;
+    corr:correspondsToElement corr:Water .
 
 rws:KingOfCups a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "King of Cups"@en ;
-    tarot:cardNumber 14 ;
+    tarot:hasCardNumber 14 ;
     tarot:hasRank tarot:King ;
     tarot:hasSuit tarot:Cups ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Cups_14.jpeg> ;
-    tarot:visualDescription "A king holding a cup sits on a throne atop a stone platform in the middle of an ocean."@en ;
-    corr:hasElement corr:Water .
+    tarot:hasVisualDescription "A king holding a cup sits on a throne atop a stone platform in the middle of an ocean."@en ;
+    corr:correspondsToElement corr:Water .
 
 
 #################################################################
@@ -570,142 +570,142 @@ rws:KingOfCups a tarot:CourtCard ;
 rws:AceOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ace of Swords"@en ;
-    tarot:cardNumber 1 ;
+    tarot:hasCardNumber 1 ;
     tarot:hasRank tarot:Ace ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_01.jpeg> ;
-    tarot:visualDescription "A hand emerges from a cloud holding a sword aloft. The top of the sword is encircled by a crown with foliage hanging from it."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A hand emerges from a cloud holding a sword aloft. The top of the sword is encircled by a crown with foliage hanging from it."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:TwoOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Two of Swords"@en ;
-    tarot:cardNumber 2 ;
+    tarot:hasCardNumber 2 ;
     tarot:hasRank tarot:Two ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_02.jpeg> ;
-    tarot:visualDescription "A blindfolded woman sits in front of a body of water. Her arms are crossed, holding two swords upright."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A blindfolded woman sits in front of a body of water. Her arms are crossed, holding two swords upright."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:ThreeOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Three of Swords"@en ;
-    tarot:cardNumber 3 ;
+    tarot:hasCardNumber 3 ;
     tarot:hasRank tarot:Three ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_03.jpeg> ;
-    tarot:visualDescription "The symbol of a heart is pierced by three swords in front of clouds and rain."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "The symbol of a heart is pierced by three swords in front of clouds and rain."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:FourOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Four of Swords"@en ;
-    tarot:cardNumber 4 ;
+    tarot:hasCardNumber 4 ;
     tarot:hasRank tarot:Four ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_04.jpeg> ;
-    tarot:visualDescription "A stone tomb depicting the effigy of a man lies in a church beneath three hanging swords. Another sword appears on the side of the tomb."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A stone tomb depicting the effigy of a man lies in a church beneath three hanging swords. Another sword appears on the side of the tomb."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:FiveOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Five of Swords"@en ;
-    tarot:cardNumber 5 ;
+    tarot:hasCardNumber 5 ;
     tarot:hasRank tarot:Five ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_05.jpeg> ;
-    tarot:visualDescription "A smiling figure gathers swords beneath jagged clouds as two other figures walk away."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A smiling figure gathers swords beneath jagged clouds as two other figures walk away."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:SixOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Six of Swords"@en ;
-    tarot:cardNumber 6 ;
+    tarot:hasCardNumber 6 ;
     tarot:hasRank tarot:Six ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_06.jpeg> ;
-    tarot:visualDescription "A cloaked figure and a child are ferried across a body of water by a third person. Six swords stand upright, blade down, in the boat."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A cloaked figure and a child are ferried across a body of water by a third person. Six swords stand upright, blade down, in the boat."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:SevenOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Seven of Swords"@en ;
-    tarot:cardNumber 7 ;
+    tarot:hasCardNumber 7 ;
     tarot:hasRank tarot:Seven ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_07.jpeg> ;
-    tarot:visualDescription "A figure looks back as he carries swords away from a tent."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A figure looks back as he carries swords away from a tent."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:EightOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Eight of Swords"@en ;
-    tarot:cardNumber 8 ;
+    tarot:hasCardNumber 8 ;
     tarot:hasRank tarot:Eight ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_08.jpeg> ;
-    tarot:visualDescription "A bound and blindfolded woman is surrounded by eight swords, upright and blade down in muddy ground."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A bound and blindfolded woman is surrounded by eight swords, upright and blade down in muddy ground."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:NineOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Nine of Swords"@en ;
-    tarot:cardNumber 9 ;
+    tarot:hasCardNumber 9 ;
     tarot:hasRank tarot:Nine ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_09.jpeg> ;
-    tarot:visualDescription "A figure sits upright in bed, head in hands. Nine horizontal swords appear behind them."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A figure sits upright in bed, head in hands. Nine horizontal swords appear behind them."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:TenOfSwords a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ten of Swords"@en ;
-    tarot:cardNumber 10 ;
+    tarot:hasCardNumber 10 ;
     tarot:hasRank tarot:Ten ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_10.jpeg> ;
-    tarot:visualDescription "A man lies face down on the ground, ten swords piercing his back. A large body of water appears in the background."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A man lies face down on the ground, ten swords piercing his back. A large body of water appears in the background."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:PageOfSwords a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Page of Swords"@en ;
-    tarot:cardNumber 11 ;
+    tarot:hasCardNumber 11 ;
     tarot:hasRank tarot:Page ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_11.jpeg> ;
-    tarot:visualDescription "A young man holding a sword stands in a windy landscape."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A young man holding a sword stands in a windy landscape."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:KnightOfSwords a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Knight of Swords"@en ;
-    tarot:cardNumber 12 ;
+    tarot:hasCardNumber 12 ;
     tarot:hasRank tarot:Knight ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_12.jpeg> ;
-    tarot:visualDescription "An armoured knight charges forward, sword held aloft, on a white horse."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "An armoured knight charges forward, sword held aloft, on a white horse."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:QueenOfSwords a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Queen of Swords"@en ;
-    tarot:cardNumber 13 ;
+    tarot:hasCardNumber 13 ;
     tarot:hasRank tarot:Queen ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_13.jpeg> ;
-    tarot:visualDescription "A queen sits on a stone throne holding an upright sword in one hand and reaching outwards with the other."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A queen sits on a stone throne holding an upright sword in one hand and reaching outwards with the other."@en ;
+    corr:correspondsToElement corr:Air .
 
 rws:KingOfSwords a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "King of Swords"@en ;
-    tarot:cardNumber 14 ;
+    tarot:hasCardNumber 14 ;
     tarot:hasRank tarot:King ;
     tarot:hasSuit tarot:Swords ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Swords_14.jpeg> ;
-    tarot:visualDescription "A robed king holding a sword sits on a throne."@en ;
-    corr:hasElement corr:Air .
+    tarot:hasVisualDescription "A robed king holding a sword sits on a throne."@en ;
+    corr:correspondsToElement corr:Air .
 
 
 #################################################################
@@ -715,139 +715,139 @@ rws:KingOfSwords a tarot:CourtCard ;
 rws:AceOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ace of Pentacles"@en ;
-    tarot:cardNumber 1 ;
+    tarot:hasCardNumber 1 ;
     tarot:hasRank tarot:Ace ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_01.jpeg> ;
-    tarot:visualDescription "A hand holding a golden pentacle emerges from a cloud above a garden."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A hand holding a golden pentacle emerges from a cloud above a garden."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:TwoOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Two of Pentacles"@en ;
-    tarot:cardNumber 2 ;
+    tarot:hasCardNumber 2 ;
     tarot:hasRank tarot:Two ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_02.jpeg> ;
-    tarot:visualDescription "A man in a large hat appears to juggle two pentacles in a figure-of-eight shaped loop."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A man in a large hat appears to juggle two pentacles in a figure-of-eight shaped loop."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:ThreeOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Three of Pentacles"@en ;
-    tarot:cardNumber 3 ;
+    tarot:hasCardNumber 3 ;
     tarot:hasRank tarot:Three ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_03.jpeg> ;
-    tarot:visualDescription "A craftsman works on a church, consulting with two other figures."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A craftsman works on a church, consulting with two other figures."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:FourOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Four of Pentacles"@en ;
-    tarot:cardNumber 4 ;
+    tarot:hasCardNumber 4 ;
     tarot:hasRank tarot:Four ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_04.jpeg> ;
-    tarot:visualDescription "A man sits in front of a cityscape holding one pentacle in front of him, two beneath his feet and another on top of his head."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A man sits in front of a cityscape holding one pentacle in front of him, two beneath his feet and another on top of his head."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:FiveOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Five of Pentacles"@en ;
-    tarot:cardNumber 5 ;
+    tarot:hasCardNumber 5 ;
     tarot:hasRank tarot:Five ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_05.jpeg> ;
-    tarot:visualDescription "Two ragged figures walk through the snow outside a brightly lit stained glass window."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "Two ragged figures walk through the snow outside a brightly lit stained glass window."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:SixOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Six of Pentacles"@en ;
-    tarot:cardNumber 6 ;
+    tarot:hasCardNumber 6 ;
     tarot:hasRank tarot:Six ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_06.jpeg> ;
-    tarot:visualDescription "A well-dressed man holding scales distributes money to two other figures kneeling before him."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A well-dressed man holding scales distributes money to two other figures kneeling before him."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:SevenOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Seven of Pentacles"@en ;
-    tarot:cardNumber 7 ;
+    tarot:hasCardNumber 7 ;
     tarot:hasRank tarot:Seven ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_07.jpeg> ;
-    tarot:visualDescription "A man leans on a garden tool, observing seven pentacles that have grown from a bush."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A man leans on a garden tool, observing seven pentacles that have grown from a bush."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:EightOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Eight of Pentacles"@en ;
-    tarot:cardNumber 8 ;
+    tarot:hasCardNumber 8 ;
     tarot:hasRank tarot:Eight ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_08.jpeg> ;
-    tarot:visualDescription "A craftsman sits at a bench, hammering the design of a pentagram into a disc. Another lies at his feet and six more hang beside him."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A craftsman sits at a bench, hammering the design of a pentagram into a disc. Another lies at his feet and six more hang beside him."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:NineOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Nine of Pentacles"@en ;
-    tarot:cardNumber 9 ;
+    tarot:hasCardNumber 9 ;
     tarot:hasRank tarot:Nine ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_09.jpeg> ;
-    tarot:visualDescription "A robed woman stands in a garden, resting her hand on a pile of pentacles. On her other hand sits a bird."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A robed woman stands in a garden, resting her hand on a pile of pentacles. On her other hand sits a bird."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:TenOfPentacles a tarot:PipCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Ten of Pentacles"@en ;
-    tarot:cardNumber 10 ;
+    tarot:hasCardNumber 10 ;
     tarot:hasRank tarot:Ten ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_10.jpeg> ;
-    tarot:visualDescription "An old man watches a couple with a child and dogs through an archway."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "An old man watches a couple with a child and dogs through an archway."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:PageOfPentacles a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Page of Pentacles"@en ;
-    tarot:cardNumber 11 ;
+    tarot:hasCardNumber 11 ;
     tarot:hasRank tarot:Page ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_11.jpeg> ;
-    tarot:visualDescription "A youth stands in a field gazing up at the pentacle he holds in his hands."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A youth stands in a field gazing up at the pentacle he holds in his hands."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:KnightOfPentacles a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Knight of Pentacles"@en ;
-    tarot:cardNumber 12 ;
+    tarot:hasCardNumber 12 ;
     tarot:hasRank tarot:Knight ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_12.jpeg> ;
-    tarot:visualDescription "An armoured knight holds a pentacle. He is seated atop a black horse standing in a rural landscape."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "An armoured knight holds a pentacle. He is seated atop a black horse standing in a rural landscape."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:QueenOfPentacles a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "Queen of Pentacles"@en ;
-    tarot:cardNumber 13 ;
+    tarot:hasCardNumber 13 ;
     tarot:hasRank tarot:Queen ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_13.jpeg> ;
-    tarot:visualDescription "Surrounded by foliage, a queen sits on a throne gazing at the pentacle in her lap. A rabbit appears in the foreground."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "Surrounded by foliage, a queen sits on a throne gazing at the pentacle in her lap. A rabbit appears in the foreground."@en ;
+    corr:correspondsToElement corr:Earth .
 
 rws:KingOfPentacles a tarot:CourtCard ;
     tarot:inDeck rws:Deck ;
     skos:prefLabel "King of Pentacles"@en ;
-    tarot:cardNumber 14 ;
+    tarot:hasCardNumber 14 ;
     tarot:hasRank tarot:King ;
     tarot:hasSuit tarot:Pentacles ;
     foaf:depiction <https://commons.wikimedia.org/wiki/Special:FilePath/RWS1909_-_Pentacles_14.jpeg> ;
-    tarot:visualDescription "A king sits on a throne atop some battlements, surrounded by plants and foliage. He looks at the pentacle in his hand."@en ;
-    corr:hasElement corr:Earth .
+    tarot:hasVisualDescription "A king sits on a throne atop some battlements, surrounded by plants and foliage. He looks at the pentacle in his hand."@en ;
+    corr:correspondsToElement corr:Earth .

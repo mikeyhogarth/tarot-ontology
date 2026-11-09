@@ -13,8 +13,8 @@ Published in 1909 by William Rider & Son (London) and beautifully illustrated by
 
 Of all the datasets included in the project, this is the one that's received the most attention. Every card includes:
 
-- A hand-written `tarot:visualDescription` of each card.
-- One popular, non-authoritative interpretation of each card (via `tarot:popularInterpretation`).
+- A hand-written `tarot:hasVisualDescription` of each card.
+- One popular, non-authoritative interpretation of each card (via `tarot:hasPopularInterpretation`).
 - The **symbology** depicted on every card, painstakingly created over many a cup of tea using the provided [symbol](symbol.md) vocabulary.
 - Several popular **correspondences** for each card, created using the provided [correspondences](correspondence.md) vocabulary and applied as per the Golden Dawn tradition.
 
@@ -29,7 +29,7 @@ Cards following the Marseille tradition and dated to the Jean Dodal edition (Lyo
 - Download as [Turtle](data/deck/marseille.ttl){ aria-label="Download the Marseille deck dataset as Turtle" }
 - Download as [JSON-LD](data/deck/marseille.jsonld){ aria-label="Download the Marseille deck dataset as JSON-LD" }
 
-In addition, this dataset includes `tarot:visualDescription` for the major arcana and court cards, and the **symbology** depicted on them (via the [symbol](symbol.md) vocabulary).
+In addition, this dataset includes `tarot:hasVisualDescription` for the major arcana and court cards, and the **symbology** depicted on them (via the [symbol](symbol.md) vocabulary).
 
 ## Sola Busca { #sola-busca }
 
@@ -40,4 +40,4 @@ Cards of the Sola Busca, made in Italy in the late 15th century (c. 1491). The o
 - Download as [Turtle](data/deck/sola-busca.ttl){ aria-label="Download the Sola Busca deck dataset as Turtle" }
 - Download as [JSON-LD](data/deck/sola-busca.jsonld){ aria-label="Download the Sola Busca deck dataset as JSON-LD" }
 
-In addition, this dataset includes `tarot:visualDescription` for some of the cards.
+In addition, this dataset includes `tarot:hasVisualDescription` for some of the cards.

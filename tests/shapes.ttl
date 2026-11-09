@@ -49,13 +49,13 @@ tsh:CardShape a sh:NodeShape ;
         sh:message "A card must have exactly one tarot:inDeck, a tarot:Deck."@en
     ] ;
     sh:property [
-        sh:path tarot:cardNumber ;
+        sh:path tarot:hasCardNumber ;
         sh:maxCount 1 ;
         sh:datatype xsd:integer ;
         sh:message "A card has at most one integer card number."@en
     ] ;
     sh:property [
-        sh:path corr:hasHebrewLetter ;
+        sh:path corr:correspondsToHebrewLetter ;
         sh:maxCount 1 ;
         sh:message "A card corresponds to at most one Hebrew letter."@en
     ] ;
@@ -99,7 +99,7 @@ tsh:MinorCardShape a sh:NodeShape ;
     rdfs:comment "A minor arcana card has a number, a suit and a rank."@en ;
     sh:targetClass tarot:MinorArcanaCard ;
     sh:property [
-        sh:path tarot:cardNumber ;
+        sh:path tarot:hasCardNumber ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:message "A minor arcana card must have exactly one card number."@en
@@ -199,12 +199,12 @@ tsh:SymbolShape a sh:NodeShape ;
 
 tsh:SymbolUseShape a sh:NodeShape ;
     rdfs:comment "Whatever a card depicts is a tarot:Symbol."@en ;
-    sh:targetObjectsOf tarot:hasSymbol ;
+    sh:targetObjectsOf tarot:depictsSymbol ;
     sh:class tarot:Symbol ;
-    sh:message "The object of tarot:hasSymbol must be a tarot:Symbol."@en .
+    sh:message "The object of tarot:depictsSymbol must be a tarot:Symbol."@en .
 
 tsh:HebrewLetterUseShape a sh:NodeShape ;
     rdfs:comment "Whatever a card corresponds to as a Hebrew letter is a corr:HebrewLetter."@en ;
-    sh:targetObjectsOf corr:hasHebrewLetter ;
+    sh:targetObjectsOf corr:correspondsToHebrewLetter ;
     sh:class corr:HebrewLetter ;
-    sh:message "The object of corr:hasHebrewLetter must be a corr:HebrewLetter."@en .
+    sh:message "The object of corr:correspondsToHebrewLetter must be a corr:HebrewLetter."@en .

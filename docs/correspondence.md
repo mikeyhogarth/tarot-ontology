@@ -7,7 +7,12 @@ This project provides an optional vocabulary for describing various esoteric cor
 - Download as [Turtle](data/correspondence.ttl){ aria-label="Download the correspondences vocabulary as Turtle" }
 - Download as [JSON-LD](data/correspondence.jsonld){ aria-label="Download the correspondences vocabulary as JSON-LD" }
 
-You can apply a correspondence to a card using `tarot:hasCorrespondence`, or more specifically one of its sub-properties defined in this vocabulary: `corr:hasElement`, `corr:hasZodiacSign`, `corr:hasCelestialBody` and `corr:hasHebrewLetter`.
+You can apply a correspondence to a card using `tarot:correspondsTo`, or more specifically one of its sub-properties defined in this vocabulary:
+
+- `corr:correspondsToElement`
+- `corr:correspondsToZodiacSign`
+- `corr:correspondsToCelestialBody`
+- `corr:correspondsToHebrewLetter`
 
 This vocabulary is provided independently of any particular tarot deck and is entirely optional. Decks and datasets are free to make use of it where appropriate, or to disregard it altogether. Datasets may also provide their own correspondences.
 

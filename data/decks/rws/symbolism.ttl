@@ -7,295 +7,295 @@
 # specific concepts in the symbols vocabulary are the only ones that should be stated 
 # for each card - the rest can be inferred through through the SKOS hierarchy.
 #
-rws:TheFool tarot:hasSymbol
+rws:TheFool tarot:depictsSymbol
     symbol:Cliff, symbol:Dog, symbol:Feather, symbol:Knapsack, symbol:LeftProfile,
     symbol:Mountain, symbol:Rose, symbol:Staff, symbol:Sun, symbol:UpwardGaze, symbol:Wreath .
 
-rws:TheMagician tarot:hasSymbol
+rws:TheMagician tarot:depictsSymbol
     symbol:Cup, symbol:FrontalPose, symbol:Infinity, symbol:Lily, symbol:Pentacle, symbol:Rose,
     symbol:Snake, symbol:Sword, symbol:Table, symbol:Wand .
 
-rws:TheHighPriestess tarot:hasSymbol
+rws:TheHighPriestess tarot:depictsSymbol
     symbol:Cross, symbol:FrontalPose, symbol:Moon, symbol:Pillar, symbol:Pomegranate,
     symbol:TwinPillars, symbol:Water .
 
-rws:TheEmpress tarot:hasSymbol
+rws:TheEmpress tarot:depictsSymbol
     symbol:Crown, symbol:Field, symbol:FrontalPose, symbol:Pomegranate, symbol:Sceptre,
     symbol:Shield, symbol:Star, symbol:Throne, symbol:Tree, symbol:Waterfall, symbol:Wheat .
 
-rws:TheEmperor tarot:hasSymbol
+rws:TheEmperor tarot:depictsSymbol
     symbol:Ankh, symbol:Armour, symbol:Crown, symbol:FrontalPose, symbol:Mountain, symbol:Orb,
     symbol:Ram, symbol:River, symbol:Sceptre, symbol:Throne .
 
-rws:TheHierophant tarot:hasSymbol
+rws:TheHierophant tarot:depictsSymbol
     symbol:Cross, symbol:Crown, symbol:FrontalPose, symbol:Keys, symbol:Lily, symbol:Pillar,
     symbol:PresidingFigure, symbol:Rose, symbol:Throne, symbol:TwinPillars .
 
-rws:TheLovers tarot:hasSymbol
+rws:TheLovers tarot:depictsSymbol
     symbol:Angel, symbol:Apple, symbol:Cloud, symbol:FlankingPair, symbol:FrontalPose,
     symbol:Mountain, symbol:Nudity, symbol:PresidingFigure, symbol:Snake, symbol:Sun,
     symbol:Tree .
 
-rws:TheChariot tarot:hasSymbol
+rws:TheChariot tarot:depictsSymbol
     symbol:Armour, symbol:Chariot, symbol:City, symbol:FrontalPose, symbol:Moon,
     symbol:PresidingFigure, symbol:River, symbol:Sphinx, symbol:Star, symbol:Wand,
     symbol:Wreath .
 
-rws:Strength tarot:hasSymbol
+rws:Strength tarot:depictsSymbol
     symbol:DownwardGaze, symbol:Infinity, symbol:LeftProfile, symbol:Lion, symbol:Mountain,
     symbol:Rose .
 
-rws:TheHermit tarot:hasSymbol
+rws:TheHermit tarot:depictsSymbol
     symbol:Cloak, symbol:DownwardGaze, symbol:Lantern, symbol:LeftProfile, symbol:Mountain,
     symbol:Staff, symbol:Star .
 
-rws:WheelOfFortune tarot:hasSymbol
+rws:WheelOfFortune tarot:depictsSymbol
     symbol:Angel, symbol:Book, symbol:Bull, symbol:Cloud, symbol:Eagle, symbol:Hermanubis,
     symbol:Lion, symbol:Sign, symbol:Snake, symbol:Sphinx, symbol:Sword, symbol:Tetramorph,
     symbol:Wheel .
 
-rws:Justice tarot:hasSymbol
+rws:Justice tarot:depictsSymbol
     symbol:Crown, symbol:FrontalPose, symbol:Pillar, symbol:Scales, symbol:Sword,
     symbol:Throne, symbol:TwinPillars .
 
-rws:TheHangedMan tarot:hasSymbol
+rws:TheHangedMan tarot:depictsSymbol
     symbol:FrontalPose, symbol:Halo, symbol:Restraint, symbol:Tree .
 
-rws:Death tarot:hasSymbol
+rws:Death tarot:depictsSymbol
     symbol:Armour, symbol:Banner, symbol:Bishop, symbol:Boat, symbol:Child, symbol:Conflict,
     symbol:Feather, symbol:Horse, symbol:King, symbol:Knight, symbol:RightProfile, symbol:Rose,
     symbol:Skeleton, symbol:Sun, symbol:Tower .
 
-rws:Temperance tarot:hasSymbol
+rws:Temperance tarot:depictsSymbol
     symbol:Angel, symbol:Cup, symbol:Halo, symbol:Iris, symbol:Mountain, symbol:Path, symbol:Pool,
     symbol:Sun .
 
-rws:TheDevil tarot:hasSymbol
+rws:TheDevil tarot:depictsSymbol
     symbol:Chain, symbol:Devil, symbol:FlankingPair, symbol:FrontalPose, symbol:Nudity,
     symbol:Pentagram, symbol:PresidingFigure, symbol:Restraint, symbol:Torch .
 
-rws:TheTower tarot:hasSymbol
+rws:TheTower tarot:depictsSymbol
     symbol:Crown, symbol:Lightning, symbol:Tower .
 
-rws:TheStar tarot:hasSymbol
+rws:TheStar tarot:depictsSymbol
     symbol:DownwardGaze, symbol:Ibis, symbol:LeftProfile, symbol:Nudity, symbol:Pitcher,
     symbol:Pool, symbol:Star, symbol:Tree .
 
-rws:TheMoon tarot:hasSymbol
+rws:TheMoon tarot:depictsSymbol
     symbol:Crayfish, symbol:Dog, symbol:Eclipse, symbol:Moon, symbol:Mountain, symbol:Path,
     symbol:Pool, symbol:PresidingFigure, symbol:Tower, symbol:UpwardGaze, symbol:Wolf .
 
-rws:TheSun tarot:hasSymbol
+rws:TheSun tarot:depictsSymbol
     symbol:Banner, symbol:Child, symbol:Feather, symbol:FrontalPose, symbol:Horse,
     symbol:Nudity, symbol:Sun, symbol:Sunflower, symbol:Wall .
 
-rws:Judgement tarot:hasSymbol
+rws:Judgement tarot:depictsSymbol
     symbol:Angel, symbol:Banner, symbol:Cloud, symbol:Coffin, symbol:Cross, symbol:FacingAway,
     symbol:Mountain, symbol:Nudity, symbol:PresidingFigure, symbol:Sea, symbol:Trumpet,
     symbol:UpwardGaze .
 
-rws:TheWorld tarot:hasSymbol
+rws:TheWorld tarot:depictsSymbol
     symbol:Angel, symbol:Bull, symbol:Cloud, symbol:Eagle, symbol:LeftProfile, symbol:Lion,
     symbol:Nudity, symbol:Tetramorph, symbol:Wand, symbol:Wreath .
 
-rws:AceOfWands tarot:hasSymbol
+rws:AceOfWands tarot:depictsSymbol
     symbol:Castle, symbol:Cloud, symbol:Hand, symbol:Hill, symbol:Mountain, symbol:River,
     symbol:Tree, symbol:Wand .
 
-rws:TwoOfWands tarot:hasSymbol
+rws:TwoOfWands tarot:depictsSymbol
     symbol:Castle, symbol:FacingAway, symbol:Globe, symbol:LeftProfile, symbol:Lily,
     symbol:Rose, symbol:Sea, symbol:Wall, symbol:Wand .
 
-rws:ThreeOfWands tarot:hasSymbol
+rws:ThreeOfWands tarot:depictsSymbol
     symbol:Boat, symbol:Cloak, symbol:FacingAway, symbol:Mountain, symbol:Sea, symbol:Wand .
 
-rws:FourOfWands tarot:hasSymbol
+rws:FourOfWands tarot:depictsSymbol
     symbol:Bridge, symbol:Castle, symbol:Flower, symbol:StageBackdrop, symbol:Wand, symbol:Wreath .
 
-rws:FiveOfWands tarot:hasSymbol
+rws:FiveOfWands tarot:depictsSymbol
     symbol:Conflict, symbol:Wand .
 
-rws:SixOfWands tarot:hasSymbol
+rws:SixOfWands tarot:depictsSymbol
     symbol:Horse, symbol:RightProfile, symbol:Wand, symbol:Wreath .
 
-rws:SevenOfWands tarot:hasSymbol
+rws:SevenOfWands tarot:depictsSymbol
     symbol:Conflict, symbol:Hill, symbol:Wand .
 
-rws:EightOfWands tarot:hasSymbol
+rws:EightOfWands tarot:depictsSymbol
     symbol:Hill, symbol:NoSentientFigures, symbol:River, symbol:Wand .
 
-rws:NineOfWands tarot:hasSymbol
+rws:NineOfWands tarot:depictsSymbol
     symbol:Bandage, symbol:StageBackdrop, symbol:Wand .
 
-rws:TenOfWands tarot:hasSymbol
+rws:TenOfWands tarot:depictsSymbol
     symbol:City, symbol:DownwardGaze, symbol:ObscuredFace, symbol:StageBackdrop, symbol:Wand .
 
-rws:PageOfWands tarot:hasSymbol
+rws:PageOfWands tarot:depictsSymbol
     symbol:Desert, symbol:Feather, symbol:Page, symbol:Pyramid, symbol:RightProfile,
     symbol:Salamander, symbol:UpwardGaze, symbol:Wand .
 
-rws:KnightOfWands tarot:hasSymbol
+rws:KnightOfWands tarot:depictsSymbol
     symbol:Armour, symbol:Desert, symbol:Feather, symbol:Horse, symbol:Knight, symbol:LeftProfile,
     symbol:Pyramid, symbol:Salamander, symbol:Wand .
 
-rws:QueenOfWands tarot:hasSymbol
+rws:QueenOfWands tarot:depictsSymbol
     symbol:Cat, symbol:Crown, symbol:Lion, symbol:Pyramid, symbol:Queen, symbol:RightProfile, symbol:Sunflower,
     symbol:Throne, symbol:Wand .
 
-rws:KingOfWands tarot:hasSymbol
+rws:KingOfWands tarot:depictsSymbol
     symbol:Cloak, symbol:Crown, symbol:King, symbol:LeftProfile, symbol:Lion, symbol:Salamander,
     symbol:Throne, symbol:Wand .
 
-rws:AceOfCups tarot:hasSymbol
+rws:AceOfCups tarot:depictsSymbol
     symbol:Cloud, symbol:Cross, symbol:Cup, symbol:Dove, symbol:Hand, symbol:Lotus, symbol:Pool,
     symbol:Waterfall .
 
-rws:TwoOfCups tarot:hasSymbol
+rws:TwoOfCups tarot:depictsSymbol
     symbol:Caduceus, symbol:Cup, symbol:House, symbol:Lion, symbol:PresidingFigure,
     symbol:StageBackdrop, symbol:Wreath .
 
-rws:ThreeOfCups tarot:hasSymbol
+rws:ThreeOfCups tarot:depictsSymbol
     symbol:Cup, symbol:Grapes, symbol:UpwardGaze, symbol:Wreath .
 
-rws:FourOfCups tarot:hasSymbol
+rws:FourOfCups tarot:depictsSymbol
     symbol:Cloud, symbol:Cup, symbol:DownwardGaze, symbol:Hand, symbol:LeftProfile,
     symbol:Tree .
 
-rws:FiveOfCups tarot:hasSymbol
+rws:FiveOfCups tarot:depictsSymbol
     symbol:Bridge, symbol:Castle, symbol:Cloak, symbol:Cup, symbol:DownwardGaze,
     symbol:FacingAway, symbol:LeftProfile, symbol:River .
 
-rws:SixOfCups tarot:hasSymbol
+rws:SixOfCups tarot:depictsSymbol
     symbol:Castle, symbol:Child, symbol:Cup, symbol:DownwardGaze, symbol:Lily,
     symbol:UpwardGaze .
 
-rws:SevenOfCups tarot:hasSymbol
+rws:SevenOfCups tarot:depictsSymbol
     symbol:Castle, symbol:Cloud, symbol:Cup, symbol:Dragon, symbol:FacingAway, symbol:Jewels,
     symbol:Snake, symbol:UpwardGaze, symbol:Wreath .
 
-rws:EightOfCups tarot:hasSymbol
+rws:EightOfCups tarot:depictsSymbol
     symbol:Cloak, symbol:Cup, symbol:Eclipse, symbol:FacingAway, symbol:Moon, symbol:Mountain,
     symbol:River, symbol:Staff .
 
-rws:NineOfCups tarot:hasSymbol
+rws:NineOfCups tarot:depictsSymbol
     symbol:Cup, symbol:FrontalPose, symbol:Table .
 
-rws:TenOfCups tarot:hasSymbol
+rws:TenOfCups tarot:depictsSymbol
     symbol:Child, symbol:Cup, symbol:FacingAway, symbol:House, symbol:Rainbow, symbol:River,
     symbol:StageBackdrop, symbol:Tree, symbol:UpwardGaze .
 
-rws:PageOfCups tarot:hasSymbol
+rws:PageOfCups tarot:depictsSymbol
     symbol:Cup, symbol:Fish, symbol:LeftProfile, symbol:Page, symbol:Sea, symbol:StageBackdrop .
 
-rws:KnightOfCups tarot:hasSymbol
+rws:KnightOfCups tarot:depictsSymbol
     symbol:Armour, symbol:Cup, symbol:Fish, symbol:Horse, symbol:Knight, symbol:Mountain,
     symbol:RightProfile, symbol:River .
 
-rws:QueenOfCups tarot:hasSymbol
+rws:QueenOfCups tarot:depictsSymbol
     symbol:Cherub, symbol:Crown, symbol:Cup, symbol:DownwardGaze, symbol:Fish, symbol:LeftProfile,
     symbol:Queen,
     symbol:Sea, symbol:Shell, symbol:Throne .
 
-rws:KingOfCups tarot:hasSymbol
+rws:KingOfCups tarot:depictsSymbol
     symbol:Boat, symbol:Cloak, symbol:Crown, symbol:Cup, symbol:Fish, symbol:King,
     symbol:RightProfile, symbol:Sea, symbol:Throne .
 
-rws:AceOfSwords tarot:hasSymbol
+rws:AceOfSwords tarot:depictsSymbol
     symbol:Cloud, symbol:Crown, symbol:Hand, symbol:Mountain, symbol:Sword, symbol:Wreath .
 
-rws:TwoOfSwords tarot:hasSymbol
+rws:TwoOfSwords tarot:depictsSymbol
     symbol:Blindfold, symbol:Eclipse, symbol:FrontalPose, symbol:Moon, symbol:Rock,
     symbol:Sea, symbol:StageBackdrop, symbol:Sword .
 
-rws:ThreeOfSwords tarot:hasSymbol
+rws:ThreeOfSwords tarot:depictsSymbol
     symbol:Cloud, symbol:Heart, symbol:NoSentientFigures, symbol:Rain, symbol:Sword .
 
-rws:FourOfSwords tarot:hasSymbol
+rws:FourOfSwords tarot:depictsSymbol
     symbol:Sword, symbol:Tomb, symbol:Window .
 
-rws:FiveOfSwords tarot:hasSymbol
+rws:FiveOfSwords tarot:depictsSymbol
     symbol:Cloud, symbol:Conflict, symbol:LeftProfile, symbol:Sea, symbol:StageBackdrop,
     symbol:Sword .
 
-rws:SixOfSwords tarot:hasSymbol
+rws:SixOfSwords tarot:depictsSymbol
     symbol:Boat, symbol:Child, symbol:Cloak, symbol:FacingAway, symbol:River, symbol:Sword .
 
-rws:SevenOfSwords tarot:hasSymbol
+rws:SevenOfSwords tarot:depictsSymbol
     symbol:Conflict, symbol:StageBackdrop, symbol:Sword, symbol:Tent .
 
-rws:EightOfSwords tarot:hasSymbol
+rws:EightOfSwords tarot:depictsSymbol
     symbol:Blindfold, symbol:Castle, symbol:Hill, symbol:Pool, symbol:Restraint, symbol:Sword .
 
-rws:NineOfSwords tarot:hasSymbol
+rws:NineOfSwords tarot:depictsSymbol
     symbol:Bed, symbol:ObscuredFace, symbol:RightProfile, symbol:Rose,
     symbol:Sword .
 
-rws:TenOfSwords tarot:hasSymbol
+rws:TenOfSwords tarot:depictsSymbol
     symbol:Cloud, symbol:FacingAway, symbol:Mountain, symbol:Sea, symbol:Sword .
 
-rws:PageOfSwords tarot:hasSymbol
+rws:PageOfSwords tarot:depictsSymbol
     symbol:Bird, symbol:Cloud, symbol:Hill, symbol:LeftProfile, symbol:Page, symbol:Sword,
     symbol:Tree .
 
-rws:KnightOfSwords tarot:hasSymbol
+rws:KnightOfSwords tarot:depictsSymbol
     symbol:Armour, symbol:Cloud, symbol:Horse, symbol:Knight, symbol:LeftProfile, symbol:Sword,
     symbol:Tree .
 
-rws:QueenOfSwords tarot:hasSymbol
+rws:QueenOfSwords tarot:depictsSymbol
     symbol:Bird, symbol:Butterfly, symbol:Cherub, symbol:Cloud, symbol:Crown, symbol:Queen,
     symbol:RightProfile, symbol:Sword, symbol:Throne, symbol:Tree .
 
-rws:KingOfSwords tarot:hasSymbol
+rws:KingOfSwords tarot:depictsSymbol
     symbol:Bird, symbol:Butterfly, symbol:Cloak, symbol:Cloud, symbol:Crown, symbol:FrontalPose,
     symbol:King, symbol:Sword, symbol:Throne, symbol:Tree .
 
-rws:AceOfPentacles tarot:hasSymbol
+rws:AceOfPentacles tarot:depictsSymbol
     symbol:Arch, symbol:Cloud, symbol:Hand, symbol:Lily, symbol:Mountain, symbol:Pentacle .
 
-rws:TwoOfPentacles tarot:hasSymbol
+rws:TwoOfPentacles tarot:depictsSymbol
     symbol:Boat, symbol:DownwardGaze, symbol:Hat, symbol:Infinity, symbol:Pentacle,
     symbol:RightProfile, symbol:Sea, symbol:StageBackdrop .
 
-rws:ThreeOfPentacles tarot:hasSymbol
+rws:ThreeOfPentacles tarot:depictsSymbol
     symbol:Arch, symbol:Bench, symbol:Cathedral, symbol:Pentacle, symbol:UpwardGaze .
 
-rws:FourOfPentacles tarot:hasSymbol
+rws:FourOfPentacles tarot:depictsSymbol
     symbol:City, symbol:Crown, symbol:FrontalPose, symbol:Pentacle, symbol:StageBackdrop .
 
-rws:FiveOfPentacles tarot:hasSymbol
+rws:FiveOfPentacles tarot:depictsSymbol
     symbol:Bell, symbol:Crutch, symbol:Pentacle, symbol:RightProfile, symbol:Snow,
     symbol:Window .
 
-rws:SixOfPentacles tarot:hasSymbol
+rws:SixOfPentacles tarot:depictsSymbol
     symbol:Coin, symbol:DownwardGaze, symbol:LeftProfile, symbol:Pentacle, symbol:PresidingFigure,
     symbol:Scales, symbol:StageBackdrop, symbol:UpwardGaze .
 
-rws:SevenOfPentacles tarot:hasSymbol
+rws:SevenOfPentacles tarot:depictsSymbol
     symbol:DownwardGaze, symbol:LeftProfile, symbol:Pentacle, symbol:Tool, symbol:Vine .
 
-rws:EightOfPentacles tarot:hasSymbol
+rws:EightOfPentacles tarot:depictsSymbol
     symbol:Bench, symbol:City, symbol:DownwardGaze, symbol:Hammer, symbol:Hill, symbol:Pentacle,
     symbol:RightProfile, symbol:StageBackdrop .
 
-rws:NineOfPentacles tarot:hasSymbol
+rws:NineOfPentacles tarot:depictsSymbol
     symbol:Castle, symbol:Falcon, symbol:Glove, symbol:Grapes, symbol:Pentacle, symbol:Snail,
     symbol:Tree, symbol:Vine .
 
-rws:TenOfPentacles tarot:hasSymbol
+rws:TenOfPentacles tarot:depictsSymbol
     symbol:Arch, symbol:Castle, symbol:Child, symbol:Dog, symbol:FacingAway, symbol:Grapes,
     symbol:Pentacle .
 
-rws:PageOfPentacles tarot:hasSymbol
+rws:PageOfPentacles tarot:depictsSymbol
     symbol:Field, symbol:Mountain, symbol:Page, symbol:Pentacle, symbol:RightProfile, symbol:Tree,
     symbol:UpwardGaze .
 
-rws:KnightOfPentacles tarot:hasSymbol
+rws:KnightOfPentacles tarot:depictsSymbol
     symbol:Armour, symbol:Field, symbol:Horse, symbol:Knight, symbol:Pentacle, symbol:RightProfile .
 
-rws:QueenOfPentacles tarot:hasSymbol
+rws:QueenOfPentacles tarot:depictsSymbol
     symbol:Crown, symbol:DownwardGaze, symbol:LeftProfile, symbol:Mountain, symbol:Pentacle,
     symbol:Queen, symbol:Rabbit, symbol:Rose, symbol:Throne, symbol:Tree .
 
-rws:KingOfPentacles tarot:hasSymbol
+rws:KingOfPentacles tarot:depictsSymbol
     symbol:Bull, symbol:Castle, symbol:Crown, symbol:Grapes, symbol:King, symbol:Pentacle,
     symbol:Throne, symbol:Vine .

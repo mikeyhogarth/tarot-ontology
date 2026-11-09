@@ -7,122 +7,122 @@
 # specific concepts in the symbols vocabulary are the only ones that should be stated 
 # for each card - the rest can be inferred through through the SKOS hierarchy.
 #
-mar:LeMat tarot:hasSymbol
+mar:LeMat tarot:depictsSymbol
     symbol:Feather, symbol:Knapsack, symbol:RightProfile, symbol:Staff .
 
-mar:LeBateleur tarot:hasSymbol
+mar:LeBateleur tarot:depictsSymbol
     symbol:Cup, symbol:FrontalPose, symbol:Hat, symbol:Table, symbol:Wand .
 
-mar:LaPapesse tarot:hasSymbol
+mar:LaPapesse tarot:depictsSymbol
     symbol:Book, symbol:Crown, symbol:LeftProfile .
 
-mar:LImperatrice tarot:hasSymbol
+mar:LImperatrice tarot:depictsSymbol
     symbol:Crown, symbol:Eagle, symbol:FrontalPose, symbol:Orb, symbol:Sceptre, symbol:Shield .
 
-mar:LEmpereur tarot:hasSymbol
+mar:LEmpereur tarot:depictsSymbol
     symbol:Crown, symbol:Eagle, symbol:LeftProfile, symbol:Orb, symbol:Sceptre, symbol:Shield .
 
-mar:LePape tarot:hasSymbol
+mar:LePape tarot:depictsSymbol
     symbol:Crown, symbol:Pillar, symbol:PresidingFigure, symbol:Staff, symbol:TwinPillars .
 
-mar:LAmoureux tarot:hasSymbol
+mar:LAmoureux tarot:depictsSymbol
     symbol:Bow, symbol:Cherub, symbol:FlankingPair, symbol:FrontalPose .
 
-mar:LeChariot tarot:hasSymbol
+mar:LeChariot tarot:depictsSymbol
     symbol:Armour, symbol:Chariot, symbol:Crown, symbol:FrontalPose, symbol:Horse,
     symbol:PresidingFigure, symbol:Sceptre, symbol:Shield .
 
-mar:LaJustice tarot:hasSymbol
+mar:LaJustice tarot:depictsSymbol
     symbol:Crown, symbol:FrontalPose, symbol:Scales, symbol:Sword .
 
-mar:LHermite tarot:hasSymbol
+mar:LHermite tarot:depictsSymbol
     symbol:Cloak, symbol:Lantern, symbol:Staff .
 
-mar:LaRoueDeFortune tarot:hasSymbol
+mar:LaRoueDeFortune tarot:depictsSymbol
     symbol:Crown, symbol:PresidingFigure, symbol:Wheel .
 
-mar:LaForce tarot:hasSymbol
+mar:LaForce tarot:depictsSymbol
     symbol:DownwardGaze, symbol:Hat, symbol:Lion .
 
-mar:LePendu tarot:hasSymbol
+mar:LePendu tarot:depictsSymbol
     symbol:FrontalPose, symbol:Restraint, symbol:Tree .
 
-mar:LArcaneSansNom tarot:hasSymbol
+mar:LArcaneSansNom tarot:depictsSymbol
     symbol:RightProfile, symbol:Scythe, symbol:Skeleton .
 
-mar:Temperance tarot:hasSymbol
+mar:Temperance tarot:depictsSymbol
     symbol:Angel, symbol:DownwardGaze, symbol:Pitcher .
 
-mar:LeDiable tarot:hasSymbol
+mar:LeDiable tarot:depictsSymbol
     symbol:Devil, symbol:FlankingPair, symbol:FrontalPose, symbol:Restraint .
 
-mar:LaMaisonDieu tarot:hasSymbol
+mar:LaMaisonDieu tarot:depictsSymbol
     symbol:Crown, symbol:Lightning, symbol:Sun, symbol:Tower .
 
-mar:LEtoile tarot:hasSymbol
+mar:LEtoile tarot:depictsSymbol
     symbol:Bird, symbol:DownwardGaze, symbol:Flower, symbol:Nudity, symbol:Pitcher, symbol:Pool,
     symbol:Star, symbol:Tree .
 
-mar:LaLune tarot:hasSymbol
+mar:LaLune tarot:depictsSymbol
     symbol:Crayfish, symbol:Dog, symbol:Moon, symbol:Pool, symbol:Tower, symbol:Wolf .
 
-mar:LeSoleil tarot:hasSymbol
+mar:LeSoleil tarot:depictsSymbol
     symbol:Child, symbol:Sun, symbol:Wall .
 
-mar:LeJugement tarot:hasSymbol
+mar:LeJugement tarot:depictsSymbol
     symbol:Angel, symbol:Banner, symbol:Cloud, symbol:Cross, symbol:Halo, symbol:Trumpet .
 
-mar:LeMonde tarot:hasSymbol
+mar:LeMonde tarot:depictsSymbol
     symbol:Tetramorph, symbol:Wreath .
 
 #################################################################
 # Court cards
 #################################################################
 
-mar:ValetDeBatons tarot:hasSymbol
+mar:ValetDeBatons tarot:depictsSymbol
     symbol:Page, symbol:RightProfile, symbol:Staff .
 
-mar:CavalierDeBatons tarot:hasSymbol
+mar:CavalierDeBatons tarot:depictsSymbol
     symbol:Hat, symbol:Horse, symbol:Knight, symbol:LeftProfile, symbol:Staff .
 
-mar:ReineDeBatons tarot:hasSymbol
+mar:ReineDeBatons tarot:depictsSymbol
     symbol:Crown, symbol:Queen, symbol:Staff .
 
-mar:RoiDeBatons tarot:hasSymbol
+mar:RoiDeBatons tarot:depictsSymbol
     symbol:Armour, symbol:Crown, symbol:FrontalPose, symbol:Hat, symbol:King, symbol:Staff .
 
-mar:ValetDeCoupes tarot:hasSymbol
+mar:ValetDeCoupes tarot:depictsSymbol
     symbol:Cup, symbol:Page, symbol:Wreath .
 
-mar:CavalierDeCoupes tarot:hasSymbol
+mar:CavalierDeCoupes tarot:depictsSymbol
     symbol:Cup, symbol:Horse, symbol:Knight, symbol:LeftProfile .
 
-mar:ReineDeCoupes tarot:hasSymbol
+mar:ReineDeCoupes tarot:depictsSymbol
     symbol:Crown, symbol:Cup, symbol:Queen .
 
-mar:RoiDeCoupes tarot:hasSymbol
+mar:RoiDeCoupes tarot:depictsSymbol
     symbol:Armour, symbol:Crown, symbol:Cup, symbol:FrontalPose, symbol:Hat, symbol:King .
 
-mar:ValetDeDeniers tarot:hasSymbol
+mar:ValetDeDeniers tarot:depictsSymbol
     symbol:Coin, symbol:FrontalPose, symbol:Hat, symbol:Page .
 
-mar:CavalierDeDeniers tarot:hasSymbol
+mar:CavalierDeDeniers tarot:depictsSymbol
     symbol:Coin, symbol:Horse, symbol:Knight .
 
-mar:ReineDeDeniers tarot:hasSymbol
+mar:ReineDeDeniers tarot:depictsSymbol
     symbol:Coin, symbol:Crown, symbol:LeftProfile, symbol:Queen, symbol:Sceptre .
 
-mar:RoiDeDeniers tarot:hasSymbol
+mar:RoiDeDeniers tarot:depictsSymbol
     symbol:Coin, symbol:Hat, symbol:King .
 
-mar:ValetDeEpees tarot:hasSymbol
+mar:ValetDeEpees tarot:depictsSymbol
     symbol:Hat, symbol:Page, symbol:Sword .
 
-mar:CavalierDeEpees tarot:hasSymbol
+mar:CavalierDeEpees tarot:depictsSymbol
     symbol:Armour, symbol:Horse, symbol:Knight, symbol:Sword .
 
-mar:ReineDeEpees tarot:hasSymbol
+mar:ReineDeEpees tarot:depictsSymbol
     symbol:Crown, symbol:Queen, symbol:Sword .
 
-mar:RoiDeEpees tarot:hasSymbol
+mar:RoiDeEpees tarot:depictsSymbol
     symbol:Crown, symbol:FrontalPose, symbol:Hat, symbol:King, symbol:Sword .

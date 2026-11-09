@@ -15,7 +15,7 @@
 # This file is published separately by design because because only some traditions use 
 # these particular correspondences (notably the Golden Dawn); this data also acts as a 
 # demonstration of how to use the main ontology's extension points (tarot:Correspondence
-# and tarot:hasCorrespondence) to introduce any correspondences you want to.
+# and tarot:correspondsTo) to introduce any correspondences you want to.
 #
 # This data purpousfully makes no claims about the correspondences of any deck, neither 
 # does it attribute any meaning to those correspondences.
@@ -64,33 +64,33 @@ corr:HebrewLetter a owl:Class ;
 # Properties
 #################################################################
 
-corr:hasElement a owl:ObjectProperty ;
+corr:correspondsToElement a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
-    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:Element ;
     rdfs:label "corresponds to element"@en ;
     rdfs:comment "Relates a card to the element it corresponds to."@en .
 
-corr:hasZodiacSign a owl:ObjectProperty ;
+corr:correspondsToZodiacSign a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
-    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:ZodiacSign ;
     rdfs:label "corresponds to zodiac sign"@en ;
     rdfs:comment "Relates a card to a zodiac sign it corresponds to."@en .
 
-corr:hasCelestialBody a owl:ObjectProperty ;
+corr:correspondsToCelestialBody a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
-    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:CelestialBody ;
     rdfs:label "corresponds to celestial body"@en ;
     rdfs:comment "Relates a card to a planet or luminary it corresponds to."@en .
 
-corr:hasHebrewLetter a owl:ObjectProperty ;
+corr:correspondsToHebrewLetter a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
-    rdfs:subPropertyOf tarot:hasCorrespondence ;
+    rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:HebrewLetter ;
     rdfs:label "corresponds to Hebrew letter"@en ;

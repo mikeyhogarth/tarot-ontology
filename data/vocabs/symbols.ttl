@@ -12,7 +12,7 @@
 #
 # This file is published separately to the cards - this is by design and the main intention
 # is that this demonstrates the extension points in the main ontology that can be used for 
-# adding symbology (tarot:Symbol and, in the example decks, tarot:hasSymbol).
+# adding symbology (tarot:Symbol and, in the example decks, tarot:depictsSymbol).
 # 
 # This vocab uses SKOS to represent the hierarchy of things a card can depict, marrying each
 # term to narrower/broader terms or to other adjacent (related) terms.

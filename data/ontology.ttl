@@ -57,7 +57,7 @@ tarot:MajorArcanaCard a owl:Class ;
     rdfs:subClassOf tarot:TarotCard ;
     rdfs:label "Major Arcana"@en ;
     rdfs:comment "A trump card with a named subject, such as The Fool or The Tower."@en ;
-    vann:example "rws:TheFool a tarot:MajorArcanaCard ; tarot:cardNumber 0 ." .
+    vann:example "rws:TheFool a tarot:MajorArcanaCard ; tarot:hasCardNumber 0 ." .
 
 tarot:MinorArcanaCard a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
@@ -128,21 +128,21 @@ tarot:inDeck a owl:ObjectProperty ;
     rdfs:comment "Relates a card to the deck it belongs to."@en ;
     vann:example "rws:TheFool a tarot:MajorArcanaCard ; tarot:inDeck rws:Deck ." .
 
-tarot:hasSymbol a owl:ObjectProperty ;
+tarot:depictsSymbol a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range tarot:Symbol ;
     rdfs:label "depicts symbol"@en ;
     rdfs:comment "Relates a card to a symbol it depicts. Cards state the most specific symbol; broader symbols are found through skos:broader."@en ;
-    vann:example "rws:TheFool tarot:hasSymbol symbol:Dog, symbol:Sun, symbol:Rose ." .
+    vann:example "rws:TheFool tarot:depictsSymbol symbol:Dog, symbol:Sun, symbol:Rose ." .
 
-tarot:hasCorrespondence a owl:ObjectProperty ;
+tarot:correspondsTo a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range tarot:Correspondence ;
     rdfs:label "corresponds to"@en ;
     rdfs:comment "Relates a card to something it corresponds to in an esoteric tradition."@en ;
-    vann:example "rws:TheFool corr:hasElement corr:Air . # corr:hasElement is a sub-property of tarot:hasCorrespondence" .
+    vann:example "rws:TheFool corr:correspondsToElement corr:Air . # corr:correspondsToElement is a sub-property of tarot:correspondsTo" .
 
 tarot:hasRank a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
@@ -164,36 +164,36 @@ tarot:hasSuit a owl:ObjectProperty ;
 # Datatype Properties
 #################################################################
 
-tarot:cardNumber a owl:DatatypeProperty ;
+tarot:hasCardNumber a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range xsd:integer ;
     rdfs:label "has card number"@en ;
     rdfs:comment "The card's number within its sequence, e.g. 0 for The Fool."@en ;
-    vann:example "rws:TheFool tarot:cardNumber 0 ." .
+    vann:example "rws:TheFool tarot:hasCardNumber 0 ." .
 
-tarot:visualDescription a owl:DatatypeProperty ;
+tarot:hasVisualDescription a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subPropertyOf skos:note ;
-    rdfs:label "visual description"@en ;
-    rdfs:comment "A plain account of what a card shows: its figures, objects and setting. The structured counterpart is tarot:hasSymbol."@en ;
-    vann:example "mar:LePape tarot:visualDescription \"The pope, with two acolytes.\"@en ." .
+    rdfs:label "has visual description"@en ;
+    rdfs:comment "A plain account of what a card shows: its figures, objects and setting. The structured counterpart is tarot:depictsSymbol."@en ;
+    vann:example "mar:LePape tarot:hasVisualDescription \"The pope, with two acolytes.\"@en ." .
 
-tarot:interpretation a owl:DatatypeProperty ;
+tarot:hasInterpretation a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subPropertyOf skos:note ;
-    rdfs:label "interpretation"@en ;
+    rdfs:label "has interpretation"@en ;
     rdfs:comment "An interpretation of a card's meaning."@en ;
-    vann:usageNote "No interpretation is the true meaning of a card, and much of the interpretation a reader may draw comes from more than just the card in isolation. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:popularInterpretation if defining a commonly used interpretation."@en ;
-    vann:example "rws:TheFool tarot:interpretation \"A new beginning.\"@en ." .
+    vann:usageNote "No interpretation is the true meaning of a card, and much of the interpretation a reader may draw comes from more than just the card in isolation. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:hasPopularInterpretation if defining a commonly used interpretation."@en ;
+    vann:example "rws:TheFool tarot:hasInterpretation \"A new beginning.\"@en ." .
 
-tarot:popularInterpretation a owl:DatatypeProperty ;
+tarot:hasPopularInterpretation a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
-    rdfs:subPropertyOf tarot:interpretation ;
-    rdfs:label "popular interpretation"@en ;
+    rdfs:subPropertyOf tarot:hasInterpretation ;
+    rdfs:label "has popular interpretation"@en ;
     rdfs:comment "A popular interpretation of a card's meaning: one that is widely used in a tradition of practice."@en ;
     vann:usageNote "Present this as one popular reading, never as the true meaning of the card - there is no true meaning, this is in the eye of the beholder alone."@en ;
-    vann:example "rws:TheFool tarot:popularInterpretation \"Innocence, spontaneity and a leap of faith.\"@en ." .
+    vann:example "rws:TheFool tarot:hasPopularInterpretation \"Innocence, spontaneity and a leap of faith.\"@en ." .
 
 #################################################################
 # Standard Tarot Individuals

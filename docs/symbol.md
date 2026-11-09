@@ -9,7 +9,7 @@ The vocabulary is non-exhaustive and has been developed primarily with reference
 - Download as [Turtle](data/symbol.ttl){ aria-label="Download the symbology vocabulary as Turtle" }
 - Download as [JSON-LD](data/symbol.jsonld){ aria-label="Download the symbology vocabulary as JSON-LD" }
 
-You can indicate that a card depicts particular symbology using the `tarot:hasSymbol` term.
+You can indicate that a card depicts particular symbology using the `tarot:depictsSymbol` term.
 
 This vocabulary is provided independently of any particular tarot deck and is entirely optional. Decks and datasets are free to use this vocabulary where appropriate, extend it with additional concepts, or disregard it completely.
 
