@@ -14,7 +14,7 @@ You can apply a correspondence to a card using `tarot:correspondsTo`, or more sp
 - `corr:correspondsToCelestialBody`
 - `corr:correspondsToHebrewLetter`
 
-This vocabulary is provided independently of any particular tarot deck and is entirely optional. Decks and datasets are free to make use of it where appropriate, or to disregard it altogether. Datasets may also provide their own correspondences.
+This vocabulary is provided independently of any particular tarot deck and is entirely optional. Decks and datasets are free to make use of it where appropriate, or to disregard it altogether. Datasets may also provide their own correspondences: see [Adding your own correspondences](./custom-correspondences.md).
 
 The example [Rider-Waite-Smith](./decks.md) deck included in this project makes use of this correspondences vocabulary. This is particularly relevant given Arthur Edward Waite's historical association with the Hermetic Order of the Golden Dawn, from which many of the correspondences represented here originate.
 

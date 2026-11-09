@@ -169,7 +169,7 @@ tarot:hasCardNumber a owl:DatatypeProperty ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range xsd:integer ;
     rdfs:label "has card number"@en ;
-    rdfs:comment "The card's number within its sequence, e.g. 0 for The Fool."@en ;
+    rdfs:comment "The card's number within its sequence: the trump number for major arcana (e.g. 0 for The Fool), or the position within the suit for minor arcana (Ace = 1 to King = 14)."@en ;
     vann:example "rws:TheFool tarot:hasCardNumber 0 ." .
 
 tarot:hasVisualDescription a owl:DatatypeProperty ;
