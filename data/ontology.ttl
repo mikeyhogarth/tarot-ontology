@@ -44,19 +44,19 @@
 tarot:Deck a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:label "Deck"@en ;
-    rdfs:comment "A published tarot deck (a particular set of cards, such as the Rider-Waite-Smith). Its dcterms:language is the language its card names are printed in, and its dcterms:creator, dcterms:publisher and dcterms:created describe the deck itself (not the RDF data about it)."@en ;
+    rdfs:comment "A published tarot deck (a particular set of cards, such as the Rider-Waite-Smith)."@en ;
     vann:example "rws:Deck a tarot:Deck ; dcterms:language \"en\" ." .
 
 tarot:TarotCard a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:label "Tarot Card"@en ;
-    rdfs:comment "A single card in a tarot deck. Cards are named with skos:prefLabel (one per language; in the deck's own language, the name printed on the card) and skos:altLabel."@en .
+    rdfs:comment "A single card in a tarot deck."@en .
 
 tarot:MajorArcanaCard a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subClassOf tarot:TarotCard ;
     rdfs:label "Major Arcana"@en ;
-    rdfs:comment "A trump card with a named subject, such as The Fool or The Tower."@en ;
+    rdfs:comment "A trump card with a name, such as The Fool or The Tower."@en ;
     vann:example "rws:TheFool a tarot:MajorArcanaCard ; tarot:hasCardNumber 0 ." .
 
 tarot:MinorArcanaCard a owl:Class ;
@@ -83,7 +83,7 @@ tarot:Symbol a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Symbol"@en ;
-    rdfs:comment "Something a card depicts, such as an animal, object or pose. Names what is drawn, not what it means. Symbols may come from any SKOS concept scheme; an optional shared vocabulary is published separately."@en ;
+    rdfs:comment "Something a card depicts, such as an animal, object or pose."@en ;
     rdfs:seeAlso <https://w3id.org/tarot/symbol> ;
     vann:example "symbol:Dove a tarot:Symbol, skos:Concept ." .
 
@@ -96,7 +96,7 @@ tarot:Correspondence a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subClassOf tarot:CardAttribute ;
     rdfs:label "Correspondence"@en ;
-    rdfs:comment "A more specific form of attribute representing something a tarot card corresponds to in an esoteric tradition. An extension point: the optional correspondences vocabulary defines elements, zodiac signs, celestial bodies and Hebrew letters as subclasses."@en ;
+    rdfs:comment "A more specific form of attribute representing something a tarot card corresponds to in an esoteric tradition."@en ;
     rdfs:seeAlso <https://w3id.org/tarot/correspondence> ;
     vann:example "corr:Air a corr:Element . # corr:Element is a subclass of tarot:Correspondence" .
 
@@ -104,7 +104,7 @@ tarot:Rank a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subClassOf tarot:CardAttribute ;
     rdfs:label "Rank"@en ;
-    rdfs:comment "A generic rank of a minor arcana card within its suit, named after the most common usage: Ace to Ten, then Page, Knight, Queen and King."@en ;
+    rdfs:comment "A generic rank of a minor arcana card within its suit."@en ;
     vann:usageNote "Decks that name ranks differently (e.g. Princess, Prince) should link to the closest generic rank and record their own name on the card. The ontology takes no position on how a renamed court card maps."@en ;
     vann:example "rws:AceOfWands tarot:hasRank tarot:Ace ." .
 
@@ -112,7 +112,7 @@ tarot:Suit a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subClassOf tarot:CardAttribute ;
     rdfs:label "Suit"@en ;
-    rdfs:comment "One of the four generic suits of the minor arcana: Wands, Cups, Swords and Pentacles. Common alternative names (e.g. Batons, Coins) are recorded as labels on the suit."@en ;
+    rdfs:comment "One of the four generic suits of the minor arcana: Wands, Cups, Swords and Pentacles."@en ;
     vann:usageNote "Decks that name suits differently should link to the closest generic suit and record their own name on the card."@en ;
     vann:example "rws:AceOfWands tarot:hasSuit tarot:Wands ." .
 
@@ -133,7 +133,7 @@ tarot:depictsSymbol a owl:ObjectProperty ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range tarot:Symbol ;
     rdfs:label "depicts symbol"@en ;
-    rdfs:comment "Relates a card to a symbol it depicts. Cards state the most specific symbol; broader symbols are found through skos:broader."@en ;
+    rdfs:comment "Relates a card to a symbol it depicts."@en ;
     vann:example "rws:TheFool tarot:depictsSymbol symbol:Dog, symbol:Sun, symbol:Rose ." .
 
 tarot:correspondsTo a owl:ObjectProperty ;
@@ -169,25 +169,31 @@ tarot:hasCardNumber a owl:DatatypeProperty ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range xsd:integer ;
     rdfs:label "has card number"@en ;
-    rdfs:comment "The card's number within its sequence: the trump number for major arcana (e.g. 0 for The Fool), or the position within the suit for minor arcana (Ace = 1 to King = 14)."@en ;
+    rdfs:comment "The card's number within its sequence: this is the trump number for major arcana (e.g. 0 for The Fool) or the position within the suit for minor arcana (Ace = 1 to King = 14)."@en ;
     vann:example "rws:TheFool tarot:hasCardNumber 0 ." .
 
 tarot:hasVisualDescription a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
-    rdfs:subPropertyOf skos:note ;
+    rdfs:domain tarot:TarotCard ;
+    rdfs:range rdf:langString ;
     rdfs:label "has visual description"@en ;
-    rdfs:comment "A plain account of what a card shows: its figures, objects and setting. The structured counterpart is tarot:depictsSymbol."@en ;
+    rdfs:comment "A plain description of what a card shows."@en ;
     vann:example "mar:LePape tarot:hasVisualDescription \"The pope, with two acolytes.\"@en ." .
 
-tarot:hasInterpretation a owl:DatatypeProperty ;
+#################################################################
+# Annotation Properties
+#################################################################
+
+tarot:hasInterpretation a owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subPropertyOf skos:note ;
     rdfs:label "has interpretation"@en ;
-    rdfs:comment "An interpretation of a card's meaning."@en ;
-    vann:usageNote "No interpretation is the true meaning of a card, and much of the interpretation a reader may draw comes from more than just the card in isolation. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:hasPopularInterpretation if defining a commonly used interpretation."@en ;
-    vann:example "rws:TheFool tarot:hasInterpretation \"A new beginning.\"@en ." .
+    rdfs:comment "An interpretation of a card's meaning. The value may be anything."@en ;
+    vann:usageNote "No interpretation is the true meaning of a card, and much of the interpretation a reader may draw comes from more than just the card in isolation. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:hasPopularInterpretation if defining a commonly used interpretation. The ontology deliberately does not prescribe what form an interpretation takes."@en ;
+    vann:example "rws:TheFool tarot:hasInterpretation \"A new beginning.\"@en .",
+        "rws:TheFool tarot:hasInterpretation ex:BeginningOfJourney ." .
 
-tarot:hasPopularInterpretation a owl:DatatypeProperty ;
+tarot:hasPopularInterpretation a owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://w3id.org/tarot/ontology> ;
     rdfs:subPropertyOf tarot:hasInterpretation ;
     rdfs:label "has popular interpretation"@en ;

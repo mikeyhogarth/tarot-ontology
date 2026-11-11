@@ -1,17 +1,10 @@
 # Design Philosophy
 
-## No single interpretation
+This page lists some of the design philosophy behind the ontology - please bear these in mind when considering contributions or making suggestions for changes.
 
-All data within this project, including the ontology itself, is deliberately designed to avoid prescribing or asserting any definitive interpretation of any particular tarot card.
+## No authoritative interpretations
 
-Interpretation is an inherently contextual and deeply personal aspect of tarot reading. We do not believe it is the role of this project, or of any single authority, to dictate how others should interpret the cards or their meanings, and we are confident that this is the prevailing view within the tarot community. Interpretations may vary considerably, and this diversity is something we seek to respect.
-
-That said, we have provided a small number of interpretation-related properties for those who wish to express and document interpretations:
-
-- `tarot:hasInterpretation` is a property that can be used to record an individual's or group's own interpretation of a card. We strongly recommend that interpretations are accompanied by provenance information identifying whose interpretation is being represented.
-- `tarot:hasPopularInterpretation` can be used to describe an interpretation that is widely recognised or accepted within a particular tradition or school of tarot. Our example [Rider-Waite-Smith dataset](./decks.md), for instance, includes a popular interpretation for each card.
-
-Ultimately, the human element is what makes tarot special. This project makes no attempt to establish a definitive or universally authoritative interpretation of any card, nor does it seek to imply that such an interpretation exists. Its purpose is to provide a framework through which interpretations can be represented, attributed, and explored, while leaving the act of interpretation where it belongs: with the individual reader.
+All data within this project, including the ontology itself, is deliberately designed to avoid prescribing or asserting any definitive interpretation of any particular tarot card. We do provide extension points for people to do that though - see [Interpretations](./interpretation.md) for more info.
 
 ## Vocabulary reuse
 

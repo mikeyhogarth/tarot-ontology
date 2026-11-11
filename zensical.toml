@@ -17,8 +17,9 @@ nav = [
   { "Home" = "index.md" },
   { "Ontology" = "ontology.md" },
   { "Example decks" = "decks.md" },
-  { "Vocabularies" = [
+  { "Describing cards" = [
     { "Symbology" = "symbol.md" },
+    { "Interpretations" = "interpretation.md" },
     { "Correspondences" = "correspondence.md" },
     { "Adding your own correspondences" = "custom-correspondences.md" },
   ] },

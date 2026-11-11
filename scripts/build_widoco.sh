@@ -12,7 +12,7 @@ docker run --rm --platform linux/amd64 \
   -v "$ROOT:/usr/local/widoco/repo" \
   "$WIDOCO_IMAGE" \
   -ontFile repo/data/ontology.ttl -outFolder repo/docs/reference \
-  -uniteSections -lang en -rewriteAll \
+  -uniteSections -lang en -rewriteAll\
   -confFile repo/widoco/config.properties -getOntologyMetadata \
   -noPlaceHolderText -doNotDisplaySerializations
 
