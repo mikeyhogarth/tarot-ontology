@@ -1,5 +1,5 @@
-@prefix tarot:   <https://w3id.org/tarot/ontology#> .
-@prefix corr:    <https://w3id.org/tarot/correspondence#> .
+@prefix tarot:   <https://w3id.org/taro/ontology#> .
+@prefix corr:    <https://w3id.org/taro/correspondence#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
@@ -20,16 +20,16 @@
 # This data purpousfully makes no claims about the correspondences of any deck, neither 
 # does it attribute any meaning to those correspondences.
 #
-<https://w3id.org/tarot/correspondence> a owl:Ontology ;
+<https://w3id.org/taro/correspondence> a owl:Ontology ;
     rdfs:label "Tarot Correspondences"@en ;
     dcterms:title "Tarot Correspondences"@en ;
     dcterms:description "A shared, optional vocabulary of esoteric correspondences used by some tarot traditions: elements, zodiac signs, celestial bodies and Hebrew letters. Which card corresponds to which is stated by each deck."@en ;
     dcterms:creator <https://github.com/mikeyhogarth> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:created "2026-11-01"^^xsd:date ;
-    dcterms:requires <https://w3id.org/tarot/ontology> ;
+    dcterms:requires <https://w3id.org/taro/ontology> ;
     vann:preferredNamespacePrefix "corr" ;
-    vann:preferredNamespaceUri "https://w3id.org/tarot/correspondence#" .
+    vann:preferredNamespaceUri "https://w3id.org/taro/correspondence#" .
 
 
 #################################################################
@@ -37,25 +37,25 @@
 #################################################################
 
 corr:Element a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subClassOf tarot:Correspondence ;
     rdfs:label "Element"@en ;
     rdfs:comment "One of the four classical elements: Fire, Water, Air or Earth."@en .
 
 corr:ZodiacSign a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subClassOf tarot:Correspondence ;
     rdfs:label "Zodiac Sign"@en ;
     rdfs:comment "One of the twelve signs of the zodiac."@en .
 
 corr:CelestialBody a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subClassOf tarot:Correspondence ;
     rdfs:label "Celestial Body"@en ;
     rdfs:comment "A planet or luminary, such as the Sun, the Moon or Venus."@en .
 
 corr:HebrewLetter a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subClassOf tarot:Correspondence ;
     rdfs:label "Hebrew Letter"@en ;
     rdfs:comment "One of the twenty-two letters of the Hebrew alphabet."@en .
@@ -65,7 +65,7 @@ corr:HebrewLetter a owl:Class ;
 #################################################################
 
 corr:correspondsToElement a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:Element ;
@@ -73,7 +73,7 @@ corr:correspondsToElement a owl:ObjectProperty ;
     rdfs:comment "Relates a card to the element it corresponds to."@en .
 
 corr:correspondsToZodiacSign a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:ZodiacSign ;
@@ -81,7 +81,7 @@ corr:correspondsToZodiacSign a owl:ObjectProperty ;
     rdfs:comment "Relates a card to a zodiac sign it corresponds to."@en .
 
 corr:correspondsToCelestialBody a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:CelestialBody ;
@@ -89,7 +89,7 @@ corr:correspondsToCelestialBody a owl:ObjectProperty ;
     rdfs:comment "Relates a card to a planet or luminary it corresponds to."@en .
 
 corr:correspondsToHebrewLetter a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://w3id.org/tarot/correspondence> ;
+    rdfs:isDefinedBy <https://w3id.org/taro/correspondence> ;
     rdfs:subPropertyOf tarot:correspondsTo ;
     rdfs:domain tarot:TarotCard ;
     rdfs:range corr:HebrewLetter ;

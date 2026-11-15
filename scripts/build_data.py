@@ -22,12 +22,12 @@ DECK_DOCUMENTS = [f"deck/{deck}" for deck in DECK_NAMES]
 # jsonld one does not, so specifying them here leads to a better jsonld @context. This may change
 # in the future if we ever decide to properly support jsonld contexts.
 PREFIXES: dict[str, str] = {
-    "tarot": "https://w3id.org/tarot/ontology#",
-    "corr": "https://w3id.org/tarot/correspondence#",
-    "symbol": "https://w3id.org/tarot/symbol#",
-    "rws": "https://w3id.org/tarot/deck/rws#",
-    "mar": "https://w3id.org/tarot/deck/marseille#",
-    "sb": "https://w3id.org/tarot/deck/sola-busca#",
+    "tarot": "https://w3id.org/taro/ontology#",
+    "corr": "https://w3id.org/taro/correspondence#",
+    "symbol": "https://w3id.org/taro/symbol#",
+    "rws": "https://w3id.org/taro/deck/rws#",
+    "mar": "https://w3id.org/taro/deck/marseille#",
+    "sb": "https://w3id.org/taro/deck/sola-busca#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",

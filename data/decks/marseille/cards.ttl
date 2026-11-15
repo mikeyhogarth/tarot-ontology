@@ -1,5 +1,5 @@
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix mar:   <https://w3id.org/tarot/deck/marseille#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix mar:   <https://w3id.org/taro/deck/marseille#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -10,7 +10,7 @@
 # The Tarot of Marseilles. Names follow the Marseilles tradition, and images are the Jean Dodal deck
 # (Lyon, c. 1701-1715; public domain).
 
-<https://w3id.org/tarot/deck/marseille> a void:Dataset ;
+<https://w3id.org/taro/deck/marseille> a void:Dataset ;
     dcterms:title "Tarot de Marseille deck data"@en ;
     dcterms:description "The cards of the Tarot de Marseille deck."@en ;
     dcterms:creator <https://github.com/mikeyhogarth> ;

@@ -1,6 +1,6 @@
 @prefix tsh:     <urn:tarot:test-shapes#> .
-@prefix tarot:   <https://w3id.org/tarot/ontology#> .
-@prefix corr:   <https://w3id.org/tarot/correspondence#> .
+@prefix tarot:   <https://w3id.org/taro/ontology#> .
+@prefix corr:   <https://w3id.org/taro/correspondence#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
@@ -19,7 +19,7 @@
 # only - they are not published.
 
 tsh: a owl:Ontology ;
-    sh:declare [ sh:prefix "tarot" ; sh:namespace "https://w3id.org/tarot/ontology#"^^xsd:anyURI ] ,
+    sh:declare [ sh:prefix "tarot" ; sh:namespace "https://w3id.org/taro/ontology#"^^xsd:anyURI ] ,
                [ sh:prefix "skos" ; sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ] ,
                [ sh:prefix "dcterms" ; sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ] ,
                [ sh:prefix "xsd" ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] .

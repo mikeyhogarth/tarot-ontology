@@ -4,7 +4,7 @@ Every published file in one place. Each is available as [Turtle](https://www.w3.
 
 ## Ontology and vocabularies
 
-- [Ontology](ontology.md) - download as [Turtle](data/ontology.ttl){ aria-label="Download the Tarot ontology as Turtle" } or [JSON-LD](data/ontology.jsonld){ aria-label="Download the Tarot ontology as JSON-LD" }
+- [Ontology](ontology.md) - download as [Turtle](data/ontology.ttl){ aria-label="Download the TAR-O ontology as Turtle" } or [JSON-LD](data/ontology.jsonld){ aria-label="Download the TAR-O ontology as JSON-LD" }
 - [Correspondences](correspondence.md) - download as [Turtle](data/correspondence.ttl){ aria-label="Download the correspondences vocabulary as Turtle" } or [JSON-LD](data/correspondence.jsonld){ aria-label="Download the correspondences vocabulary as JSON-LD" }
 - [Symbology](symbol.md) - download as [Turtle](data/symbol.ttl){ aria-label="Download the symbology vocabulary as Turtle" } or [JSON-LD](data/symbol.jsonld){ aria-label="Download the symbology vocabulary as JSON-LD" }
 

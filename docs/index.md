@@ -1,4 +1,4 @@
-# Tarot Ontology
+# TAR-O: The Tarot Ontology
 
 !!! warning "Work in progress"
 

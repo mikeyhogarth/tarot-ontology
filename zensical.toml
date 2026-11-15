@@ -1,6 +1,6 @@
 [project]
 site_url = "https://mikeyhogarth.github.io/tarot-ontology/"
-site_name = "Tarot Ontology"
+site_name = "TAR-O: The Tarot Ontology"
 site_description = "An RDF ontology for tarot, plus data for the Rider-Waite-Smith, Marseille and Sola Busca decks, published as Linked Open Data."
 site_author = "Mikey Hogarth"
 

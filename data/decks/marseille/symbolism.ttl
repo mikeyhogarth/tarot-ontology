@@ -1,6 +1,6 @@
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix mar:   <https://w3id.org/tarot/deck/marseille#> .
-@prefix symbol: <https://w3id.org/tarot/symbol#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix mar:   <https://w3id.org/taro/deck/marseille#> .
+@prefix symbol: <https://w3id.org/taro/symbol#> .
 
 # 
 # What the picture on each Marseille card depicts. For this dataset, the most 

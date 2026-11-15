@@ -19,8 +19,8 @@ Here are three ways of giving `rws:TheFool` the interpretation of "a new beginni
 
 ```turtle
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix rws:   <https://w3id.org/tarot/deck/rws#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix rws:   <https://w3id.org/taro/deck/rws#> .
 
 # The namespace used here (`example.org`) is a placeholder: if you do this yourself,
 # you should publish your own concepts under a namespace you control.
@@ -48,8 +48,8 @@ Because no interpretation represents the definitive meaning of a card, we strong
 A simple way to record provenance is to put the interpretation in a named graph and describe that graph. This can be written in [TriG](https://www.w3.org/TR/trig/) like so:
 
 ```trig
-@prefix tarot:   <https://w3id.org/tarot/ontology#> .
-@prefix rws:     <https://w3id.org/tarot/deck/rws#> .
+@prefix tarot:   <https://w3id.org/taro/ontology#> .
+@prefix rws:     <https://w3id.org/taro/deck/rws#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ex:      <https://example.org/> .
 
@@ -70,8 +70,8 @@ Anyone consuming the data can then decide whose interpretations they want to use
 [RDF 1.2](https://www.w3.org/TR/rdf12-concepts/) lets you attach provenance to an individual statement via [Triple Annotations](https://www.w3.org/TR/rdf12-concepts/#dfn-triple-annotation). In Turtle 1.2, anything inside [`{| ... |}`](https://www.w3.org/TR/rdf12-turtle/#annotation-syntax) adds additional details to statements:
 
 ```turtle
-@prefix tarot:   <https://w3id.org/tarot/ontology#> .
-@prefix rws:     <https://w3id.org/tarot/deck/rws#> .
+@prefix tarot:   <https://w3id.org/taro/ontology#> .
+@prefix rws:     <https://w3id.org/taro/deck/rws#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex:      <https://example.org/> .

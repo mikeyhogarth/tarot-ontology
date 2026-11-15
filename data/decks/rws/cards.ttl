@@ -1,6 +1,6 @@
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix rws:   <https://w3id.org/tarot/deck/rws#> .
-@prefix corr:  <https://w3id.org/tarot/correspondence#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix rws:   <https://w3id.org/taro/deck/rws#> .
+@prefix corr:  <https://w3id.org/taro/correspondence#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -12,7 +12,7 @@
 # Pamela Colman Smith under the direction of Arthur Edward Waite; images are that edition (public domain,
 # from Wikimedia Commons). Correspondences follow the Golden Dawn tradition.
 
-<https://w3id.org/tarot/deck/rws> a void:Dataset ;
+<https://w3id.org/taro/deck/rws> a void:Dataset ;
     dcterms:title "Rider-Waite-Smith deck data"@en ;
     dcterms:description "The cards of the Rider-Waite-Smith tarot deck."@en ;
     dcterms:creator <https://github.com/mikeyhogarth> ;

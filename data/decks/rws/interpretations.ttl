@@ -1,5 +1,5 @@
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix rws:   <https://w3id.org/tarot/deck/rws#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix rws:   <https://w3id.org/taro/deck/rws#> .
 
 # 
 # Popular interpretations of the Rider-Waite-Smith cards: one common reading of each card. 

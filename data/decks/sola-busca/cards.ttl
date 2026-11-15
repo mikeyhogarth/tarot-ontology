@@ -1,5 +1,5 @@
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix sb:    <https://w3id.org/tarot/deck/sola-busca#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix sb:    <https://w3id.org/taro/deck/sola-busca#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -10,7 +10,7 @@
 # The Sola Busca tarot (Italy, late 15th century, c. 1491). Names follow the inscriptions on the cards, and
 # images are from Wikimedia Commons (public domain).
 
-<https://w3id.org/tarot/deck/sola-busca> a void:Dataset ;
+<https://w3id.org/taro/deck/sola-busca> a void:Dataset ;
     dcterms:title "Sola Busca deck data"@en ;
     dcterms:description "The cards of the Sola Busca deck."@en ;
     dcterms:creator <https://github.com/mikeyhogarth> ;

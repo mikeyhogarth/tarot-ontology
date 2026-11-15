@@ -16,8 +16,8 @@ Numerologists are interested in how numbers relate to one another: for example, 
 The following snippet demonstrates how one might create a numerology correspondence.
 
 ```turtle
-@prefix tarot: <https://w3id.org/tarot/ontology#> .
-@prefix rws:   <https://w3id.org/tarot/deck/rws#> .
+@prefix tarot: <https://w3id.org/taro/ontology#> .
+@prefix rws:   <https://w3id.org/taro/deck/rws#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .

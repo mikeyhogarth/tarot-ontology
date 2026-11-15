@@ -2,7 +2,7 @@
 
 This project provides an optional vocabulary for describing various esoteric correspondences, including elements, zodiac signs, celestial bodies, and Hebrew letters. The correspondences included in this vocabulary are drawn primarily from systems popularised by the Hermetic Order of the Golden Dawn.
 
-`https://w3id.org/tarot/correspondence`
+`https://w3id.org/taro/correspondence`
 
 - Download as [Turtle](data/correspondence.ttl){ aria-label="Download the correspondences vocabulary as Turtle" }
 - Download as [JSON-LD](data/correspondence.jsonld){ aria-label="Download the correspondences vocabulary as JSON-LD" }

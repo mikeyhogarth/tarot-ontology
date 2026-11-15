@@ -1,4 +1,4 @@
-# Tarot Ontology
+# TAR-O: The Tarot Ontology
 
 An RDF ontology for describing tarot cards, as well as some supporting vocabularies and example datasets.
 

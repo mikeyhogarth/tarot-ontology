@@ -4,7 +4,7 @@ This project provides an optional `SKOS` vocabulary for describing the visual el
 
 The vocabulary is non-exhaustive and has been developed primarily with reference to the Rider-Waite-Smith tarot deck.
 
-`https://w3id.org/tarot/symbol`
+`https://w3id.org/taro/symbol`
 
 - Download as [Turtle](data/symbol.ttl){ aria-label="Download the symbology vocabulary as Turtle" }
 - Download as [JSON-LD](data/symbol.jsonld){ aria-label="Download the symbology vocabulary as JSON-LD" }

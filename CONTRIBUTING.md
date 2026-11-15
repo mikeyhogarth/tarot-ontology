@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to the Tarot Ontology!
+Thank you for your interest in contributing to TAR-O!
 
 Contributions of all kinds are welcome: fixing mistakes, improving the documentation, adding symbols or correspondences, or contributing whole new decks.
 
