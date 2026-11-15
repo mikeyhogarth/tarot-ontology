@@ -43,7 +43,7 @@ rws:TheFool tarot:hasInterpretation [
 
 Because no interpretation represents the definitive meaning of a card, we strongly recommend recording whose interpretation it is alongside the interpretation itself wihtin your data.
 
-### With TriG
+### With Named Graphs
 
 A simple way to record provenance is to put the interpretation in a named graph and describe that graph. This can be written in [TriG](https://www.w3.org/TR/trig/) like so:
 
