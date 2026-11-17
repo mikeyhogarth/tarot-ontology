@@ -29,11 +29,13 @@
         <https://w3id.org/taro/deck/sola-busca> ;
     schema:codeRepository <https://github.com/mikeyhogarth/tarot-ontology> ;
     foaf:logo <https://mikeyhogarth.github.io/tarot-ontology/images/favicon.svg> ;
-    bibo:status <http://purl.org/ontology/bibo/status/draft> ;
+    owl:versionInfo "1.0.0" ;
+    bibo:status <http://purl.org/ontology/bibo/status/published> ;
     dcterms:bibliographicCitation "Hogarth, M. (2026). TAR-O: The Tarot Ontology. https://w3id.org/taro/ontology"@en ;
     dcterms:creator "Mikey Hogarth" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:created "2026-10-30"^^xsd:date ;
+    dcterms:issued "2026-11-17"^^xsd:date ;
     voaf:extends <http://www.w3.org/2004/02/skos/core> ;
     vann:preferredNamespacePrefix "tarot" ;
     vann:preferredNamespaceUri "https://w3id.org/taro/ontology#" .

@@ -2,13 +2,15 @@
 
 An RDF ontology for describing tarot cards, as well as some supporting vocabularies and example datasets.
 
+Permanent identifier: <https://w3id.org/taro/ontology>
+
 - [Documentation](https://mikeyhogarth.github.io/tarot-ontology/)
-- [Ontology Specification](https://mikeyhogarth.github.io/tarot-ontology/reference/index-en.html)
+- [Ontology Specification](https://w3id.org/taro/ontology)
 - [Symbolism Vocabulary](https://mikeyhogarth.github.io/tarot-ontology/symbol/)
 - [Correspondences Vocabulary](https://mikeyhogarth.github.io/tarot-ontology/correspondence/)
 - [Example Decks](https://mikeyhogarth.github.io/tarot-ontology/decks/)
 
-Note that the Rider-Waite-Smith deck is the one that's received the most attention. Everythign is available in one place via our [downloads](https://mikeyhogarth.github.io/tarot-ontology/downloads/) page.
+Note that the Rider-Waite-Smith deck is the one that's received the most attention. Everything is available in one place via our [downloads](https://mikeyhogarth.github.io/tarot-ontology/downloads/) page.
 
 ## Development
 

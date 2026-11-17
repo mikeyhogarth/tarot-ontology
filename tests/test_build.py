@@ -3,6 +3,8 @@ Tests the build_data functionality
 """
 
 import json
+import re
+
 import pytest
 
 from scripts.build_data import (
@@ -60,6 +62,15 @@ def test_downloads_page_lists_every_document(name):
     page = (ROOT / "docs" / "downloads.md").read_text()
     for extension in ("ttl", "jsonld"):
         assert f"({DATA_OUTPUT_DIRECTORY}/{name}.{extension})" in page
+
+
+@pytest.mark.parametrize("name", DOCUMENTS)
+def test_document_names_match_w3id_redirects(name):
+    """
+    Checks every document name matches the pattern in the live w3id.org/taro redirect rules.
+    https://github.com/perma-id/w3id.org/blob/master/ids/taro/.htaccess
+    """
+    assert re.fullmatch(r"ontology|symbol|correspondence|deck/[a-z0-9-]+", name)
 
 
 def test_every_source_file_is_published():

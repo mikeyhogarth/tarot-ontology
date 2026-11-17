@@ -2,6 +2,17 @@
 
 Every published file in one place. Each is available as [Turtle](https://www.w3.org/TR/turtle/) or [JSON-LD](https://www.w3.org/TR/json-ld11/). For a human-readable reference to the ontology, see the [ontology specification :octicons-link-external-16:](reference/index-en.html){ target="\_blank" rel="noopener" }.
 
+## Permanent identifiers
+
+Every document has a permanent `w3id.org` identifier which supports content negotiation, so you can fetch the RDF straight from the IRI:
+
+```sh
+curl -L -H "Accept: text/turtle" https://w3id.org/taro/ontology
+curl -L -H "Accept: application/ld+json" https://w3id.org/taro/deck/rws
+```
+
+Requested from a browser, `https://w3id.org/taro/ontology` takes you to the ontology specification; the other identifiers take you to this site.
+
 ## Ontology and vocabularies
 
 - [Ontology](ontology.md) - download as [Turtle](data/ontology.ttl){ aria-label="Download the TAR-O ontology as Turtle" } or [JSON-LD](data/ontology.jsonld){ aria-label="Download the TAR-O ontology as JSON-LD" }

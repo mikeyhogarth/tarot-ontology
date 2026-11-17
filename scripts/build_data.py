@@ -12,7 +12,6 @@ DATA_DIRECTORY = ROOT / "data"
 DECKS_DIRECTORY = DATA_DIRECTORY / "decks"
 VOCABS_DIRECTORY = DATA_DIRECTORY / "vocabs"
 OUTPUT_ROOT = ROOT / "docs"
-DATA_OUTPUT_DIRECTORY = "data"  # subfolder of the site holding the RDF downloads
 DECK_NAMES = ["rws", "marseille", "sola-busca"]
 DECK_DOCUMENTS = [f"deck/{deck}" for deck in DECK_NAMES]
 
@@ -41,6 +40,9 @@ PREFIXES: dict[str, str] = {
     "schema": "https://schema.org/",
 }
 
+# Note: neither the keys from DOCUMENTS, nor the DATA_OUTPUT_DIRECTORY
+# can change as the w3id redirects expect them to be named exactly like this.
+DATA_OUTPUT_DIRECTORY = "data"
 DOCUMENTS: dict[str, list[Path]] = {
     "ontology": [DATA_DIRECTORY / "ontology.ttl"],
     "correspondence": [VOCABS_DIRECTORY / "correspondences.ttl"],

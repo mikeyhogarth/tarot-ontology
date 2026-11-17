@@ -1,6 +1,6 @@
 # Ontology
 
-`https://w3id.org/taro/ontology`
+[`https://w3id.org/taro/ontology`](https://w3id.org/taro/ontology)
 
 An ontology defining the classes and properties commonly required for describing tarot decks and their cards. This includes the suits and ranks that nearly every tarot system has, as well as the extension points that external vocabularies fill, such as for [symbology](./symbol.md) or [correspondences](./correspondence.md).
 
