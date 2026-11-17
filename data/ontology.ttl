@@ -22,7 +22,9 @@
     dcterms:description "A small ontology for describing tarot decks and their cards."@en ;
     dcterms:abstract "Classes and properties for describing tarot decks, their cards, and the suits and ranks nearly every deck shares. Esoteric correspondences and the symbols cards depict are deliberately left to optional companion vocabularies, so each deck states only the claims its own tradition makes. The ontology describes cards, not what they mean: any interpretation is offered as one popular reading among many. Suits and ranks are generic hooks labelled with popular terminology; a deck that uses its own names (e.g. Princess for Page) still links to the shared individuals and records its own names on its own cards."@en ;
     vann:usageNote "This ontology is generic and extensible - tarot has no single vocabulary."@en ;
-    rdfs:seeAlso <https://w3id.org/taro/correspondence>,
+    foaf:homepage <https://mikeyhogarth.github.io/tarot-ontology/> ;
+    rdfs:seeAlso <https://mikeyhogarth.github.io/tarot-ontology/>,
+        <https://w3id.org/taro/correspondence>,
         <https://w3id.org/taro/symbol>,
         <https://w3id.org/taro/deck/rws>,
         <https://w3id.org/taro/deck/marseille>,
