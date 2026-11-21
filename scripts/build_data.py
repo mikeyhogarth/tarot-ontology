@@ -17,9 +17,9 @@ DECK_DOCUMENTS = [f"deck/{deck}" for deck in DECK_NAMES]
 
 # Prefixes lookup to ensure we get nice, human-readable prefixes in the outputs when we serialize
 # them. This includes both our own prefixes and the ones from other vocabularies that we're using.
-# Whilst the ttl serialization would sort most of the "popular vocab" prefixes out for us, the
-# jsonld one does not, so specifying them here leads to a better jsonld @context. This may change
-# in the future if we ever decide to properly support jsonld contexts.
+# Whilst the ttl serialization through rdflib would sort most of the "popular vocab" prefixes out
+# for us, the jsonld one does not, so specifying them here leads to a better jsonld @context. This
+# may change in the future if we ever decide to properly support jsonld contexts.
 PREFIXES: dict[str, str] = {
     "tarot": "https://w3id.org/taro/ontology#",
     "corr": "https://w3id.org/taro/correspondence#",

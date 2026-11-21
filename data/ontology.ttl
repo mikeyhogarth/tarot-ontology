@@ -193,17 +193,18 @@ tarot:hasInterpretation a owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://w3id.org/taro/ontology> ;
     rdfs:subPropertyOf skos:note ;
     rdfs:label "has interpretation"@en ;
-    rdfs:comment "An interpretation of a card's meaning. The value may be anything."@en ;
-    vann:usageNote "No interpretation is the true meaning of a card, and much of the interpretation a reader may draw comes from more than just the card in isolation. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:hasPopularInterpretation if defining a commonly used interpretation. The ontology deliberately does not prescribe what form an interpretation takes."@en ;
+    rdfs:comment "An interpretation of what a card, or a symbol a card depicts, means. The value may be anything."@en ;
+    vann:usageNote "No interpretation is the true meaning of a card or symbol, and much of the interpretation a reader may draw comes from more than just the card in isolation. A symbol's interpretation is about the symbol itself, and a symbol may mean different things in different decks and traditions, so provenance matters even more. If using this property, ensure that you capture the provenance somehow to identify whose interpretation it actually is. Use tarot:hasPopularInterpretation if defining a commonly used interpretation. The ontology deliberately does not prescribe what form an interpretation takes."@en ;
     vann:example "rws:TheFool tarot:hasInterpretation \"A new beginning.\"@en .",
-        "rws:TheFool tarot:hasInterpretation ex:BeginningOfJourney ." .
+        "rws:TheFool tarot:hasInterpretation ex:BeginningOfJourney .",
+        "symbol:Lion tarot:hasInterpretation \"Courage.\"@en ." .
 
 tarot:hasPopularInterpretation a owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://w3id.org/taro/ontology> ;
     rdfs:subPropertyOf tarot:hasInterpretation ;
     rdfs:label "has popular interpretation"@en ;
-    rdfs:comment "A popular interpretation of a card's meaning: one that is widely used in a tradition of practice."@en ;
-    vann:usageNote "Present this as one popular reading, never as the true meaning of the card - there is no true meaning, this is in the eye of the beholder alone."@en ;
+    rdfs:comment "A popular interpretation of what something means: one that is widely used in a tradition of practice."@en ;
+    vann:usageNote "Present this as one popular reading, never as the true meaning of something - there is no true meaning of anything within tarot: this is entirely in the eye of the beholder."@en ;
     vann:example "rws:TheFool tarot:hasPopularInterpretation \"Innocence, spontaneity and a leap of faith.\"@en ." .
 
 #################################################################

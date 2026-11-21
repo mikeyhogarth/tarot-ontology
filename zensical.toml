@@ -25,6 +25,7 @@ nav = [
   ] },
   { "Development" = [
     { "Downloads" = "downloads.md" },
+    { "IRIs and Prefixes" = "iris-and-prefixes.md" },
     { "Design Philosophy" = "design.md" },
     { "Working with this repository" = "development.md" },
     { "Contributing" = "contribution.md" },
