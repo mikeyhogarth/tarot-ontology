@@ -2,16 +2,16 @@
 
 All data within this project, including the ontology itself, deliberately avoids prescribing or asserting a definitive interpretation of any particular tarot card.
 
-Interpretation is an inherently contextual and deeply personal aspect of tarot reading. We do not believe it is the role of this project, or of any single authority, to dictate how others should interpret the cards or their meanings, and we are confident that this is the prevailing view within the tarot community. Interpretations may vary considerably, and this diversity is something we seek to respect.
+Interpretation is an inherently contextual and deeply personal aspect of tarot reading. We do not believe it is the role of this project, or of any single authority, to dictate how others should interpret the cards or their meanings, and we are confident that this is the prevailing view within the tarot community.
 
 That said, we have provided a small number of interpretation-related properties for those who wish to express and document their interpretations:
 
 - `tarot:hasInterpretation` is a property that can be used to record an individual's or group's own interpretation of a something (such as of a card, or something the card depicts). We strongly recommend that interpretations are accompanied by provenance information identifying whose interpretation is being represented.
 - `tarot:hasPopularInterpretation` can be used to describe an interpretation that is widely recognised or accepted within a particular tradition or school of tarot. Our example [Rider-Waite-Smith dataset](./decks.md) includes a popular interpretation for each card.
 
-Ultimately, it is our view that the human element is what makes tarot special. This project makes no attempt to establish a definitive or universally authoritative interpretation of any card, nor does it seek to imply that such an interpretation exists. Its purpose is to provide a framework through which interpretations can be represented, attributed, and explored, while leaving the act of interpretation where it belongs: with the individual reader.
+It is our view that the human element is what makes tarot special. This project therefore makes no attempt to establish a definitive or universally authoritative interpretation of any card, nor does it seek to imply that such an interpretation exists. Its purpose is to provide a the terms through which interpretations can be expressed, while leaving the act of interpretation where it belongs: with the individual reader.
 
-## Assigning an interpretation to a card
+## Representing interpretations
 
 There are no restrictions on what the value of an interpretation can be - you can use a literal (such as a piece of text), a link to a resource from any vocabulary or concept scheme, or a structure of your own design.
 
@@ -41,7 +41,7 @@ rws:TheFool tarot:hasInterpretation [
 
 And here is how you might say that the "Lion" on the `rws:Strength` card represents courage.
 
-```ttl
+```turtle
 @prefix tarot:  <https://w3id.org/taro/ontology#> .
 @prefix rws:    <https://w3id.org/taro/deck/rws#> .
 @prefix symbol: <https://w3id.org/taro/symbol#> .
